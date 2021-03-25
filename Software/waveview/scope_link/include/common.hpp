@@ -32,6 +32,9 @@
 // Window size in buffers
 #define DEFAULT_WINDOW 10
 
+// Limit On The Number Of Points Sent In GetData()
+#define GET_DATA_POINT_LIMIT 4096
+
 /* Structures */
 struct buffer
 {

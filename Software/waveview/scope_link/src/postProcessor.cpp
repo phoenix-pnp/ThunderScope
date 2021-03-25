@@ -83,30 +83,36 @@ void postProcessor::coreLoop()
             DEBUG << "post processing next window";
 
             // New packet
-            postWindow = (int8_t *)malloc(windowSize
+            int actual_window_size = windowSize;
+            if(actual_window_size > GET_DATA_POINT_LIMIT)
+                actual_window_size = GET_DATA_POINT_LIMIT;
+            
+            int window_ratio = windowSize / actual_window_size;
+            
+            postWindow = (int8_t *)malloc(actual_window_size
                     * (numCh + 1 * (doMath == true)));
-            memset(postWindow, 0, windowSize
+            memset(postWindow, 0, actual_window_size
                     * (numCh + 1 * (doMath == true)));
 
             for (uint8_t j = 0; j < numCh; j++) {
                 // Post process window
-                for (uint32_t i = 0; i < windowSize; i++) {
-                    postWindow[i + j * windowSize] = currentWindow[i * numCh + j];
+                for (uint32_t i = 0; i < actual_window_size; i++) {
+                    postWindow[i + (j * actual_window_size)] = currentWindow[(i * numCh * window_ratio) + j];
                     if (doMath == true) {
                         // do math
                         // TODO: This will rollover if the number doesn't fit into an int8_t
                         if (mathCh_1 == j) {
                             // LHS of math
-                            postWindow[i + numCh * windowSize] += currentWindow[i * numCh + j];
+                            postWindow[i + numCh * actual_window_size] += currentWindow[(i * numCh * window_ratio) + j];
                         }
                         if (mathCh_2 == j) {
                             // RHS of math
                             if (mathSign == true){
                                 // Add
-                                postWindow[i + numCh * windowSize] += currentWindow[i * numCh + j];
+                                postWindow[i + numCh * actual_window_size] += currentWindow[(i * numCh * window_ratio) + j];
                             } else {
                                 // Subtract
-                                postWindow[i + numCh * windowSize] -= currentWindow[i * numCh + j];
+                                postWindow[i + numCh * actual_window_size] -= currentWindow[(i * numCh * window_ratio) + j];
                             }
                         }
                     }
@@ -117,7 +123,7 @@ void postProcessor::coreLoop()
             currentPacket = (EVPacket*)malloc(sizeof(EVPacket));
             currentPacket->command = 1;
             currentPacket->packetID = 0x0808;
-            currentPacket->dataSize = windowSize
+            currentPacket->dataSize = actual_window_size
                 * (numCh + 1 * (doMath == true));
             currentPacket->data = postWindow;
 
