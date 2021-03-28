@@ -220,9 +220,42 @@ boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<false>> testerDataQ
  *   None
  ******************************************************************************/
 void runPCIeTest() {
+    controller* troller = new controller(testerDataQueue);
 
+    delete troller;
+}
+
+
+void getDataSpeedTest() {
     controller* troller = new controller(&testerDataQueue);
-    troller->setWindowSize(1000);
-    troller->testADCData();
+    uint32_t windowSize = 5000000;
+    troller->setWindowSize(windowSize);
+    troller->controllerUnPause();
+    LARGE_INTEGER t1, t2, freq;
+    QueryPerformanceFrequency(&freq);
+
+    EVPacket GetDataPacket;
+    EVPacket returnPacket;
+    GetDataPacket.command = (int)CMD_GetData1;
+    GetDataPacket.dataSize = 20;
+    GetDataPacket.packetID = 0x808;
+    GetDataPacket.data = (int8_t*)malloc(20);
+    troller->initTestBridge();
+
+    QueryPerformanceCounter(&t1);
+    for(int i = 0; i < 30; i++) {
+        troller->sendPacket(GetDataPacket);
+        bool gotPacket = false;
+        
+        while(!gotPacket) {
+            returnPacket = troller->readPacket();
+            gotPacket = returnPacket.packetID == 2056;
+        }
+    }
+    QueryPerformanceCounter(&t2);
+
+    double time_sec = (unsigned long long)(t2.QuadPart - t1.QuadPart) / (double)freq.QuadPart;
+    INFO << "Time it took for: " << windowSize << " Points to be processed 30 times is: " << time_sec;
+
     delete troller;
 }

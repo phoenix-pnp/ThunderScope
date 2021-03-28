@@ -28,6 +28,7 @@ public:
     void setMathSign(bool sign);
 
     /* variables */
+    std::atomic<bool> isPaused;
 
 private:
     /* functions */

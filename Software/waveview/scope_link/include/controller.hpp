@@ -41,6 +41,10 @@ public:
     void setFileName(int8_t newFile);
     void hardWareCommand(int command, int channel, int val1, double val2);
     void testADCData();
+    void waitPause(std::atomic<bool>& isPaused);
+    void initTestBridge();
+    EVPacket readPacket();
+    void sendPacket(EVPacket packet);
 
 private:
     // external queue
@@ -67,6 +71,7 @@ private:
     std::atomic<bool> stopController;
 
     int8_t triggerLevel = 0;
+    int8_t* testArray;
 };
 
 enum CMD {

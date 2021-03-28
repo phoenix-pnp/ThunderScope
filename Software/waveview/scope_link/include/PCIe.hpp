@@ -99,6 +99,7 @@ class PCIeLink {
 public:
     bool connected;
     PCIeLink(boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<false>> *outputQueue);
+    std::atomic<bool> isPaused;
 
     int Connect();
     void InitBoard();

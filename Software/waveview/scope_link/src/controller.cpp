@@ -57,6 +57,11 @@ controller::controller(boost::lockfree::queue<buffer*, boost::lockfree::fixed_si
     free(inputFile);
     inputFile = filename;
 
+    testArray = (int8_t*)malloc(sizeof(int8_t) * BUFFER_SIZE);
+    for(int i = 0; i < BUFFER_SIZE; i++) {
+        testArray[i] = (i % 122);
+    }
+
     INFO << "Controller Created";
 }
 
@@ -427,11 +432,23 @@ void controller::controllerLoop()
 void controller::controllerPause()
 {
     DEBUG << "Pausing pipeline";
-    processorThread->processorPause();
+    //pause and wait for the triggerthread to pause
     triggerThread->triggerPause();
+    waitPause(triggerThread->isPaused);
+    DEBUG << "Trigger Thread Paused";
+    //pause and wait for the processorthread to pause
+    processorThread->processorPause();
+    waitPause(processorThread->isPaused);
+    DEBUG << "Processor Thread Paused";
+    //pause and wait for the postProcessorthread to pause
     postProcessorThread->postProcessorPause();
+    waitPause(postProcessorThread->isPaused);
+    DEBUG << "PostProcessor Thread Paused";
 #ifndef NOHARDWARE
+    //pause and wait for the pcieLinkThread to pause
     pcieLinkThread->Pause();
+    waitPause(pcieLinkThread->isPaused);
+    DEBUG << "PCIeLink Thread Paused";
 #endif
 }
 
@@ -471,9 +488,11 @@ void controller::controllerUnPause()
  ******************************************************************************/
 void controller::controllerFlush()
 {
-    INFO << "Flushing pipeline";
+    DEBUG << "Flushing pipeline";
     // pause while flusing
     controllerPause();
+
+    //wait for eveyone to stop
 
     // Clear queues
     size_t count = 0;
@@ -765,9 +784,17 @@ void controller::getData()
     controllerUnPause();
 
 #ifdef NOHARDWARE
-    if (inputFile != NULL) {
-        loadFromFile(inputFile, dataQueue);
+    //if (inputFile != NULL) {
+    //    loadFromFile(inputFile, dataQueue);
+    //}
+
+    for(int i = 0; i < 2; i++) {
+        buffer* tempBuffer;
+        tempBuffer = bufferAllocator.allocate(1);
+        memcpy(tempBuffer->data,testArray,BUFFER_SIZE);
+        dataQueue->push(tempBuffer);
     }
+    
 #endif
 }
 
@@ -882,3 +909,52 @@ void controller::hardWareCommand(int command, int channel, int val1, double val2
 void controller::testADCData() {
     pcieLinkThread->Write(test_adc_data,nullptr);
 }
+
+
+//Will wait in a loop until the wait flag given is true
+void controller::waitPause(std::atomic<bool>& isPaused) {
+    while(!isPaused.load()) {
+        std::this_thread::sleep_for(std::chrono::microseconds(50));
+    }
+}
+
+void controller::initTestBridge() {
+    bridgeThread->InitTxTestBridge();
+    bridgeThread->InitRxTestBridge();
+}
+
+EVPacket controller::readPacket() {
+    return bridgeThread->ReadPacket(bridgeThread->rx_test_hPipe);
+}
+
+void controller::sendPacket(EVPacket packet) {
+    bridgeThread->SendPacket(bridgeThread->tx_test_hPipe,packet);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

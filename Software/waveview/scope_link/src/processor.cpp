@@ -21,6 +21,7 @@ Processor::Processor(
     stopTransfer.store(false);
     pauseTransfer.store(true);
     windowStored.store(false);
+    isPaused.store(true);
 
     updateWinPerSize(windowSize, persistanceSize);
 
@@ -117,7 +118,8 @@ void Processor::coreLoop()
         while (pauseTransfer.load() == false &&
                windowStored.load() == false &&
                inputQueue->pop(currentBuffer)) {
-
+            
+            isPaused.store(false);
             DEBUG << "*** New Buffer ***";
             // New buffer, reset variables
             count++;
@@ -154,6 +156,7 @@ void Processor::coreLoop()
                 if (windowCol == windowSize) {
                     windowCol = 0;
 
+
                     outputQueue->push(windowProcessed + (windowCol * numCh + windowRow * windowSize * numCh));
 
                     // Setup next trigger in persistance buffer
@@ -185,6 +188,12 @@ void Processor::coreLoop()
             }
 
             bufferAllocator.deallocate(currentBuffer, 1);
+        }
+
+        if(pauseTransfer.load())
+            isPaused.store(true);
+        while(pauseTransfer.load()) {
+            std::this_thread::sleep_for(std::chrono::microseconds(100));
         }
 
         if (windowStored.load() == true || pauseTransfer.load() == true) {

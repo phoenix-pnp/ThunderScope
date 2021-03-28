@@ -23,7 +23,7 @@
 #include <unistd.h>
 #endif
 
-#define BRIDGE_BUFFER_SIZE 4096
+#define BRIDGE_BUFFER_SIZE (1 << 23)
 #define END_PACKET_COMMAND 0xEF
 #define END_PACKET_PACKETID 0xAB
 #define END_PACKET_DATA_SIZE 0x00
@@ -37,8 +37,10 @@ private:
 
     const char tx_connection_string[100] = {};
     const char rx_connection_string[100] = {};
-    char tx_buff[BRIDGE_BUFFER_SIZE] = {};
-    char rx_buff[BRIDGE_BUFFER_SIZE] = {};
+    char* tx_buff;
+    char* rx_buff;
+    char* tx_test_buff;
+    char* rx_test_buff;
 #ifdef WIN32
     HANDLE tx_hPipe;
     HANDLE rx_hPipe;
@@ -50,7 +52,8 @@ private:
     int client_rx_sock;
     const char* base_path = "/tmp/";
 #endif
-    char txBuff[BRIDGE_BUFFER_SIZE], rxBuff[BRIDGE_BUFFER_SIZE];
+    char* txBuff;
+    char* rxBuff;
     std::thread tx_worker;
     std::thread rx_worker;
 
@@ -82,6 +85,20 @@ public:
 
     int InitTxBridge();
     int InitRxBridge();
+    int InitTxTestBridge();
+    int InitRxTestBridge();
+
+#ifdef WIN32
+    EVPacket ReadPacket(HANDLE hPipe);
+    void SendPacket(HANDLE hPipe, EVPacket packet);
+    HANDLE tx_test_hPipe;
+    HANDLE rx_test_hPipe;
+#else
+    EVPacket ReadPacket(int sock);
+    void SendPacket(int sock, EVPacket packet);
+    int tx_test_sock;
+    int rx_test_sock;
+#endif
 
     void push(EVPacket* newPacket);
 

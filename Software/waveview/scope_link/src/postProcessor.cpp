@@ -29,6 +29,7 @@ postProcessor::postProcessor(
 
     stopTransfer.store(false);
     pauseTransfer.store(true);
+    isPaused.store(true);
 
     // create new thread
     postProcessorThread = std::thread(&postProcessor::coreLoop, this);
@@ -79,15 +80,20 @@ void postProcessor::coreLoop()
         // Inner loop
         while (pauseTransfer.load() == false &&
                inputQueue->pop(currentWindow)) {
-
+            isPaused.store(false);
             DEBUG << "post processing next window";
 
             // New packet
-            int actual_window_size = windowSize;
-            if(actual_window_size > GET_DATA_POINT_LIMIT)
+            if(windowSize == 0)
+                continue;
+
+            uint32_t actual_window_size = windowSize;
+            uint32_t window_ratio = 1;
+            if(actual_window_size > GET_DATA_POINT_LIMIT) {
                 actual_window_size = GET_DATA_POINT_LIMIT;
-            
-            int window_ratio = windowSize / actual_window_size;
+                window_ratio = windowSize / actual_window_size;
+            }
+                
             
             postWindow = (int8_t *)malloc(actual_window_size
                     * (numCh + 1 * (doMath == true)));
@@ -138,12 +144,13 @@ void postProcessor::coreLoop()
 
         }
 
-        if (pauseTransfer.load() == true) {
-            // flush the input queue so it doesn't overflow
-            size_t count = 0;
-            count = (*inputQueue).consume_all(free);
-            TRACE << "Flushed postProcessor inputQueue: " << count;
+        if(pauseTransfer.load())
+            isPaused.store(true);
+        while(pauseTransfer.load()) {
+            std::this_thread::sleep_for(std::chrono::microseconds(100));
         }
+
+        
         // Queue empty, Sleep for a bit
         std::this_thread::sleep_for(std::chrono::microseconds(100));
     }

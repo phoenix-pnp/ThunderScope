@@ -23,17 +23,17 @@
 #define BUFFER_1024K 1048576
 #define BUFFER_8M    (1 << 23)
 
-#ifdef NOHARDWARE
-#define BUFFER_SIZE BUFFER_8K
-#else
+//#ifdef NOHARDWARE
+//#define BUFFER_SIZE BUFFER_8K
+//#else
 #define BUFFER_SIZE BUFFER_8M
-#endif
+//#endif
 
 // Window size in buffers
 #define DEFAULT_WINDOW 10
 
 // Limit On The Number Of Points Sent In GetData()
-#define GET_DATA_POINT_LIMIT 4096
+#define GET_DATA_POINT_LIMIT 512
 
 /* Structures */
 struct buffer

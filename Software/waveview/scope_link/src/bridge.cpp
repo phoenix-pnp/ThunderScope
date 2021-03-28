@@ -59,11 +59,20 @@ txQueue(txQueue)
     // command packets from js
     rxOutputQueue = outputQ;
 
+    tx_buff = (char*)malloc(sizeof(char) * BRIDGE_BUFFER_SIZE);
+    txBuff = (char*)malloc(sizeof(char) * BRIDGE_BUFFER_SIZE);
+    rx_buff = (char*)malloc(sizeof(char) * BRIDGE_BUFFER_SIZE);
+    rxBuff = (char*)malloc(sizeof(char) * BRIDGE_BUFFER_SIZE);
+    tx_test_buff = (char*)malloc(sizeof(char) * BRIDGE_BUFFER_SIZE);
+    rx_test_buff = (char*)malloc(sizeof(char) * BRIDGE_BUFFER_SIZE);
+
     tx_run.store(false);
     rx_run.store(false);
 #ifdef WIN32
     tx_hPipe = INVALID_HANDLE_VALUE;
     rx_hPipe = INVALID_HANDLE_VALUE;
+    tx_test_hPipe = INVALID_HANDLE_VALUE;
+    rx_test_hPipe = INVALID_HANDLE_VALUE;
 #else
     tx_sock = -1;
     rx_sock = -1;
@@ -101,6 +110,26 @@ txQueue(txQueue)
  ******************************************************************************/
 Bridge::~Bridge() {
     DEBUG << "Destroying bridge";
+
+    free(tx_buff);
+    free(txBuff);
+    free(rx_buff);
+    free(rxBuff);
+    free(tx_test_buff);
+    free(rx_test_buff);
+
+#ifdef WIN32
+    //If test pipes are created, close them first
+    if(INVALID_HANDLE_VALUE != tx_test_hPipe) {
+        CloseHandle(tx_test_hPipe);
+        tx_test_hPipe = INVALID_HANDLE_VALUE;
+    }
+    if(INVALID_HANDLE_VALUE != rx_test_hPipe) {
+        CloseHandle(rx_test_hPipe);
+        rx_test_hPipe = INVALID_HANDLE_VALUE;
+    }
+#endif
+
     if (rx_run.load() == true) {
         RxStop();
     }
@@ -209,6 +238,7 @@ void Bridge::TxJob() {
 #endif
                 //free the packet
                 FreePacket(currentPacket);
+                INFO << "Sent Packet";
         }
         // No more packets, sleep.
         std::this_thread::sleep_for(std::chrono::microseconds(500));
@@ -248,7 +278,7 @@ void Bridge::RxJob() {
         int val;
         unsigned long bytes_read;
         //get the header
-        val = ReadFile(rx_hPipe, rxBuff, 6, &bytes_read, NULL);
+        val = ReadFile(rx_hPipe, (LPVOID)rxBuff, 6, &bytes_read, NULL);
         if(val == 0) {
             //error
             int err = GetLastError();
@@ -277,7 +307,7 @@ void Bridge::RxJob() {
         //read the rest of the packet
         uint16_t dataSize = ((uint16_t*)(rxBuff))[2];
         if(dataSize < BRIDGE_BUFFER_SIZE - 6) {
-            val = ReadFile(rx_hPipe, rxBuff + 6, dataSize, &bytes_read, NULL);
+            val = ReadFile(rx_hPipe, (LPVOID)(rxBuff + 6), dataSize, &bytes_read, NULL);
         } else {
             continue;
         }
@@ -298,7 +328,6 @@ void Bridge::RxJob() {
             }
         }
         packet_size = 6 + dataSize;
-
 #else
         ssize_t packet_size;
         packet_size = recv(client_rx_sock,rxBuff,BRIDGE_BUFFER_SIZE,0);
@@ -321,16 +350,6 @@ void Bridge::RxJob() {
             rx_run.store(false);
         }
 #endif
-
-        //process whatever is sent (for now just print it)
-        /*
-        std::string dbgMsg = "Packet Size: " + std::to_string(packet_size) + " Packet Info: ";
-        for(int i = 0; i < (int)packet_size; i++) {
-            dbgMsg += convert_int(rxBuff[i]) + " ";
-        }
-        INFO << dbgMsg;
-        */
-        
         // TODO: you can just cast it as the struct and access things that way
         uint16_t* rxBuff16 = (uint16_t*) rxBuff;
         uint8_t* rxBuffData = (uint8_t*) (rxBuff + 6);
@@ -436,8 +455,8 @@ int Bridge::InitTxBridge() {
                                // pipe already exists...
                                PIPE_TYPE_MESSAGE | PIPE_READMODE_MESSAGE | PIPE_WAIT | PIPE_REJECT_REMOTE_CLIENTS,
                                1,
-                               4096 * 4096 * 16,
-                               4096 * 4096 * 16,
+                               (1 << 24),
+                               (1 << 24),
                                NMPWAIT_USE_DEFAULT_WAIT,
                                NULL);
 
@@ -503,8 +522,8 @@ int Bridge::InitRxBridge() {
                                PIPE_TYPE_MESSAGE | PIPE_READMODE_MESSAGE |
                                PIPE_WAIT | PIPE_REJECT_REMOTE_CLIENTS,
                                1,
-                               4096 * 4096 * 16,
-                               4096 * 4096 * 16,
+                               (1 << 24),
+                               (1 << 24),
                                NMPWAIT_USE_DEFAULT_WAIT,
                                NULL);
 
@@ -545,6 +564,149 @@ int Bridge::InitRxBridge() {
     return 0;
 #endif
 }
+
+#ifdef WIN32
+int Bridge::InitTxTestBridge() {
+    if(tx_test_hPipe != INVALID_HANDLE_VALUE) {
+        return 2;
+    }
+    tx_test_hPipe = CreateFile( 
+         rx_connection_string,   // pipe name 
+         GENERIC_READ |  // read and write access 
+         GENERIC_WRITE, 
+         0,              // no sharing 
+         NULL,           // default security attributes
+         OPEN_EXISTING,  // opens existing pipe 
+         0,              // default attributes 
+         NULL);          // no template file 
+
+    if(tx_test_hPipe == INVALID_HANDLE_VALUE) {
+        ERROR << "Failed To Open Test Tx Pipe at: " << rx_connection_string;
+        return 1;
+    }
+    
+    INFO << "Opened Test Tx Pipe at: " << rx_connection_string;
+    return 0;
+}
+
+int Bridge::InitRxTestBridge() {
+    if(rx_test_hPipe != INVALID_HANDLE_VALUE) {
+        return 2;
+    }
+    rx_test_hPipe = CreateFile( 
+         tx_connection_string,   // pipe name 
+         GENERIC_READ |  // read and write access 
+         GENERIC_WRITE, 
+         0,              // no sharing 
+         NULL,           // default security attributes
+         OPEN_EXISTING,  // opens existing pipe 
+         0,              // default attributes 
+         NULL);          // no template file 
+
+    if(rx_test_hPipe == INVALID_HANDLE_VALUE) {
+        ERROR << "Failed To Open Test Rx Pipe at: " << tx_connection_string;
+        return 1;
+    }
+    
+    INFO << "Opened Test Rx Pipe at: " << tx_connection_string;
+    return 0;
+}
+
+EVPacket Bridge::ReadPacket(HANDLE hPipe) {
+    EVPacket packet;
+    DWORD packet_size;
+    int val;
+    unsigned long bytes_read;
+    //get the header
+    val = ReadFile(hPipe, rx_test_buff, 6, &bytes_read, NULL);
+    if(val == 0) {
+        //error
+        int err = GetLastError();
+        if(err == 234) { //err 234 is there is more data, not an error
+            //do nothing
+        } else if(err == 109) { //err 109 there were not enough bytes in the pipline
+            return packet; //error packet move onto next one
+        } else {
+            ERROR << "rx_test_pipe header_read: Error: " << GetLastError();
+            return packet;
+        }
+    }
+
+    //check to see if the packet is the END_CONNECTION packet
+    //uint16_t* endPacketCheck = (uint16_t*)rxBuff;
+    //if (endPacketCheck[0] == END_PACKET_COMMAND
+    //        && endPacketCheck[1] == END_PACKET_PACKETID
+    //        && endPacketCheck[2] == END_PACKET_DATA_SIZE) {
+    //
+    //    DEBUG << "END PACKET Recieved, Jumping Out Of RX Job";
+    //    rx_run.store(false);
+    //    continue;
+    //}
+
+    //read the rest of the packet
+    uint16_t dataSize = ((uint16_t*)(rxBuff))[2];
+    if(dataSize < BRIDGE_BUFFER_SIZE - 6) {
+        val = ReadFile(hPipe, rx_test_buff + 6, dataSize, &bytes_read, NULL);
+    } else {
+        return packet;
+    }
+    if(val == 0){
+        //error
+        int err = GetLastError();
+        if (err == 234) {
+            // more data exists
+        } else if (err == 109) {
+            // not enough bytes in pipeline
+            // Skip error packet
+            return packet;
+        } else {
+            ERROR << "rx_test_pipe data_read: Error: " << GetLastError();
+            return packet;
+        }
+    }
+    packet_size = 6 + dataSize;
+
+    // TODO: you can just cast it as the struct and access things that way
+    uint16_t* rxBuff16 = (uint16_t*) rx_test_buff;
+    uint8_t* rxBuffData = (uint8_t*) (rx_test_buff + 6);
+    //get the header
+    packet.command = rxBuff16[0];
+    packet.packetID = rxBuff16[1];
+    packet.dataSize = rxBuff16[2];
+
+    //check that the dataSize is valid (less than or equal to BUFF_SIZE - 6)
+    // TODO: Might be good idea to set data on all command packets to NULL
+    //       and check against it. It would save a lot of malloc.
+    if(packet.dataSize <= BRIDGE_BUFFER_SIZE - 6) {
+        packet.data = (int8_t*)malloc(packet.dataSize);
+        memcpy(packet.data,rxBuffData,packet.dataSize);
+    } else {
+        // TODO: this is a transmission error for now, until we get multiple
+        // packet payloads enabled
+        packet.dataSize = 1;
+        packet.data = (int8_t*)malloc(1);
+    }
+
+    return packet;
+}
+
+void Bridge::SendPacket(HANDLE hPipe, EVPacket packet) {
+    // Copy packet into tx_buff
+    uint16_t* txBuffCast = (uint16_t*)tx_test_buff;
+    int packet_size = 6 + packet.dataSize;
+    txBuffCast[0] = packet.command;
+    txBuffCast[1] = packet.packetID;
+    txBuffCast[2] = packet.dataSize;
+    memcpy(tx_test_buff+6,packet.data,packet.dataSize);
+
+    // send the packet over a named pipe
+    unsigned long bytes_written;
+    WriteFile(hPipe,tx_test_buff,packet_size,&bytes_written,NULL);
+}
+
+#else
+
+#endif
 
 /*******************************************************************************
  * TxStop()
@@ -621,7 +783,7 @@ int Bridge::RxStop() {
     rx_run.store(false);
 
 #ifdef WIN32
-    // because windows has belocking calls, because ofc it does, we need to
+    // because windows has blocking calls, because ofc it does, we need to
     // write an end bit to it so that it unblocks and sees that it should end
     // itself.
     // This also ensures that the code does not get stuck on trying to accept a

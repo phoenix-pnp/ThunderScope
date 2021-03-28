@@ -73,6 +73,7 @@ bool loadFromFile ( char* filename, boost::lockfree::queue<buffer*, boost::lockf
 {
     std::ifstream stream;
     stream.open(filename);
+    int p = 0;
 
     char delim = '\n';
     std::string tmp;
@@ -90,7 +91,7 @@ bool loadFromFile ( char* filename, boost::lockfree::queue<buffer*, boost::lockf
     }
 
     while (std::getline(stream, tmp, delim)) {
-        DEBUG << "Parsing line into buffer";
+        //DEBUG << "Parsing line into buffer";
         // Parse the line into a buffer
         typedef boost::tokenizer<boost::char_separator<char>> tokenizer;
         boost::char_separator<char> sep{","};
@@ -111,7 +112,10 @@ bool loadFromFile ( char* filename, boost::lockfree::queue<buffer*, boost::lockf
             if (tmpBufPos == BUFFER_SIZE) {
                 DEBUG << "Adding buffer to queue from file";
                 // Buffer is now full push it
+                p++;
                 outputQ->push(tempBuffer);
+                if(p >= 3)
+                    return true;
 
                 // Create a new one to fill
                 tempBuffer = bufferAllocator.allocate(1);

@@ -234,6 +234,7 @@ void PCIeLink::Write(ScopeCommand command, void* val) {
             _Write32(user_handle,BOARD_REG_OUT,currentBoardState.board_reg_out);
         }
 
+        /*
         INFO << "Enabling ADC";
         {
             //Reset ADC
@@ -262,7 +263,9 @@ void PCIeLink::Write(ScopeCommand command, void* val) {
             _adc_active();
             _FIFO_WRITE(user_handle,currentBoardState.adc_in_sel_12,sizeof(currentBoardState.adc_in_sel_12));
             _FIFO_WRITE(user_handle,currentBoardState.adc_in_sel_34,sizeof(currentBoardState.adc_in_sel_34));
-        }
+        } */
+
+        Write(adc_enable_ramp_test,nullptr);
         
         INFO << "Enabling the front end";
         {
@@ -543,8 +546,10 @@ void PCIeLink::_Job() {
     uint8_t* preBuff = (uint8_t*)malloc(sizeof(uint8_t) * BUFFER_SIZE);
     while(_run.load()) {
         while(_pause.load()) {
-            std::this_thread::sleep_for(std::chrono::milliseconds(2));
+            isPaused.store(true);
+            std::this_thread::sleep_for(std::chrono::microseconds(500));
         }
+        isPaused.store(false);
         //allocate a buffer
         buffer* buff;
         buff = bufferAllocator.allocate(1);
@@ -573,8 +578,9 @@ PCIeLink::PCIeLink(boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<
     QueryPerformanceFrequency(&freq);
     this->outputQueue = outputQueue;
     //keep the read thread alive but paused
-    _run = true;
-    _pause = true;
+    _run.store(true);
+    _pause.store(true);
+    isPaused.store(true);
     //init board state vairable
     currentBoardState.board_en = false;
     currentBoardState.adc_en = false;

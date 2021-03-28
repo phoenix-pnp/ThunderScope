@@ -48,6 +48,8 @@ public:
     void setRising();
     void setFalling();
 
+    std::atomic<bool> isPaused;
+
     /* variables */
 
 private:

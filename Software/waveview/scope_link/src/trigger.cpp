@@ -21,6 +21,7 @@ Trigger::Trigger(boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<fa
 
     stopTrigger.store(false);
     pauseTrigger.store(true);
+    isPaused.store(true);
     triggerMet.store(false);
 
     // start thread paused
@@ -354,10 +355,14 @@ void Trigger::coreLoop()
 
         // Outer loop
         while (stopTrigger.load() == false) {
-
+          
+          DEBUG << "Outer Loop Entered";
             // Inner Loop
             while (pauseTrigger.load() == false) {
+                isPaused.store(false);
                 // Attempt to pop from the pueue
+
+                DEBUG << "Inner Loop Entered";
 
                 if (inputQueue->pop(nextBuffer)) {
                     count++;
@@ -390,6 +395,11 @@ void Trigger::coreLoop()
                     // Queue empty, Sleep for a bit
                     std::this_thread::sleep_for(std::chrono::microseconds(100));
                 }
+            }
+
+            isPaused.store(true);
+            while (pauseTrigger.load()) {
+                std::this_thread::sleep_for(std::chrono::microseconds(50));
             }
         }
     }

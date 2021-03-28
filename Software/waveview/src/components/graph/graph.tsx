@@ -45,19 +45,23 @@ class Graph extends React.Component<any, any> {
     let base = this.props.horizontalWidget.horizontalTimeBase.course;
     let dCount = DefaultValues.divisions.time;
     let winSize = dCount * convertTime(base.value, base.unit, TimeUnit.NanoSecond);
+    var xLimit = winSize;
+    if(xLimit > 512) {
+      xLimit = 512;
+    }
     let yTicks = [-128, -96, -64, -32, 0, 32, 64, 96, 128]
     let xTicks = [
       0,
-      1*winSize/10,
-      2*winSize/10,
-      3*winSize/10,
-      4*winSize/10,
-      5*winSize/10,
-      6*winSize/10,
-      7*winSize/10,
-      8*winSize/10,
-      9*winSize/10,
-      winSize
+      1*xLimit/10,
+      2*xLimit/10,
+      3*xLimit/10,
+      4*xLimit/10,
+      5*xLimit/10,
+      6*xLimit/10,
+      7*xLimit/10,
+      8*xLimit/10,
+      9*xLimit/10,
+      xLimit
     ]
     return (
       <div className="graph_view">
@@ -72,7 +76,7 @@ class Graph extends React.Component<any, any> {
         </div>
         <FlexibleXYPlot
           yDomain={[-128,128]}
-          xDomain={[0, winSize]}
+          xDomain={[0, xLimit]}
           margin={{right:0, bottom:0}}
         >
           <HorizontalGridLines

@@ -48,6 +48,8 @@ public:
     uint32_t windowRow;
     uint32_t bufferCol;
 
+    std::atomic<bool> isPaused;
+
 private:
     /* functions */
     void copyProcess(int8_t * src, int8_t * dst, uint32_t count);

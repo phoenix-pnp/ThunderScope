@@ -71,7 +71,12 @@ class TestPoints {
     if(this.setChDone && this.setFileDone && this.setWinDone) {
       let state = store.getState();
       let base = state.horizontalWidget.horizontalTimeBase.course;
-      let xLimit = convertTime(base.value, base.unit, TimeUnit.NanoSecond);
+      let dCount = DefaultValues.divisions.time;
+      let logicalXLimit = dCount * convertTime(base.value, base.unit, TimeUnit.NanoSecond);
+      var xLimit = logicalXLimit;
+      if(xLimit > 512) {
+        xLimit = 512;
+      }
       let doMath = state.mathWidget.mathEnabled as boolean;
       let order = state.verticalWidget.getDataChannelOrder as number[];
 
@@ -80,26 +85,27 @@ class TestPoints {
         bodyCheck: (a, bytesRead, body) => {
           var chMax = (doMath) ? order.length + 1: order.length;
           var perChannel = Math.floor(body.length/chMax);
-          let xOffset = (this.lastX < xLimit) ? this.lastX : 0;
+          //let xOffset = (this.lastX < xLimit) ? this.lastX : 0;
           var cppChannel = 0;
           for(var uiChannel = 0; uiChannel < this.getDataMaxCh; uiChannel++) {
-            let mathCh = (uiChannel == this.getDataMaxCh-1) && doMath;
+            let mathCh = (uiChannel === this.getDataMaxCh-1) && doMath;
             let dataCh = order.includes(uiChannel + 1);
             if(mathCh || dataCh) {
               for(var i = 0; i < perChannel; i++) {
-                var x = xOffset + i;
-                if(x != 0 && !this.scope_data[uiChannel][x-1]) {
+                var dataIdx = (/*xOffset +*/ i);
+                /*if(dataIdx !== 0 && !this.scope_data[uiChannel][dataIdx-1]) {
                   //Adding a channel while other channels in middle of screen
                   //causes an error.
                   break;
-                }
+                }*/
+                let x = dataIdx;
                 let y = body[cppChannel*perChannel + i];
-                this.scope_data[uiChannel][x] = {x: x, y: y};
+                this.scope_data[uiChannel][dataIdx] = {x: x, y: y};
               }
               cppChannel++;
             }
           }
-          this.lastX = xOffset + perChannel;
+          //this.lastX = xOffset + perChannel;
           return true;
         },
         cmd: CMD.CMD_GetData1,

@@ -46,7 +46,7 @@ BOOST_LOG_GLOBAL_LOGGER_INIT(my_logger, logger_t)
     return lg;
 }
 
-/*******************************************************************************
+/****************************************************************************
  * convert_int()
  *
  * converts an integer to a hex string.
