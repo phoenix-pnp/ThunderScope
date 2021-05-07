@@ -172,14 +172,14 @@ void Processor::coreLoop()
 
                 if (windowRow == persistanceSize) {
                     // Window persistance buffer filled. write to csv
-                    INFO << "Dumping to csv";
-
+                    //INFO << "Dumping to csv";
+                    /*
                     writeToCsv(filename,
                                windowProcessed,
                                persistanceSize,
                                windowSize * numCh,
                                numCh);
-
+                    */
                     windowStored.store(true);
                 }
             }

@@ -125,52 +125,19 @@ int PCIeLink::Connect() {
  * 
 *************************************************************/
 void PCIeLink::Read(uint8_t* buff) {
-    //Read register to tell you how much it has read 
-    //Once more than 2^23 bytes have been written, halt the datamover
     bool enoughData = false;
-    int64_t current_chunk;
-    uint32_t kbytes_4_moved = 0;
-    uint32_t error_code = 0;
-    uint32_t overflow_count = 0;
+    //uint32_t current_chunk = 0;
+    uint32_t bram_address = 0;
 
     while(!enoughData) {
-        _Read(user_handle,DATAMOVER_TRANSFER_COUNTER,(uint8_t*)(&kbytes_4_moved),4);
-        error_code = ((kbytes_4_moved & 0xC0000000)>>30);
-        overflow_count = ((kbytes_4_moved & 0x3FFF0000)>>16);
-        kbytes_4_moved = kbytes_4_moved & 0x0000FFFF;
-        current_chunk = kbytes_4_moved / (1 << 11);
-        //INFO << "error code: " << error_code;
-        //INFO << "overflow count: " << overflow_count;
-        //INFO << "4kB Transfered: " << kbytes_4_moved;
-        //INFO << "Current Chunk: " << current_chunk;
-        if(last_chunk_read == -1) {
-            enoughData = (kbytes_4_moved >= (1 << 11));
-            if(enoughData && current_chunk == 0) {
-                enoughData = false;
-                continue;
-            } else {
-                current_chunk = current_chunk - 1;
-            }
-        } else {
-            enoughData = (current_chunk != last_chunk_read);
-            if(enoughData && (current_chunk - last_chunk_read == 1 || (current_chunk == 0 && last_chunk_read == 31))) { //if the datamover is still writing to the next chunk, dont read it
-                enoughData = false;
-                continue;
-            } else { //otherwise decretment the current chunk by 1 to read the next finished chunk
-                if(current_chunk == 0) {
-                    current_chunk = 31;
-                } else {
-                    current_chunk = current_chunk - 1;
-                }
-            }
-        }
+        _Read(user_handle,DATAMOVER_TRANSFER_COUNTER,(uint8_t*)(&bram_address),4);
+        //current_chunk = bram_address >> 18;
+        bram_address = bram_address & 0x0003FFFF;
+        //INFO << "chunk: " << current_chunk << "     address: " << bram_address;
+        enoughData = (bram_address >= (BUFFER_SIZE/8));
     }
-    last_chunk_read = current_chunk;
-    int64_t reading_offset = current_chunk * (1 << 23);
-    //INFO << "Reading from current current chunk: " << current_chunk;
-    //INFO << "Offset: " << reading_offset;
-    //Read the data from ddr3 memory
-    _Read(c2h_0_handle,reading_offset,buff,1 << 23);
+
+    _Read(c2h_0_handle,0,buff,BUFFER_SIZE);
 }
 
 void PCIeLink::InitBoard() {
@@ -540,31 +507,25 @@ void PCIeLink::_Write32(HANDLE hPCIE, long long address, uint32_t val) {
 }
 
 void PCIeLink::_Job() {
-
-    uint8_t* preBuff = (uint8_t*)malloc(sizeof(uint8_t) * BUFFER_SIZE);
     while(_run.load()) {
         while(_pause.load()) {
             std::this_thread::sleep_for(std::chrono::milliseconds(2));
         }
+        
+        ClockTick1();
+
         //allocate a buffer
         buffer* buff;
         buff = bufferAllocator.allocate(1);
         bufferAllocator.construct(buff);
         //read from the PCIeLink
-        Read(preBuff);
-        for(int i = 0; i < BUFFER_SIZE; i++) {
-            if(preBuff[i] & 0x80) {
-                //postive
-                buff->data[i] = (int)(preBuff[i] & 0x7F);
-            } else {
-                //negative
-                buff->data[i] = (-128 + ((int)(preBuff[i] & 0x7F)));
-            }
-        }
+        Read((uint8_t*)buff->data);
         //push to queue
         outputQueue->push(buff);
+
+        ClockTick2();
+        PrintTimeDelta();
     }
-    free(preBuff);
 }
 
 PCIeLink::PCIeLink(boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<false>> *outputQueue) {
