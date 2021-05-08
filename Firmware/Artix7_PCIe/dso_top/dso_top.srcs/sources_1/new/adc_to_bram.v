@@ -33,44 +33,6 @@ module adc_to_bram(
   assign BRAM_PORTA_addr = {14'h0000,address};
 
 /*  
-  reg cmd_tvalid;
-  reg [27:0] address;
-  always @(posedge axi_aclk) begin
-    cmd_tvalid <= 1;
-    if (!S01_ARESETN) begin
-        address <= 0;
-        cmd_tvalid <= 0;
-    end
-    else if (axis_cmd_tready) begin
-        address <= address + 16'h1000;
-    end
-  end
-
-  assign axis_cmd_tvalid = cmd_tvalid;
-  //Reserved[3:0], Tag[3:0], SADDR[31:0], DRE, EOF, DSA[3:0], Type, BTT[22:0]
-  assign axis_cmd_tdata = {4'h0,4'h0,4'h0,address,1'b0,1'b1,6'h00,1'b1,23'h001000};
-  
-  wire new_sample;
-  assign new_sample = axis_data_tready & ~fifo_empty;
-  assign fifo_rd_en = new_sample;
-  assign axis_data_tvalid = new_sample & fifo_valid;
-  
-  reg [7:0] data_counter;
-  reg data_tlast;
-  always @(posedge axi_aclk) begin
-    if (!S01_ARESETN) begin
-        data_counter <= 0;
-    end
-    else if (new_sample) begin
-        data_counter <= data_counter + 1;
-        data_tlast <= 0;
-        if (data_counter==16'd254) begin
-            data_tlast <= 1;
-        end
-    end
-  end
-  assign axis_data_tlast = data_tlast; 
-  
   always @(*)
     begin
         case(gpio_io_o_0[5:4]) // pga_cs demux
@@ -81,17 +43,6 @@ module adc_to_bram(
     endcase
   end
 
-  //Transfer Counter
-  reg [15:0] transfer_counter;
-  always @(posedge axi_aclk) begin
-    if (!S01_ARESETN) begin
-        transfer_counter <= 0;
-    end
-    else if (s2mm_wr_xfer_cmplt) begin
-        transfer_counter <= transfer_counter + 1;
-    end
-  end
-  
   */
 
 endmodule

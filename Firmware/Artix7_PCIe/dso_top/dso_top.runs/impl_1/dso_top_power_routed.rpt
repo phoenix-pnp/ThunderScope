@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Fri May  7 20:51:01 2021
+| Date             : Sat May  8 19:28:15 2021
 | Host             : DESKTOP-J72MK93 running 64-bit major release  (build 9200)
 | Command          : report_power -file dso_top_power_routed.rpt -pb dso_top_power_summary_routed.pb -rpx dso_top_power_routed.rpx
 | Design           : dso_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.547        |
+| Total On-Chip Power (W)  | 1.531        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.428        |
+| Dynamic (W)              | 1.412        |
 | Device Static (W)        | 0.119        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 80.9         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.120 |       16 |       --- |             --- |
-| Slice Logic              |     0.044 |    37995 |       --- |             --- |
-|   LUT as Logic           |     0.037 |    12960 |     63400 |           20.44 |
-|   Register               |     0.003 |    17307 |    126800 |           13.65 |
-|   LUT as Distributed RAM |     0.003 |     1436 |     19000 |            7.56 |
-|   CARRY4                 |     0.002 |      511 |     15850 |            3.22 |
-|   F7/F8 Muxes            |    <0.001 |      449 |     63400 |            0.71 |
-|   LUT as Shift Register  |    <0.001 |       45 |     19000 |            0.24 |
-|   Others                 |     0.000 |      629 |       --- |             --- |
-| Signals                  |     0.062 |    29733 |       --- |             --- |
-| Block RAM                |     0.115 |     91.5 |       135 |           67.78 |
+| Clocks                   |     0.117 |       16 |       --- |             --- |
+| Slice Logic              |     0.043 |    35778 |       --- |             --- |
+|   LUT as Logic           |     0.035 |    12288 |     63400 |           19.38 |
+|   Register               |     0.003 |    16195 |    126800 |           12.77 |
+|   LUT as Distributed RAM |     0.003 |     1432 |     19000 |            7.54 |
+|   CARRY4                 |     0.002 |      510 |     15850 |            3.22 |
+|   F7/F8 Muxes            |    <0.001 |      321 |     63400 |            0.51 |
+|   LUT as Shift Register  |    <0.001 |       14 |     19000 |            0.07 |
+|   Others                 |     0.000 |      619 |       --- |             --- |
+| Signals                  |     0.061 |    27342 |       --- |             --- |
+| Block RAM                |     0.104 |     91.5 |       135 |           67.78 |
 | MMCM                     |     0.218 |        2 |         6 |           33.33 |
 | I/O                      |     0.134 |       52 |       285 |           18.25 |
 | GTP                      |     0.676 |        4 |       --- |             --- |
 | Hard IPs                 |     0.058 |        1 |       --- |             --- |
 |   PCIE                   |     0.058 |        1 |         1 |          100.00 |
 | Static Power             |     0.119 |          |           |                 |
-| Total                    |     1.547 |          |           |                 |
+| Total                    |     1.531 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.510 |       0.490 |      0.020 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.495 |       0.475 |      0.020 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.186 |       0.167 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.016 |       0.012 |      0.004 |       NA    | Unspecified | NA         |
@@ -88,7 +88,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.010 |       0.007 |      0.003 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.009 |       0.006 |      0.003 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.298 |       0.297 |      0.002 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.248 |       0.245 |      0.003 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -158,26 +158,26 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------------------------+-----------+
-| Name                         | Power (W) |
-+------------------------------+-----------+
-| dso_top                      |     1.428 |
-|   design_1_i                 |     1.171 |
-|     AXI_LITE_IO              |     0.010 |
-|       axi_crossbar_0         |     0.001 |
-|       axi_fifo_mm_s_0        |     0.004 |
-|       axi_gpio_0             |     0.002 |
-|       axi_gpio_1             |     0.002 |
-|     BRAM                     |     0.037 |
-|       axi_bram_ctrl_0        |     0.005 |
-|       axi_dwidth_converter_0 |     0.006 |
-|       blk_mem_gen_0          |     0.026 |
-|     xdma_0                   |     1.125 |
-|       inst                   |     1.125 |
-|   serdes                     |     0.245 |
-|     combined_serdes          |     0.125 |
-|     serdes_clocking          |     0.119 |
-|       inst                   |     0.119 |
-+------------------------------+-----------+
++-----------------------+-----------+
+| Name                  | Power (W) |
++-----------------------+-----------+
+| dso_top               |     1.412 |
+|   design_1_i          |     1.155 |
+|     AXI_LITE_IO       |     0.010 |
+|       axi_crossbar_0  |     0.001 |
+|       axi_fifo_mm_s_0 |     0.004 |
+|       axi_gpio_0      |     0.002 |
+|       axi_gpio_1      |     0.002 |
+|     axi_bram_ctrl_0   |     0.002 |
+|       U0              |     0.002 |
+|     blk_mem_gen_0     |     0.015 |
+|       U0              |     0.015 |
+|     xdma_0            |     1.129 |
+|       inst            |     1.129 |
+|   serdes              |     0.244 |
+|     combined_serdes   |     0.125 |
+|     serdes_clocking   |     0.119 |
+|       inst            |     0.119 |
++-----------------------+-----------+
 
 

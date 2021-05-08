@@ -16,8 +16,8 @@ preplace netloc xdma_0_axi_aclk 1 0 2 30 230 350J
 preplace netloc PCIe_axi_aresetn 1 0 2 20 220 360J
 preplace netloc Conn1 1 0 3 NJ 60 NJ 60 NJ
 preplace netloc axi_dwidth_converter_0_M_AXI 1 1 1 N 140
-preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 2 1 640 80n
 preplace netloc xdma_0_M_AXI1 1 0 1 NJ 120
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 2 1 640 80n
 levelinfo -pg 1 0 190 500 740 850
 pagesize -pg 1 -db -bbox -sgen -150 0 850 240
 "

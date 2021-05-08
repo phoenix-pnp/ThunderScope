@@ -35,6 +35,23 @@ module dso_top
 	input[7:0] adc_data_n
     );
 
+  wire [17:0]S_AXI_0_araddr;
+  wire [1:0]S_AXI_0_arburst;
+  wire [3:0]S_AXI_0_arcache;
+  wire [3:0]S_AXI_0_arid;
+  wire [7:0]S_AXI_0_arlen;
+  wire S_AXI_0_arlock;
+  wire [2:0]S_AXI_0_arprot;
+  wire S_AXI_0_arready;
+  wire [2:0]S_AXI_0_arsize;
+  wire S_AXI_0_arvalid;
+  wire [127:0]S_AXI_0_rdata;
+  wire [3:0]S_AXI_0_rid;
+  wire S_AXI_0_rlast;
+  wire S_AXI_0_rready;
+  wire [1:0]S_AXI_0_rresp;
+  wire S_AXI_0_rvalid;
+
   wire [31:0]AXI_STR_TXD_0_tdata;
   wire AXI_STR_TXD_0_tlast;
   wire AXI_STR_TXD_0_tready;
@@ -103,7 +120,7 @@ module dso_top
     bram_addr_rst_cdc <= { bram_addr_rst_cdc[1:0], bram_addr_rst };
   assign bram_addr_rst_axi = bram_addr_rst_cdc[2];
   
-  reg [23:0] bram_address;
+  reg [21:0] bram_address;
   reg write;
   always @(posedge axi_aclk) begin
     if (bram_addr_rst_axi) begin
@@ -202,7 +219,7 @@ module dso_top
     .adc_cs(adc_cs)
     );
 
-  design_1 design_1_i
+    design_1 design_1_i
        (.AXI_STR_TXD_0_tdata(AXI_STR_TXD_0_tdata),
         .AXI_STR_TXD_0_tlast(AXI_STR_TXD_0_tlast),
         .AXI_STR_TXD_0_tready(AXI_STR_TXD_0_tready),
@@ -212,6 +229,76 @@ module dso_top
         .BRAM_PORTA_din(BRAM_PORTA_din),
         .BRAM_PORTA_dout(),
         .BRAM_PORTA_we(BRAM_PORTA_we),
+        .M_AXI_0_araddr(S_AXI_0_araddr),
+        .M_AXI_0_arburst(S_AXI_0_arburst),
+        .M_AXI_0_arcache(S_AXI_0_arcache),
+        .M_AXI_0_arid(S_AXI_0_arid),
+        .M_AXI_0_arlen(S_AXI_0_arlen),
+        .M_AXI_0_arlock(S_AXI_0_arlock),
+        .M_AXI_0_arprot(S_AXI_0_arprot),
+        .M_AXI_0_arready(S_AXI_0_arready),
+        .M_AXI_0_arsize(S_AXI_0_arsize),
+        .M_AXI_0_arvalid(S_AXI_0_arvalid),
+        .M_AXI_0_awaddr(),
+        .M_AXI_0_awburst(),
+        .M_AXI_0_awcache(),
+        .M_AXI_0_awid(),
+        .M_AXI_0_awlen(),
+        .M_AXI_0_awlock(),
+        .M_AXI_0_awprot(),
+        .M_AXI_0_awready(),
+        .M_AXI_0_awsize(),
+        .M_AXI_0_awvalid(),
+        .M_AXI_0_bid(),
+        .M_AXI_0_bready(),
+        .M_AXI_0_bresp(),
+        .M_AXI_0_bvalid(),
+        .M_AXI_0_rdata(S_AXI_0_rdata),
+        .M_AXI_0_rid(S_AXI_0_rid),
+        .M_AXI_0_rlast(S_AXI_0_rlast),
+        .M_AXI_0_rready(S_AXI_0_rready),
+        .M_AXI_0_rresp(S_AXI_0_rresp),
+        .M_AXI_0_rvalid(S_AXI_0_rvalid),
+        .M_AXI_0_wdata(),
+        .M_AXI_0_wlast(),
+        .M_AXI_0_wready(),
+        .M_AXI_0_wstrb(),
+        .M_AXI_0_wvalid(),
+        .S_AXI_0_araddr(S_AXI_0_araddr),
+        .S_AXI_0_arburst(S_AXI_0_arburst),
+        .S_AXI_0_arcache(S_AXI_0_arcache),
+        .S_AXI_0_arid(S_AXI_0_arid),
+        .S_AXI_0_arlen(S_AXI_0_arlen),
+        .S_AXI_0_arlock(S_AXI_0_arlock),
+        .S_AXI_0_arprot(S_AXI_0_arprot),
+        .S_AXI_0_arready(S_AXI_0_arready),
+        .S_AXI_0_arsize(S_AXI_0_arsize),
+        .S_AXI_0_arvalid(S_AXI_0_arvalid),
+        .S_AXI_0_awaddr(),
+        .S_AXI_0_awburst(),
+        .S_AXI_0_awcache(),
+        .S_AXI_0_awid(),
+        .S_AXI_0_awlen(),
+        .S_AXI_0_awlock(),
+        .S_AXI_0_awprot(),
+        .S_AXI_0_awready(),
+        .S_AXI_0_awsize(),
+        .S_AXI_0_awvalid(),
+        .S_AXI_0_bid(),
+        .S_AXI_0_bready(),
+        .S_AXI_0_bresp(),
+        .S_AXI_0_bvalid(),
+        .S_AXI_0_rdata(S_AXI_0_rdata),
+        .S_AXI_0_rid(S_AXI_0_rid),
+        .S_AXI_0_rlast(S_AXI_0_rlast),
+        .S_AXI_0_rready(S_AXI_0_rready),
+        .S_AXI_0_rresp(S_AXI_0_rresp),
+        .S_AXI_0_rvalid(S_AXI_0_rvalid),
+        .S_AXI_0_wdata(),
+        .S_AXI_0_wlast(),
+        .S_AXI_0_wready(),
+        .S_AXI_0_wstrb(),
+        .S_AXI_0_wvalid(),
         .axi_aclk(axi_aclk),
         .axi_aresetn(axi_aresetn),
         .gpio2_io_i(gpio2_io_i),

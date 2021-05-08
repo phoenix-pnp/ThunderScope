@@ -61,15 +61,15 @@ design_1_axi_bram_ctrl_0_1_sc::design_1_axi_bram_ctrl_0_1_sc(const sc_core::sc_m
 
   // initialize module
     xsc::common_cpp::properties model_param_props;
-    model_param_props.addLong("C_MEMORY_DEPTH", "8192");
-    model_param_props.addLong("C_BRAM_ADDR_WIDTH", "13");
+    model_param_props.addLong("C_MEMORY_DEPTH", "16384");
+    model_param_props.addLong("C_BRAM_ADDR_WIDTH", "14");
     model_param_props.addLong("C_S_AXI_ADDR_WIDTH", "18");
-    model_param_props.addLong("C_S_AXI_DATA_WIDTH", "256");
-    model_param_props.addLong("C_S_AXI_ID_WIDTH", "1");
+    model_param_props.addLong("C_S_AXI_DATA_WIDTH", "128");
+    model_param_props.addLong("C_S_AXI_ID_WIDTH", "4");
     model_param_props.addLong("C_S_AXI_SUPPORTS_NARROW_BURST", "0");
     model_param_props.addLong("C_SINGLE_PORT_BRAM", "1");
     model_param_props.addLong("C_READ_LATENCY", "1");
-    model_param_props.addLong("C_RD_CMD_OPTIMIZATION", "0");
+    model_param_props.addLong("C_RD_CMD_OPTIMIZATION", "1");
     model_param_props.addLong("C_S_AXI_CTRL_ADDR_WIDTH", "32");
     model_param_props.addLong("C_S_AXI_CTRL_DATA_WIDTH", "32");
     model_param_props.addLong("C_ECC", "0");
