@@ -1,5 +1,3 @@
-
-
 #include "PCIe.hpp"
 #include "logger.hpp"
 
@@ -125,17 +123,17 @@ int PCIeLink::Connect() {
  * 
 *************************************************************/
 void PCIeLink::Read(uint8_t* buff) {
-    bool enoughData = false;
     //uint32_t current_chunk = 0;
     uint32_t bram_address = 0;
 
-    while(!enoughData) {
+    while(bram_address < (BUFFER_SIZE/2)) {
         _Read(user_handle,DATAMOVER_TRANSFER_COUNTER,(uint8_t*)(&bram_address),4);
-        //current_chunk = bram_address >> 18;
+        //current_chunk = bram_address >> 19;
         bram_address = bram_address & 0x0003FFFF;
-        //INFO << "chunk: " << current_chunk << "     address: " << bram_address;
-        enoughData = (bram_address >= (BUFFER_SIZE/8));
+        //INFO << "address: " << bram_address;
     }
+
+    //INFO << "chunk: " << current_chunk;
 
     _Read(c2h_0_handle,0,buff,BUFFER_SIZE);
 }
@@ -507,9 +505,11 @@ void PCIeLink::_Write32(HANDLE hPCIE, long long address, uint32_t val) {
 }
 
 void PCIeLink::_Job() {
+    bool priority = SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_TIME_CRITICAL);
+    INFO << "Set priority: " << priority;
     while(_run.load()) {
         while(_pause.load()) {
-            std::this_thread::sleep_for(std::chrono::milliseconds(2));
+            std::this_thread::sleep_for(std::chrono::microseconds(100)); 
         }
         
         ClockTick1();
@@ -636,7 +636,7 @@ void PCIeLink::ClockTick2() {
 *************************************************************/
 void PCIeLink::PrintTimeDelta() {
     double time_sec = (unsigned long long)(tick2.QuadPart - tick1.QuadPart) / (double)freq.QuadPart;
-    INFO << "Time Delta is: " << time_sec;
+    INFO << "Time Delta is, " << time_sec;
 }
 
 double PCIeLink::GetTimeDelta() {
