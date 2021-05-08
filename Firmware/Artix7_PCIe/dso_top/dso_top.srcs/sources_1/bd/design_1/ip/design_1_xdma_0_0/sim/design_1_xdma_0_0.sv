@@ -365,7 +365,7 @@ output wire m_axil_rready;
     .EN_RCHNL_6("FALSE"),
     .EN_RCHNL_7("FALSE"),
     .XDMA_DSC_BYPASS("FALSE"),
-    .C_METERING_ON(1),
+    .C_METERING_ON(0),
     .RX_DETECT(0),
     .C_ATS_ENABLE("FALSE"),
     .C_ATS_CAP_NEXTPTR('H000),

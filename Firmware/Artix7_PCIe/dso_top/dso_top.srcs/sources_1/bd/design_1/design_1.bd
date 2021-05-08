@@ -439,11 +439,17 @@
           "dsc_bypass_wr": {
             "value": "0000"
           },
+          "mode_selection": {
+            "value": "Advanced"
+          },
           "pcie_extended_tag": {
             "value": "true"
           },
           "pciebar2axibar_axil_master": {
             "value": "0x40000000"
+          },
+          "performance": {
+            "value": "true"
           },
           "pf0_device_id": {
             "value": "7024"
@@ -537,7 +543,7 @@
                 "value": "256"
               },
               "READ_LATENCY": {
-                "value": "2"
+                "value": "1"
               },
               "SINGLE_PORT_BRAM": {
                 "value": "1"
@@ -610,10 +616,10 @@
                 "value": "256"
               },
               "Register_PortA_Output_of_Memory_Primitives": {
-                "value": "true"
+                "value": "false"
               },
               "Register_PortB_Output_of_Memory_Primitives": {
-                "value": "true"
+                "value": "false"
               },
               "Use_RSTA_Pin": {
                 "value": "false"

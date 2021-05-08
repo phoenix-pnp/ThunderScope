@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/dso_top.tcl"
+  variable script "C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/dso_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -79,55 +79,55 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.cache/wt [current_project]
-set_property parent.project_path C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.cache/wt [current_project]
+set_property parent.project_path C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib -sv C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/combined_serdes.v
+read_verilog -library xil_defaultlib -sv C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/combined_serdes.v
 read_verilog -library xil_defaultlib {
-  C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/I2C_Transmit.v
-  C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/SPI_Transmit.v
-  C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/adc_to_bram.v
-  C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serdes.v
-  C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serial_controller.v
-  C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/hdl/dso_top.v
+  C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/I2C_Transmit.v
+  C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/SPI_Transmit.v
+  C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/adc_to_bram.v
+  C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serdes.v
+  C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serial_controller.v
+  C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/hdl/dso_top.v
 }
-add_files C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_2/xdma_v4_1_6_blk_mem_64_noreg_be_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_1/xdma_v4_1_6_blk_mem_64_reg_be_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/synth/design_1_xdma_0_0_pcie2_ip_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/source/design_1_xdma_0_0_pcie3_7vx_ip.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/synth/design_1_xdma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+add_files C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_2/xdma_v4_1_6_blk_mem_64_noreg_be_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_1/xdma_v4_1_6_blk_mem_64_reg_be_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/synth/design_1_xdma_0_0_pcie2_ip_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/source/design_1_xdma_0_0_pcie3_7vx_ip.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/synth/design_1_xdma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
-read_ip -quiet C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -138,14 +138,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_bitgen.xdc
-set_property used_in_implementation false [get_files C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_bitgen.xdc]
+read_xdc C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_bitgen.xdc
+set_property used_in_implementation false [get_files C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_bitgen.xdc]
 
-read_xdc C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_io.xdc
-set_property used_in_implementation false [get_files C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_io.xdc]
+read_xdc C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_io.xdc
+set_property used_in_implementation false [get_files C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_io.xdc]
 
-read_xdc C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc
-set_property used_in_implementation false [get_files C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc]
+read_xdc C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc
+set_property used_in_implementation false [get_files C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

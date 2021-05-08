@@ -26,7 +26,7 @@
 #ifdef NOHARDWARE
 #define BUFFER_SIZE BUFFER_8K
 #else
-#define BUFFER_SIZE BUFFER_256K
+#define BUFFER_SIZE BUFFER_512K
 #endif
 
 // Window size in buffers

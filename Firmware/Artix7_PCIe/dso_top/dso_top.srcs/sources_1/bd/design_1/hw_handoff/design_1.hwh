@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May  7 16:14:21 2021" VIVADOVERSION="2020.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May  7 20:45:49 2021" VIVADOVERSION="2020.1">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1" PACKAGE="fgg484" SPEEDGRADE="-2"/>
 
@@ -2886,7 +2886,7 @@
         <PARAMETER NAME="C_S_AXI_SUPPORTS_NARROW_BURST" VALUE="0"/>
         <PARAMETER NAME="C_SINGLE_PORT_BRAM" VALUE="1"/>
         <PARAMETER NAME="C_FAMILY" VALUE="artix7"/>
-        <PARAMETER NAME="C_READ_LATENCY" VALUE="2"/>
+        <PARAMETER NAME="C_READ_LATENCY" VALUE="1"/>
         <PARAMETER NAME="C_RD_CMD_OPTIMIZATION" VALUE="0"/>
         <PARAMETER NAME="C_S_AXI_CTRL_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S_AXI_CTRL_DATA_WIDTH" VALUE="32"/>
@@ -2906,7 +2906,7 @@
         <PARAMETER NAME="Component_Name" VALUE="design_1_axi_bram_ctrl_0_1"/>
         <PARAMETER NAME="BMG_INSTANCE" VALUE="EXTERNAL"/>
         <PARAMETER NAME="MEM_DEPTH" VALUE="8192"/>
-        <PARAMETER NAME="READ_LATENCY" VALUE="2"/>
+        <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
         <PARAMETER NAME="RD_CMD_OPTIMIZATION" VALUE="0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="EDK_SPECIAL" VALUE="BRAM_CTRL"/>
@@ -3120,7 +3120,7 @@
           <PARAMETER NAME="MEM_WIDTH" VALUE="256"/>
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
           <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="READ_LATENCY" VALUE="2"/>
+          <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="ADDR" PHYSICAL="bram_addr_a"/>
             <PORTMAP LOGICAL="CLK" PHYSICAL="bram_clk_a"/>
@@ -3495,8 +3495,8 @@
         <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="8192"/>
         <PARAMETER NAME="C_READ_DEPTH_B" VALUE="8192"/>
         <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="1"/>
-        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="0"/>
         <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
         <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
         <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
@@ -3556,10 +3556,10 @@
         <PARAMETER NAME="Read_Width_B" VALUE="256"/>
         <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
         <PARAMETER NAME="Enable_B" VALUE="Use_ENB_Pin"/>
-        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="true"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="false"/>
         <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
         <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
-        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="true"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="false"/>
         <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
         <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
         <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
@@ -3680,7 +3680,7 @@
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
           <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
           <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="READ_LATENCY" VALUE="2"/>
+          <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="ADDR" PHYSICAL="addrb"/>
             <PORTMAP LOGICAL="CLK" PHYSICAL="clkb"/>
@@ -3843,7 +3843,7 @@
         <PARAMETER NAME="EN_RCHNL_6" VALUE="FALSE"/>
         <PARAMETER NAME="EN_RCHNL_7" VALUE="FALSE"/>
         <PARAMETER NAME="XDMA_DSC_BYPASS" VALUE="FALSE"/>
-        <PARAMETER NAME="C_METERING_ON" VALUE="1"/>
+        <PARAMETER NAME="C_METERING_ON" VALUE="0"/>
         <PARAMETER NAME="RX_DETECT" VALUE="0"/>
         <PARAMETER NAME="C_ATS_ENABLE" VALUE="FALSE"/>
         <PARAMETER NAME="C_ATS_CAP_NEXTPTR" VALUE="0x000"/>
@@ -4047,7 +4047,7 @@
         <PARAMETER NAME="FLR_ENABLE" VALUE="FALSE"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_xdma_0_0"/>
         <PARAMETER NAME="functional_mode" VALUE="DMA"/>
-        <PARAMETER NAME="mode_selection" VALUE="Basic"/>
+        <PARAMETER NAME="mode_selection" VALUE="Advanced"/>
         <PARAMETER NAME="device_port_type" VALUE="PCI_Express_Endpoint_device"/>
         <PARAMETER NAME="pcie_blk_locn" VALUE="X0Y0"/>
         <PARAMETER NAME="pl_link_cap_max_link_width" VALUE="X4"/>
@@ -4129,7 +4129,7 @@
         <PARAMETER NAME="xdma_pcie_64bit_en" VALUE="true"/>
         <PARAMETER NAME="silicon_rev" VALUE="Pre-Production"/>
         <PARAMETER NAME="xdma_dsc_bypass" VALUE="false"/>
-        <PARAMETER NAME="performance" VALUE="false"/>
+        <PARAMETER NAME="performance" VALUE="true"/>
         <PARAMETER NAME="pcie_extended_tag" VALUE="true"/>
         <PARAMETER NAME="rx_detect" VALUE="Default"/>
         <PARAMETER NAME="pf0_link_status_slot_clock_config" VALUE="true"/>

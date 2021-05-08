@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Fri May  7 16:20:12 2021
+| Date             : Fri May  7 20:51:01 2021
 | Host             : DESKTOP-J72MK93 running 64-bit major release  (build 9200)
 | Command          : report_power -file dso_top_power_routed.rpt -pb dso_top_power_summary_routed.pb -rpx dso_top_power_routed.rpx
 | Design           : dso_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.552        |
+| Total On-Chip Power (W)  | 1.547        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.433        |
+| Dynamic (W)              | 1.428        |
 | Device Static (W)        | 0.119        |
 | Effective TJA (C/W)      | 2.7          |
-| Max Ambient (C)          | 80.8         |
-| Junction Temperature (C) | 29.2         |
+| Max Ambient (C)          | 80.9         |
+| Junction Temperature (C) | 29.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,23 +53,23 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.120 |       16 |       --- |             --- |
-| Slice Logic              |     0.044 |    40070 |       --- |             --- |
-|   LUT as Logic           |     0.037 |    13533 |     63400 |           21.35 |
-|   Register               |     0.003 |    17050 |    126800 |           13.45 |
-|   LUT as Distributed RAM |     0.003 |     3146 |     19000 |           16.56 |
-|   CARRY4                 |     0.002 |      532 |     15850 |            3.36 |
+| Slice Logic              |     0.044 |    37995 |       --- |             --- |
+|   LUT as Logic           |     0.037 |    12960 |     63400 |           20.44 |
+|   Register               |     0.003 |    17307 |    126800 |           13.65 |
+|   LUT as Distributed RAM |     0.003 |     1436 |     19000 |            7.56 |
+|   CARRY4                 |     0.002 |      511 |     15850 |            3.22 |
 |   F7/F8 Muxes            |    <0.001 |      449 |     63400 |            0.71 |
 |   LUT as Shift Register  |    <0.001 |       45 |     19000 |            0.24 |
-|   Others                 |     0.000 |      693 |       --- |             --- |
-| Signals                  |     0.068 |    31464 |       --- |             --- |
-| Block RAM                |     0.114 |     91.5 |       135 |           67.78 |
+|   Others                 |     0.000 |      629 |       --- |             --- |
+| Signals                  |     0.062 |    29733 |       --- |             --- |
+| Block RAM                |     0.115 |     91.5 |       135 |           67.78 |
 | MMCM                     |     0.218 |        2 |         6 |           33.33 |
 | I/O                      |     0.134 |       52 |       285 |           18.25 |
 | GTP                      |     0.676 |        4 |       --- |             --- |
 | Hard IPs                 |     0.058 |        1 |       --- |             --- |
 |   PCIE                   |     0.058 |        1 |         1 |          100.00 |
 | Static Power             |     0.119 |          |           |                 |
-| Total                    |     1.552 |          |           |                 |
+| Total                    |     1.547 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.515 |       0.496 |      0.020 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.510 |       0.490 |      0.020 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.186 |       0.167 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.016 |       0.012 |      0.004 |       NA    | Unspecified | NA         |
@@ -161,19 +161,19 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| dso_top                      |     1.433 |
-|   design_1_i                 |     1.177 |
-|     AXI_LITE_IO              |     0.009 |
-|       axi_crossbar_0         |     0.002 |
+| dso_top                      |     1.428 |
+|   design_1_i                 |     1.171 |
+|     AXI_LITE_IO              |     0.010 |
+|       axi_crossbar_0         |     0.001 |
 |       axi_fifo_mm_s_0        |     0.004 |
 |       axi_gpio_0             |     0.002 |
 |       axi_gpio_1             |     0.002 |
-|     BRAM                     |     0.046 |
-|       axi_bram_ctrl_0        |     0.016 |
-|       axi_dwidth_converter_0 |     0.005 |
+|     BRAM                     |     0.037 |
+|       axi_bram_ctrl_0        |     0.005 |
+|       axi_dwidth_converter_0 |     0.006 |
 |       blk_mem_gen_0          |     0.026 |
-|     xdma_0                   |     1.121 |
-|       inst                   |     1.121 |
+|     xdma_0                   |     1.125 |
+|       inst                   |     1.125 |
 |   serdes                     |     0.245 |
 |     combined_serdes          |     0.125 |
 |     serdes_clocking          |     0.119 |

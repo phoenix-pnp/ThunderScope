@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/design_1_blk_mem_gen_0_2_synth_1'
+HD_PWD='C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/design_1_blk_mem_gen_0_2_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

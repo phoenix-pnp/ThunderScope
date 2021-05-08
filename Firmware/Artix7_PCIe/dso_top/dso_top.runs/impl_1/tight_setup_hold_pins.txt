@@ -1,6 +1,0 @@
-+--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
-+--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|      clk_250mhz_mux_x0y0 |      clk_125mhz_mux_x0y0 |design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/gt_rx_valid_filter[3].GT_RX_VALID_FILTER_7x_inst/reg_symbol_after_eios_reg/D|
-|      clk_250mhz_mux_x0y0 |          clk_125mhz_x0y0 |design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gtp_pipe_drp.gtp_pipe_drp_i/x16_reg1_reg/D|
-+--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

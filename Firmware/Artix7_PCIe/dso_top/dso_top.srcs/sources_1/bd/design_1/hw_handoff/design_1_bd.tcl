@@ -170,7 +170,7 @@ proc create_hier_cell_BRAM { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.DATA_WIDTH {256} \
    CONFIG.ECC_TYPE {0} \
-   CONFIG.READ_LATENCY {2} \
+   CONFIG.READ_LATENCY {1} \
    CONFIG.SINGLE_PORT_BRAM {1} \
  ] $axi_bram_ctrl_0
 
@@ -198,8 +198,8 @@ proc create_hier_cell_BRAM { parentCell nameHier } {
    CONFIG.Port_B_Write_Rate {50} \
    CONFIG.Read_Width_A {64} \
    CONFIG.Read_Width_B {256} \
-   CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
-   CONFIG.Register_PortB_Output_of_Memory_Primitives {true} \
+   CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+   CONFIG.Register_PortB_Output_of_Memory_Primitives {false} \
    CONFIG.Use_Byte_Write_Enable {true} \
    CONFIG.Use_RSTA_Pin {false} \
    CONFIG.Use_RSTB_Pin {true} \
@@ -409,8 +409,10 @@ proc create_root_design { parentCell } {
    CONFIG.axisten_freq {125} \
    CONFIG.cfg_mgmt_if {false} \
    CONFIG.dsc_bypass_wr {0000} \
+   CONFIG.mode_selection {Advanced} \
    CONFIG.pcie_extended_tag {true} \
    CONFIG.pciebar2axibar_axil_master {0x40000000} \
+   CONFIG.performance {true} \
    CONFIG.pf0_device_id {7024} \
    CONFIG.pf0_msi_enabled {true} \
    CONFIG.pf0_msix_cap_pba_bir {BAR_3:2} \

@@ -2,12 +2,12 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Fri May  7 16:14:27 2021
-# Process ID: 9368
-# Current directory: C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1
+# Start of session at: Fri May  7 20:45:55 2021
+# Process ID: 8364
+# Current directory: C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1
 # Command line: vivado.exe -log dso_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dso_top.tcl
-# Log file: C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/dso_top.vds
-# Journal file: C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1\vivado.jou
+# Log file: C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/dso_top.vds
+# Journal file: C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source dso_top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -20,15 +20,15 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tfgg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5388
+INFO: [Synth 8-7075] Helper process launched with PID 2152
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1019.160 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1015.672 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'dso_top' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/hdl/dso_top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'serdes' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serdes.v:3]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'combined_serdes' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/combined_serdes.v:4]
+INFO: [Synth 8-6157] synthesizing module 'dso_top' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/hdl/dso_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'serdes' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serdes.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'combined_serdes' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/combined_serdes.v:4]
 	Parameter PARAM_ARRAY bound to: 288'b000000000000000000000000000001110000000000000000000000000000011100000000000000000000000000001000000000000000000000000000000001110000000000000000000000000000011100000000000000000000000000000111000000000000000000000000000001110000000000000000000000000000011100000000000000000000000000000111 
 INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:32992]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
@@ -96,16 +96,16 @@ INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2__parameterized0' (4#1) [
 INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:35056]
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (5#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:35056]
-INFO: [Synth 8-6155] done synthesizing module 'combined_serdes' (6#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/combined_serdes.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'serdes' (7#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serdes.v:3]
-INFO: [Synth 8-6157] synthesizing module 'adc_to_bram' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/adc_to_bram.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'adc_to_bram' (8#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/adc_to_bram.v:3]
-INFO: [Synth 8-6157] synthesizing module 'serial_controller' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serial_controller.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'combined_serdes' (6#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/combined_serdes.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'serdes' (7#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serdes.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adc_to_bram' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/adc_to_bram.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'adc_to_bram' (8#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/adc_to_bram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'serial_controller' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serial_controller.v:2]
 	Parameter IDLE bound to: 2'b00 
 	Parameter CONTROL_BYTE bound to: 2'b01 
 	Parameter TRANSMIT_WAIT bound to: 2'b10 
 	Parameter TRANSMIT bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'I2C_Transmit' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/I2C_Transmit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Transmit' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/I2C_Transmit.v:3]
 	Parameter IDLE bound to: 3'b000 
 	Parameter START bound to: 3'b001 
 	Parameter SEND bound to: 3'b010 
@@ -114,175 +114,175 @@ INFO: [Synth 8-6157] synthesizing module 'I2C_Transmit' [C:/Users/Aleksa/Documen
 	Parameter STOP_LOW bound to: 3'b101 
 	Parameter STOP_SCL bound to: 3'b110 
 	Parameter STOP_SDA bound to: 3'b111 
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Transmit' (9#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/I2C_Transmit.v:3]
-INFO: [Synth 8-6157] synthesizing module 'SPI_Transmit' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/SPI_Transmit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Transmit' (9#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/I2C_Transmit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SPI_Transmit' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/SPI_Transmit.v:3]
 	Parameter IDLE bound to: 2'b00 
 	Parameter READ bound to: 2'b01 
 	Parameter SEND bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/SPI_Transmit.v:41]
-INFO: [Synth 8-6155] done synthesizing module 'SPI_Transmit' (10#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/SPI_Transmit.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'serial_controller' (11#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serial_controller.v:2]
-INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:495]
-INFO: [Synth 8-6157] synthesizing module 'AXI_LITE_IO_imp_1879I2S' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_crossbar_0_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_crossbar_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_crossbar_0_0' (12#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_crossbar_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_axi_crossbar_0_0' is unconnected for instance 'axi_crossbar_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:182]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_axi_crossbar_0_0' is unconnected for instance 'axi_crossbar_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:182]
-WARNING: [Synth 8-7023] instance 'axi_crossbar_0' of module 'design_1_axi_crossbar_0_0' has 40 connections declared, but only 38 given [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:182]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_fifo_mm_s_0_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_fifo_mm_s_0_0' (13#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:221]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:221]
-WARNING: [Synth 8-7023] instance 'axi_fifo_mm_s_0' of module 'design_1_axi_fifo_mm_s_0_0' has 25 connections declared, but only 23 given [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:221]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_1' (14#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (15#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AXI_LITE_IO_imp_1879I2S' (16#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:12]
-INFO: [Synth 8-6157] synthesizing module 'BRAM_imp_AGABTZ' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:291]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_1' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_1' (17#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
-WARNING: [Synth 8-7071] port 's_axi_awready' of module 'design_1_axi_bram_ctrl_0_1' is unconnected for instance 'axi_bram_ctrl_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:407]
-WARNING: [Synth 8-7071] port 's_axi_wready' of module 'design_1_axi_bram_ctrl_0_1' is unconnected for instance 'axi_bram_ctrl_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:407]
-WARNING: [Synth 8-7071] port 's_axi_bresp' of module 'design_1_axi_bram_ctrl_0_1' is unconnected for instance 'axi_bram_ctrl_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:407]
-WARNING: [Synth 8-7071] port 's_axi_bvalid' of module 'design_1_axi_bram_ctrl_0_1' is unconnected for instance 'axi_bram_ctrl_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:407]
-WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0' of module 'design_1_axi_bram_ctrl_0_1' has 40 connections declared, but only 36 given [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:407]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dwidth_converter_0_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_dwidth_converter_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dwidth_converter_0_0' (18#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_axi_dwidth_converter_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_axi_dwidth_converter_0_0' is unconnected for instance 'axi_dwidth_converter_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:444]
-WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'design_1_axi_dwidth_converter_0_0' is unconnected for instance 'axi_dwidth_converter_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:444]
-WARNING: [Synth 8-7023] instance 'axi_dwidth_converter_0' of module 'design_1_axi_dwidth_converter_0_0' has 36 connections declared, but only 34 given [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:444]
-INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_2' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_blk_mem_gen_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_2' (19#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_blk_mem_gen_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'BRAM_imp_AGABTZ' (20#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:291]
-INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_0_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_util_ds_buf_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_0_0' (21#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_util_ds_buf_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'IBUF_DS_ODIV2' of module 'design_1_util_ds_buf_0_0' is unconnected for instance 'util_ds_buf_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:676]
-WARNING: [Synth 8-7023] instance 'util_ds_buf_0' of module 'design_1_util_ds_buf_0_0' has 4 connections declared, but only 3 given [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:676]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_xdma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xdma_0_0' (22#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/realtime/design_1_xdma_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'user_lnk_up' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'msi_enable' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-WARNING: [Synth 8-7023] instance 'xdma_0' of module 'design_1_xdma_0_0' has 67 connections declared, but only 49 given [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (23#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:495]
-INFO: [Synth 8-6155] done synthesizing module 'dso_top' (24#1) [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/hdl/dso_top.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/SPI_Transmit.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_Transmit' (10#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/dso_top/SPI_Transmit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'serial_controller' (11#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/new/serial_controller.v:2]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:495]
+INFO: [Synth 8-6157] synthesizing module 'AXI_LITE_IO_imp_1879I2S' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_crossbar_0_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_crossbar_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_crossbar_0_0' (12#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_crossbar_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_axi_crossbar_0_0' is unconnected for instance 'axi_crossbar_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:182]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_axi_crossbar_0_0' is unconnected for instance 'axi_crossbar_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:182]
+WARNING: [Synth 8-7023] instance 'axi_crossbar_0' of module 'design_1_axi_crossbar_0_0' has 40 connections declared, but only 38 given [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:182]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_fifo_mm_s_0_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_fifo_mm_s_0_0' (13#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:221]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:221]
+WARNING: [Synth 8-7023] instance 'axi_fifo_mm_s_0' of module 'design_1_axi_fifo_mm_s_0_0' has 25 connections declared, but only 23 given [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:221]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_1' (14#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (15#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_LITE_IO_imp_1879I2S' (16#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'BRAM_imp_AGABTZ' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:291]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_1' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_1' (17#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axi_awready' of module 'design_1_axi_bram_ctrl_0_1' is unconnected for instance 'axi_bram_ctrl_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:407]
+WARNING: [Synth 8-7071] port 's_axi_wready' of module 'design_1_axi_bram_ctrl_0_1' is unconnected for instance 'axi_bram_ctrl_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:407]
+WARNING: [Synth 8-7071] port 's_axi_bresp' of module 'design_1_axi_bram_ctrl_0_1' is unconnected for instance 'axi_bram_ctrl_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:407]
+WARNING: [Synth 8-7071] port 's_axi_bvalid' of module 'design_1_axi_bram_ctrl_0_1' is unconnected for instance 'axi_bram_ctrl_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:407]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0' of module 'design_1_axi_bram_ctrl_0_1' has 40 connections declared, but only 36 given [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:407]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dwidth_converter_0_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_dwidth_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dwidth_converter_0_0' (18#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_axi_dwidth_converter_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_axi_dwidth_converter_0_0' is unconnected for instance 'axi_dwidth_converter_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:444]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'design_1_axi_dwidth_converter_0_0' is unconnected for instance 'axi_dwidth_converter_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:444]
+WARNING: [Synth 8-7023] instance 'axi_dwidth_converter_0' of module 'design_1_axi_dwidth_converter_0_0' has 36 connections declared, but only 34 given [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:444]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_2' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_blk_mem_gen_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_2' (19#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_blk_mem_gen_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'BRAM_imp_AGABTZ' (20#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:291]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_0_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_0_0' (21#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_util_ds_buf_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'IBUF_DS_ODIV2' of module 'design_1_util_ds_buf_0_0' is unconnected for instance 'util_ds_buf_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:676]
+WARNING: [Synth 8-7023] instance 'util_ds_buf_0' of module 'design_1_util_ds_buf_0_0' has 4 connections declared, but only 3 given [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:676]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_xdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xdma_0_0' (22#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/realtime/design_1_xdma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'user_lnk_up' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'msi_enable' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+WARNING: [Synth 8-7023] instance 'xdma_0' of module 'design_1_xdma_0_0' has 67 connections declared, but only 49 given [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:680]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (23#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/synth/design_1.v:495]
+INFO: [Synth 8-6155] done synthesizing module 'dso_top' (24#1) [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/imports/hdl/dso_top.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1019.160 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.672 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1019.160 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.672 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1019.160 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.672 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1019.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1015.672 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc] for cell 'design_1_i/xdma_0'
-WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc:2]
-Finished Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc] for cell 'design_1_i/xdma_0'
-Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
-WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc:2]
-WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc:4]
-Finished Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
-Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_gpio_0'
-Finished Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_gpio_0'
-Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_gpio_1'
-Finished Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_gpio_1'
-Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_fifo_mm_s_0'
-Finished Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_fifo_mm_s_0'
-Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/BRAM/axi_dwidth_converter_0'
-Finished Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/BRAM/axi_dwidth_converter_0'
-Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_crossbar_0'
-Finished Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_crossbar_0'
-Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/BRAM/axi_bram_ctrl_0'
-WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_in_context.xdc:2]
-Finished Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/BRAM/axi_bram_ctrl_0'
-Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2_in_context.xdc] for cell 'design_1_i/BRAM/blk_mem_gen_0'
-Finished Parsing XDC File [c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2_in_context.xdc] for cell 'design_1_i/BRAM/blk_mem_gen_0'
-Parsing XDC File [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'serdes/serdes_clocking'
-WARNING: [Vivado 12-584] No ports matched ''. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
-WARNING: [Vivado 12-584] No ports matched ''. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:4]
-WARNING: [Vivado 12-584] No ports matched ''. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:6]
-WARNING: [Vivado 12-584] No ports matched ''. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:8]
-Finished Parsing XDC File [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'serdes/serdes_clocking'
-Parsing XDC File [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_bitgen.xdc]
-Finished Parsing XDC File [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_bitgen.xdc]
-Parsing XDC File [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_io.xdc]
-Finished Parsing XDC File [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_io.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dso_top_propImpl.xdc].
+Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc] for cell 'design_1_i/xdma_0'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc:2]
+Finished Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc] for cell 'design_1_i/xdma_0'
+Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc:2]
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc:4]
+Finished Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_gpio_0'
+Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_gpio_1'
+Finished Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_gpio_1'
+Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_fifo_mm_s_0'
+Finished Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_fifo_mm_s_0'
+Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/BRAM/axi_dwidth_converter_0'
+Finished Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/BRAM/axi_dwidth_converter_0'
+Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_crossbar_0'
+Finished Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0_in_context.xdc] for cell 'design_1_i/AXI_LITE_IO/axi_crossbar_0'
+Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/BRAM/axi_bram_ctrl_0'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_in_context.xdc:2]
+Finished Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/BRAM/axi_bram_ctrl_0'
+Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2_in_context.xdc] for cell 'design_1_i/BRAM/blk_mem_gen_0'
+Finished Parsing XDC File [c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2_in_context.xdc] for cell 'design_1_i/BRAM/blk_mem_gen_0'
+Parsing XDC File [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'serdes/serdes_clocking'
+WARNING: [Vivado 12-584] No ports matched ''. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:6]
+WARNING: [Vivado 12-584] No ports matched ''. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:8]
+Finished Parsing XDC File [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'serdes/serdes_clocking'
+Parsing XDC File [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_bitgen.xdc]
+Finished Parsing XDC File [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_bitgen.xdc]
+Parsing XDC File [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_io.xdc]
+Finished Parsing XDC File [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/imports/new/module_io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dso_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/dso_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc]
-WARNING: [Vivado 12-627] No clocks matched 'userclk2'. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
-WARNING: [Vivado 12-627] No clocks matched 'clk_out2_clk_wiz_0'. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks userclk2]'. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
+Parsing XDC File [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'userclk2'. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out2_clk_wiz_0'. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks userclk2]'. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_out2_clk_wiz_0]'. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_out2_clk_wiz_0]'. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc:3]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-Finished Parsing XDC File [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/dso_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-Parsing XDC File [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/constrs_1/new/timing.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/dso_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1046.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1026.598 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1046.180 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1026.598 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/AXI_LITE_IO/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/AXI_LITE_IO/axi_gpio_1' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/BRAM/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1026.629 ; gain = 10.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1026.629 ; gain = 10.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for pcie_clk_n[0]. (constraint file  c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 5).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for pcie_clk_n[0]. (constraint file  c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 6).
-Applied set_property IO_BUFFER_TYPE = NONE for pcie_clk_p[0]. (constraint file  c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 7).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for pcie_clk_p[0]. (constraint file  c:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 8).
-Applied set_property IO_BUFFER_TYPE = NONE for adc_lclk_n. (constraint file  C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 9).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for adc_lclk_n. (constraint file  C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 10).
-Applied set_property IO_BUFFER_TYPE = NONE for adc_lclk_p. (constraint file  C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 11).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for adc_lclk_p. (constraint file  C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-9368-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for pcie_clk_n[0]. (constraint file  c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pcie_clk_n[0]. (constraint file  c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for pcie_clk_p[0]. (constraint file  c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pcie_clk_p[0]. (constraint file  c:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for adc_lclk_n. (constraint file  C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for adc_lclk_n. (constraint file  C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for adc_lclk_p. (constraint file  C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for adc_lclk_p. (constraint file  C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/.Xil/Vivado-8364-DESKTOP-J72MK93/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 12).
 Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/xdma_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/util_ds_buf_0. (constraint file  auto generated constraint, line ).
@@ -295,7 +295,7 @@ Applied set_property DONT_TOUCH = true for design_1_i/BRAM/axi_bram_ctrl_0. (con
 Applied set_property DONT_TOUCH = true for design_1_i/BRAM/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for serdes/serdes_clocking. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1026.629 ; gain = 10.957
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'I2C_Transmit'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SPI_Transmit'
@@ -331,7 +331,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'serial_controller'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1026.629 ; gain = 10.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -385,25 +385,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1026.629 ; gain = 10.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1026.629 ; gain = 10.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1026.629 ; gain = 10.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1033.391 ; gain = 17.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -453,37 +453,37 @@ WARNING: [Synth 8-3295] tying undriven pin design_1_i:gpio2_io_i_0[2] to constan
 WARNING: [Synth 8-3295] tying undriven pin design_1_i:gpio2_io_i_0[1] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin design_1_i:gpio2_io_i_0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1033.391 ; gain = 17.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1033.391 ; gain = 17.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1033.391 ; gain = 17.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1033.391 ; gain = 17.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1033.391 ; gain = 17.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1033.391 ; gain = 17.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -553,27 +553,27 @@ Report Cell Usage:
 |28    |OBUFT                           |     2|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1033.391 ; gain = 17.719
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1046.180 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1046.180 ; gain = 27.020
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1033.391 ; gain = 6.762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1033.391 ; gain = 17.719
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1046.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1033.391 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 9 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1048.992 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1043.266 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 79 Infos, 81 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1048.992 ; gain = 29.832
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1043.266 ; gain = 27.594
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Aleksa/Documents/FPGA_Dev/Artix7_PCIe/dso_top/dso_top.runs/synth_1/dso_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Aleksa/Documents/EEVengers/Firmware/Artix7_PCIe/dso_top/dso_top.runs/synth_1/dso_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file dso_top_utilization_synth.rpt -pb dso_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May  7 16:14:59 2021...
+INFO: [Common 17-206] Exiting Vivado at Fri May  7 20:46:27 2021...

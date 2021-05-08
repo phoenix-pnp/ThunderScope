@@ -19862,11 +19862,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 07 20:14:22 UTC 2021</spirit:value>
+            <spirit:value>Sat May 08 00:45:50 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0f8d86be</spirit:value>
+            <spirit:value>9:364fbb7a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -19880,11 +19880,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu May 06 23:29:58 UTC 2021</spirit:value>
+            <spirit:value>Sat May 08 00:23:52 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:58ee8352</spirit:value>
+            <spirit:value>9:f3dabf30</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -19900,11 +19900,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 07 20:14:15 UTC 2021</spirit:value>
+            <spirit:value>Sat May 08 00:45:45 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d1cee62c</spirit:value>
+            <spirit:value>9:198e2649</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -19915,7 +19915,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d1cee62c</spirit:value>
+            <spirit:value>9:198e2649</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -19931,11 +19931,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 07 20:14:15 UTC 2021</spirit:value>
+            <spirit:value>Sat May 08 00:45:45 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d1cee62c</spirit:value>
+            <spirit:value>9:198e2649</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -19951,11 +19951,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 07 20:14:15 UTC 2021</spirit:value>
+            <spirit:value>Sat May 08 00:45:45 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:66a299c2</spirit:value>
+            <spirit:value>9:cdd2c702</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -19971,11 +19971,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 07 20:14:16 UTC 2021</spirit:value>
+            <spirit:value>Sat May 08 00:45:45 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:66a299c2</spirit:value>
+            <spirit:value>9:cdd2c702</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -19989,11 +19989,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 07 20:14:16 UTC 2021</spirit:value>
+            <spirit:value>Sat May 08 00:45:45 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d1cee62c</spirit:value>
+            <spirit:value>9:198e2649</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -51570,7 +51570,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_METERING_ON</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_METERING_ON">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_METERING_ON">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>RX_DETECT</spirit:name>
@@ -53767,7 +53767,7 @@
     <spirit:parameter>
       <spirit:name>mode_selection</spirit:name>
       <spirit:displayName>Mode</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.mode_selection" spirit:choiceRef="choice_list_24b724fb" spirit:order="1.5">Basic</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.mode_selection" spirit:choiceRef="choice_list_24b724fb" spirit:order="1.5">Advanced</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -54554,7 +54554,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>performance</spirit:name>
-      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.performance" spirit:order="72">false</spirit:value>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.performance" spirit:order="72">true</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>pcie_extended_tag</spirit:name>
@@ -61992,8 +61992,10 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.axisten_freq" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.cfg_mgmt_if" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.dsc_bypass_wr" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.mode_selection" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.pcie_extended_tag" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.pciebar2axibar_axil_master" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.performance" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.pf0_device_id" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.pf0_msi_enabled" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.pf0_msix_cap_pba_bir" xilinx:valueSource="user"/>
