@@ -128,6 +128,9 @@ private:
     LARGE_INTEGER freq; //used for perforamnce testing
     int64_t last_chunk_read;
 
+    uint32_t current_chunk;
+    uint32_t bram_address;
+
     //current state
     BoardState currentBoardState;
 

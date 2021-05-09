@@ -123,17 +123,15 @@ int PCIeLink::Connect() {
  * 
 *************************************************************/
 void PCIeLink::Read(uint8_t* buff) {
-    //uint32_t current_chunk = 0;
-    uint32_t bram_address = 0;
 
-    while(bram_address < (BUFFER_SIZE/2)) {
+    do {
         _Read(user_handle,DATAMOVER_TRANSFER_COUNTER,(uint8_t*)(&bram_address),4);
-        //current_chunk = bram_address >> 19;
-        bram_address = bram_address & 0x0003FFFF;
-        //INFO << "address: " << bram_address;
-    }
+    } while((bram_address & 0x0003FFFF) < (BUFFER_SIZE/2));
 
-    //INFO << "chunk: " << current_chunk;
+    uint32_t temp_chunk = bram_address >> 18; 
+    if ((temp_chunk-current_chunk != 1)&&(temp_chunk-current_chunk != -15))
+        INFO << "SKIPPED CHUNK " << temp_chunk << " " << current_chunk << " " << (int)temp_chunk-(int)current_chunk;
+    current_chunk = temp_chunk;
 
     _Read(c2h_0_handle,0,buff,BUFFER_SIZE);
 }
@@ -506,13 +504,13 @@ void PCIeLink::_Write32(HANDLE hPCIE, long long address, uint32_t val) {
 
 void PCIeLink::_Job() {
     bool priority = SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_TIME_CRITICAL);
-    INFO << "Set priority: " << priority;
+    INFO << "THREAD_PRIORITY_TIME_CRITICAL: " << priority;
     while(_run.load()) {
         while(_pause.load()) {
             std::this_thread::sleep_for(std::chrono::microseconds(100)); 
         }
         
-        ClockTick1();
+        //ClockTick1();
 
         //allocate a buffer
         buffer* buff;
@@ -523,8 +521,8 @@ void PCIeLink::_Job() {
         //push to queue
         outputQueue->push(buff);
 
-        ClockTick2();
-        PrintTimeDelta();
+        //ClockTick2();
+        //PrintTimeDelta();
     }
 }
 
