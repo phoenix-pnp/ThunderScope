@@ -33,7 +33,7 @@ void parseCommandLineArgs(int argc, char** args) {
 //                testCsv(inputFile);
 //            } else {
 //                INFO << "No filename provided";
-//                char filename[] = "../scope_link/test/test1.csv";
+//                char filename[] = "../test/test1.csv";
 //                inputFile = filename;
 //                testCsv(filename);
 //            }
@@ -343,7 +343,7 @@ bool parseCli (std::string line)
         std::string nextArgument = line.substr(line.find(' ') + 1, line.length());
         if (nextArgument != "data") {
 
-            nextArgument = "./scope_link/test/" + nextArgument;
+            nextArgument = "./test/" + nextArgument;
             char* filename = (char*)malloc(nextArgument.size() + 1);
             std::strcpy(filename, nextArgument.c_str());
             inputFile = filename;
@@ -356,7 +356,7 @@ bool parseCli (std::string line)
     } else if ("data" == line.substr(0, line.find(' '))) {
         INFO << "Adding data to the pipeline";
 
-        char filename[] = "./scope_link/test/test1.csv";
+        char filename[] = "./test/test1.csv";
         inputFile = filename;
         loadFromFile(filename, &dataQueue_1);
 
@@ -375,7 +375,7 @@ bool parseCli (std::string line)
         ERROR << "controller";
         ERROR << "unpause";
         ERROR << "data";
-        ERROR << "datafile <csv file in waveview/scope_link/test/>";
+        ERROR << "datafile <csv file in scope_link/test/>";
         ERROR << "getch";
         ERROR << "setch <# of channels: 1, 2 or 4>";
         ERROR << "gettrig";

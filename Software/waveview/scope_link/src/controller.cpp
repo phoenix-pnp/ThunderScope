@@ -53,7 +53,7 @@ controller::controller(boost::lockfree::queue<buffer*, boost::lockfree::fixed_si
     }
 
     // input file related
-    std::string newName = "./scope_link/test/test1.csv";
+    std::string newName = "./test/test1.csv";
     char* filename = (char*)malloc(newName.size() + 1);
     std::strcpy(filename, newName.c_str());
     free(inputFile);
@@ -825,43 +825,43 @@ void controller::getData()
 
 void controller::setFileName(int8_t newFile)
 {
-    std::string newName = "./scope_link/test/test1.csv";
+    std::string newName = "./test/test1.csv";
     switch (newFile) {
         case 1:
-            newName = "./scope_link/test/test1.csv";
+            newName = "./test/test1.csv";
             break;
         case 2:
-            newName = "./scope_link/test/test2.csv";
+            newName = "./test/test2.csv";
             break;
         case 3:
-            newName = "./scope_link/test/test3.csv";
+            newName = "./test/test3.csv";
             break;
         case 4:
-            newName = "./scope_link/test/test4.csv";
+            newName = "./test/test4.csv";
             break;
         case 5:
-            newName = "./scope_link/test/test5.csv";
+            newName = "./test/test5.csv";
             break;
         case 6:
-            newName = "./scope_link/test/test6.csv";
+            newName = "./test/test6.csv";
             break;
         case 72:
-            newName = "./scope_link/test/test7-2ch.csv";
+            newName = "./test/test7-2ch.csv";
             break;
         case 74:
-            newName = "./scope_link/test/test7-4ch.csv";
+            newName = "./test/test7-4ch.csv";
             break;
         case 8:
-            newName = "./scope_link/test/test8.csv";
+            newName = "./test/test8.csv";
             break;
         case 91:
-            newName = "./scope_link/test/test9-max.csv";
+            newName = "./test/test9-max.csv";
             break;
         case 92:
-            newName = "./scope_link/test/test9-min.csv";
+            newName = "./test/test9-min.csv";
             break;
         default:
-            newName = "./scope_link/test/test1.csv";
+            newName = "./test/test1.csv";
     }
     char* filename = (char*)malloc(newName.size() + 1);
     std::strcpy(filename, newName.c_str());
