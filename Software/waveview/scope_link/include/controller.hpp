@@ -4,7 +4,10 @@
 #include "dspPipeline.hpp"
 #include "bridge.hpp"
 #include "common.hpp"
+
+#ifndef NOHARDWARE
 #include "PCIe.hpp"
+#endif
 
 class controller
 {
@@ -58,7 +61,9 @@ private:
     Trigger* triggerThread = NULL;
     Processor* processorThread = NULL;
     postProcessor* postProcessorThread = NULL;
+#ifndef NOHARDWARE
     PCIeLink* pcieLinkThread = NULL;
+#endif
     
 
     // Control Command Processor

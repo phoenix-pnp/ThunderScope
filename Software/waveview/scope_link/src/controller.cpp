@@ -13,10 +13,12 @@ controller::controller(boost::lockfree::queue<buffer*, boost::lockfree::fixed_si
     // command packet parser thread
     controllerThread = std::thread(&controller::controllerLoop, this);
 
+#ifdef ELECTRON
     // Bridge to JS
     bridgeThread = new Bridge("testPipe", &controllerQueue_tx, &controllerQueue_rx);
     bridgeThread->TxStart();
     bridgeThread->RxStart();
+#endif
 
     // Create pipeline threads
     triggerThread = new Trigger(dataQueue, &triggerProcessorQueue, triggerLevel);
@@ -68,8 +70,12 @@ controller::~controller()
     delete triggerThread;
     delete processorThread;
     delete postProcessorThread;
+#ifdef ELECTRON
     delete bridgeThread;
+#endif
+#ifndef NOHARDWARE
     delete pcieLinkThread;
+#endif
 
     DEBUG << "Controller Destroyed";
 }
@@ -863,6 +869,7 @@ void controller::setFileName(int8_t newFile)
     inputFile = filename;
 }
 
+#ifndef NOHARDWARE
 void controller::hardWareCommand(int command, int channel, int val1, double val2) {
     ScopeCommand cmd = static_cast<ScopeCommand>(command);
 
@@ -923,8 +930,11 @@ void controller::hardWareCommand(int command, int channel, int val1, double val2
         break;
     }
 }
+#endif
 
 
+#ifndef NOHARDWARE
 void controller::testADCData() {
     pcieLinkThread->Write(test_adc_data,nullptr);
 }
+#endif

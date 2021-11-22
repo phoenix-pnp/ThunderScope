@@ -1,7 +1,7 @@
-
-
 #ifndef PCIe_HPP
 #define PCIe_HPP
+
+#ifndef NOHARDWARE
 
 #include <assert.h>
 #include <stdlib.h>
@@ -165,4 +165,5 @@ protected:
 
 };
 
-#endif
+#endif // NOHARDWARE
+#endif // PCIe_HPP

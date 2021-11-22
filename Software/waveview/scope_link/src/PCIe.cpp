@@ -1,4 +1,4 @@
-
+#ifndef NOHARDWARE
 
 #include "PCIe.hpp"
 #include "logger.hpp"
@@ -908,3 +908,4 @@ void PCIeLink::_adc_active() {
 
 
 
+#endif

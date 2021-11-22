@@ -5,7 +5,9 @@
 #include "postProcessor.hpp"
 #include "bridge.hpp"
 #include "dspPipeline.hpp"
+#ifndef NOHARDWARE
 #include "PCIe.hpp"
+#endif
 #include <boost/tokenizer.hpp>
 #include <fstream>
 #include <iostream>
@@ -220,8 +222,10 @@ boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<false>> testerDataQ
  ******************************************************************************/
 void runPCIeTest() {
 
+#ifndef NOHARDWARE
     controller* troller = new controller(&testerDataQueue);
     troller->setWindowSize(1000);
     troller->testADCData();
     delete troller;
+#endif
 }
