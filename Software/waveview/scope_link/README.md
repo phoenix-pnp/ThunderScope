@@ -2,38 +2,127 @@
 
 ## Setup
 
-You will need to download and install the D3XX ftdi drivers
-* They can be found on the [ftdi website](https://www.ftdichip.com/Drivers/D3XX.htm).
-    * Extract the files to the correct locations
-    * Run the following commands
-    * Ensure that the lib exists at scope_link/lib/FTD3XXLibrary_v1.3.0.4/x64/FTD3XX.lib (The lib file to move over is the one that is ~13kb in size)
+* Install boost
+* Install cmake
+
+## Building
+To setup the project build files run (Should only need to be run once):
+```
+cmake -B build
 ```
 
-
-//Linux instructions --Legacy
-sudo cp libftd3xx.so /usr/lib/
-sudo cp libftd3xx.so.0.5.21 /usr/lib/
-sudo cp 51-ftd3xx.rules /etc/udev/rules.d/
-sudo udevadm control --reload-rules
+To build the project, run the following commands:
+```
+cmake -B build
+cmake --build build --config release
 ```
 
 ## Running
 
-Only 2 command line arguments are implemented currently
+Its easiest to run from the `scope_link` folder. The relative paths to the test
+files are messed up otherwise.
 
-### Test Sinc Interpolation -- TEST FUNCTION DOESNT REALLY DO ANYTHING FOR THE FINAL PRODUCT
-Not quite sure what this does yet
+Run with the command:
 ```
-./scope --TestSync
+./build/scope
+```
+After, you will need to setup the controller, get some data and unpause the
+system. The CLI will tell you the commands available and how to use them.
+
+Alternatively, you can start the controller from cli with:
+```
+./build/scope -c
 ```
 
-### Test Data Throughput -- TEST FUNCTION DOESNT REALLY DO ANYTHING FOR THE FINAL PRODUCT
-Not quite sure what this does yet either
-```
-./scope --TestDataThrougput
-```
+## Commands
+There are a large number of commands available to the user. They are listed here
+in no particular order
 
-## test1
+### getch
+* Prints the number of channels (1, 2 or 4)
+
+### setch
+* Sets the number of channels (1, 2 or 4)
+
+### gettrig
+* Prints the currently triggered channel
+
+### settrig
+* Sets the currently triggered channel (1, 2, 3, or 4)
+
+### getwin
+* Prints the current window size in number of samples
+
+### setwin
+* Sets the window size in number of samples
+
+### getlevel
+* Print the current trigger level
+
+### setlevel
+* Sets the current trigger level
+
+### getmax
+* Prints the maximum value of the current window
+
+### getmin
+* Prints the minimum value of the current window
+
+### controller
+* Initializes the controller thread to start all other threads
+
+### pause
+* Pauses processing of data
+
+### unpause
+* Unpauses processing of data
+
+### reprocess
+* reprocesses the currently displayed window?
+
+### flush
+* Flushes the pipeline by emptying all queues of any data
+
+### getedgetype
+* Returns the current trigger edge type (Rising or falling)
+
+### setrising
+* Sets the trigger type to trigger on the rising edge
+
+### setfalling
+* Sets the trigger type to trigger on the falling edge
+
+### getdata
+* Reloads the last loaded data file into the queue?
+
+### getper
+* Prints the persistence level
+
+### setper
+* Sets the persistence level
+
+### setmath1
+* Sets the first channel in the math equation
+
+### setmath2
+* Sets the second channel in the math equation
+
+### setmathsign
+* Sets the sign of the math opperation (add, or sub)
+
+### datafile
+* Loads the specified test samples from the csv in the test folder
+
+### data
+* Loads the test1.csv from the test folder
+
+### delete
+* Deletes the controller thread and all other threads with it
+
+
+## Test files
+Some of the tests may show different output now that 4 channels are available.
+
 Takes a csv input (or defaults to test1.csv) and runs it through the pipeline.
 It will treat the csv as a continuous stream of samples and generate triggers,
 outputing a dump.csv file containing the triggered data.

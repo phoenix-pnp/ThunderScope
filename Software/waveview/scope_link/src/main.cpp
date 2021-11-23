@@ -6,7 +6,6 @@
 //
 
 #include "EVTester.hpp"
-#include "dspPipeline.hpp"
 #include "logger.hpp"
 #include "controller.hpp"
 

@@ -4,7 +4,6 @@
 #include "trigger.hpp"
 #include "postProcessor.hpp"
 #include "bridge.hpp"
-#include "dspPipeline.hpp"
 #ifndef NOHARDWARE
 #include "PCIe.hpp"
 #endif

@@ -24,13 +24,6 @@ set(BOOST_ROOT C:/Boost)
 endif()
 find_package( Boost REQUIRED COMPONENTS system thread log_setup log )
 
-# QT
-find_package(Qt5 COMPONENTS Widgets PrintSupport REQUIRED)
-
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTORCC ON)
-
 # Declare the location of the source and header files
 file(GLOB SOURCES CONFIGURE_DEPENDS "src/*.cpp")
 # Need to add all header files into add_executable or moc wont parse them
@@ -50,4 +43,4 @@ add_executable(${PROJECT_NAME}
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${Boost_INCLUDE_DIRS} include)
-target_link_libraries(${PROJECT_NAME} ${LIBRARIES} ${Boost_LIBRARIES} Qt5::Widgets Qt5::PrintSupport)
+target_link_libraries(${PROJECT_NAME} ${LIBRARIES} ${Boost_LIBRARIES})

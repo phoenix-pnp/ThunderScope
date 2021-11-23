@@ -1,9 +1,11 @@
 #ifndef controller_hpp
 #define controller_hpp
 
-#include "dspPipeline.hpp"
 #include "bridge.hpp"
 #include "common.hpp"
+#include "trigger.hpp"
+#include "processor.hpp"
+#include "postProcessor.hpp"
 
 #ifndef NOHARDWARE
 #include "PCIe.hpp"
