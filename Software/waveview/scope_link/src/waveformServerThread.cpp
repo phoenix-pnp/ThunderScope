@@ -1,0 +1,255 @@
+/***********************************************************************************************************************
+*                                                                                                                      *
+* ps6000d                                                                                                              *
+*                                                                                                                      *
+* Copyright (c) 2012-2021 Andrew D. Zonenberg                                                                          *
+* All rights reserved.                                                                                                 *
+*                                                                                                                      *
+* Redistribution and use in source and binary forms, with or without modification, are permitted provided that the     *
+* following conditions are met:                                                                                        *
+*                                                                                                                      *
+*    * Redistributions of source code must retain the above copyright notice, this list of conditions, and the         *
+*      following disclaimer.                                                                                           *
+*                                                                                                                      *
+*    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the       *
+*      following disclaimer in the documentation and/or other materials provided with the distribution.                *
+*                                                                                                                      *
+*    * Neither the name of the author nor the names of any contributors may be used to endorse or promote products     *
+*      derived from this software without specific prior written permission.                                           *
+*                                                                                                                      *
+* THIS SOFTWARE IS PROVIDED BY THE AUTHORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED   *
+* TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL *
+* THE AUTHORS BE HELD LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES        *
+* (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR       *
+* BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT *
+* (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE       *
+* POSSIBILITY OF SUCH DAMAGE.                                                                                          *
+*                                                                                                                      *
+***********************************************************************************************************************/
+
+/**
+	@file
+	@author Andrew D. Zonenberg
+	@brief Waveform server. Waveform data only, no control plane traffic.
+ */
+//#include "ps6000d.h"
+#include <string.h>
+
+#include "../lib/log/log.h"
+#include "../lib/xptools/Socket.h"
+
+#ifdef _WIN32
+#include <windows.h>
+#include <shlwapi.h>
+#endif
+
+#include <thread>
+#include <map>
+#include <mutex>
+
+using namespace std;
+
+volatile bool g_waveformThreadQuit = false;
+
+float InterpolateTriggerTime(int16_t* buf);
+
+Socket g_dataSocket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
+
+//vector<PICO_CHANNEL> g_channelIDs;
+
+void WaveformServerThread()
+{
+	Socket client = g_dataSocket.Accept();
+	LogVerbose("Client connected to data plane socket\n");
+
+	if(!client.IsValid())
+		return;
+	if(!client.DisableNagle())
+		LogWarning("Failed to disable Nagle on socket, performance may be poor\n");
+
+//	//Set up channel IDs
+//	for(size_t i=0; i<g_numChannels; i++)
+//		g_channelIDs.push_back((PICO_CHANNEL)i);
+//	for(size_t i=0; i<g_numDigitalPods; i++)
+//		g_channelIDs.push_back((PICO_CHANNEL)(PICO_PORT0 + i));
+
+	map<size_t, int16_t*> waveformBuffers;
+	size_t numSamples = 0;
+	uint32_t numSamples_int = 0;
+	uint16_t numchans;
+	while(!g_waveformThreadQuit)
+	{
+//		int16_t ready;
+//		{
+//			lock_guard<mutex> lock(g_mutex);
+//			if(g_pico_type == PICO6000A)
+//				ps6000aIsReady(g_hScope, &ready);
+//			else if(g_pico_type == PICO3000A)
+//				ps3000aIsReady(g_hScope, &ready);
+//		}
+
+//		if( (ready == 0) || (!g_triggerArmed) )
+//		{
+//			std::this_thread::sleep_for(std::chrono::microseconds(1000));
+//			continue;
+//		}
+
+//		{
+//			lock_guard<mutex> lock(g_mutex);
+//
+//			//Stop the trigger
+//			PICO_STATUS status = PICO_OPERATION_FAILED;
+//			if(g_pico_type == PICO6000A)
+//				status = ps6000aStop(g_hScope);
+//			else if(g_pico_type == PICO3000A)
+//				status = ps3000aStop(g_hScope);
+//			if(PICO_OK != status)
+//				LogFatal("ps6000aStop failed (code 0x%x)\n", status);
+//
+//			//Verify it's actually stopped
+//
+//			//Set up buffers if needed
+//			if(g_memDepthChanged || waveformBuffers.empty())
+//			{
+//				LogTrace("Reallocating buffers\n");
+//
+//				//Clear out old buffers
+//				for(auto ch : g_channelIDs)
+//				{
+//					if(g_pico_type == PICO6000A)
+//						ps6000aSetDataBuffer(g_hScope, ch, NULL,
+//							0, PICO_INT16_T, 0, PICO_RATIO_MODE_RAW, PICO_CLEAR_ALL);
+//					else if(g_pico_type == PICO3000A)
+//						ps3000aSetDataBuffer(g_hScope, (PS3000A_CHANNEL)ch, NULL,
+//							0, 0, PS3000A_RATIO_MODE_NONE);
+//				}
+//
+//				//Set up new ones
+//				for(size_t i=0; i<g_channelIDs.size(); i++)
+//				{
+//					//Allocate memory if needed
+//					if(waveformBuffers[i])
+//						delete[] waveformBuffers[i];
+//					waveformBuffers[i] = new int16_t[g_captureMemDepth];
+//					memset(waveformBuffers[i], 0x00, g_captureMemDepth * sizeof(int16_t));
+//
+//					//Give it to the scope, removing any other buffer we might have
+//					auto ch = g_channelIDs[i];
+//					if(g_pico_type == PICO6000A)
+//						status = ps6000aSetDataBuffer(g_hScope, (PICO_CHANNEL)ch, waveformBuffers[i],
+//							g_captureMemDepth, PICO_INT16_T, 0, PICO_RATIO_MODE_RAW, PICO_ADD);
+//					else if(g_pico_type == PICO3000A)
+//						status = ps3000aSetDataBuffer(g_hScope, (PS3000A_CHANNEL)ch, waveformBuffers[i],
+//							g_captureMemDepth, 0, PS3000A_RATIO_MODE_NONE);
+//					if(status != PICO_OK)
+//						LogFatal("psXXXXSetDataBuffer for channel %d failed (code 0x%x)\n", ch, status);
+//				}
+//
+//				g_memDepthChanged = false;
+//			}
+//
+//			//Download the data from the scope
+//			numSamples = g_captureMemDepth;
+//			numSamples_int = g_captureMemDepth;
+//			int16_t overflow = 0;
+//			if(g_pico_type == PICO6000A)
+//				status = ps6000aGetValues(g_hScope, 0, &numSamples, 1, PICO_RATIO_MODE_RAW, 0, &overflow);
+//			else if(g_pico_type == PICO3000A)
+//				status = ps3000aGetValues(g_hScope, 0, &numSamples_int, 1, PS3000A_RATIO_MODE_NONE, 0, &overflow);
+//			if(status == PICO_NO_SAMPLES_AVAILABLE)
+//				continue; // state changed while mutex was unlocked?
+//			if(PICO_OK != status)
+//				LogFatal("psXXXXGetValues (code 0x%x)\n", status);
+//
+//			//Figure out how many channels are active in this capture
+//			numchans = 0;
+//			for(size_t i=0; i<g_numChannels; i++)
+//			{
+//				if(g_channelOnDuringArm[i])
+//					numchans ++;
+//			}
+//			for(size_t i=0; i<g_numDigitalPods; i++)
+//			{
+//				if(g_msoPodEnabledDuringArm[i])
+//					numchans ++;
+//			}
+//		}
+//
+//		//Send the channel count to the client
+//		client.SendLooped((uint8_t*)&numchans, sizeof(numchans));
+//
+//		//Send sample rate to the client
+//		client.SendLooped((uint8_t*)&g_sampleIntervalDuringArm, sizeof(g_sampleIntervalDuringArm));
+//
+//		//TODO: send overflow flags to client
+//
+//		//Interpolate trigger position if we're using an analog level trigger
+//		bool triggerIsAnalog = (g_triggerChannel < g_numChannels);
+//		float trigphase = 0;
+//		if(triggerIsAnalog)
+//			trigphase = InterpolateTriggerTime(waveformBuffers[g_triggerChannel]);
+//
+//		//Send data for each channel to the client
+//		for(size_t i=0; i<g_channelIDs.size(); i++)
+//		{
+//			//Analog channels
+//			if((i < g_numChannels) && (g_channelOnDuringArm[i]) )
+//			{
+//				//Send channel ID, scale, offset, and memory depth
+//				client.SendLooped((uint8_t*)&i, sizeof(i));
+//				client.SendLooped((uint8_t*)&numSamples, sizeof(numSamples));
+//				float scale = g_roundedRange[i] / 32512;
+//				float offset = g_offsetDuringArm[i];
+//				float config[3] = {scale, offset, trigphase};
+//				client.SendLooped((uint8_t*)&config, sizeof(config));
+//
+//				//Send the actual waveform data
+//				client.SendLooped((uint8_t*)waveformBuffers[i], numSamples * sizeof(int16_t));
+//			}
+//
+//			//Digital channels
+//			else if( (i >= g_numChannels) && (g_msoPodEnabledDuringArm[i - g_numChannels]) )
+//			{
+//				client.SendLooped((uint8_t*)&i, sizeof(i));
+//				client.SendLooped((uint8_t*)&numSamples, sizeof(numSamples));
+//				client.SendLooped((uint8_t*)&trigphase, sizeof(trigphase));
+//				client.SendLooped((uint8_t*)waveformBuffers[i], numSamples * sizeof(int16_t));
+//			}
+//		}
+//
+//		//Re-arm the trigger if doing repeating triggers
+//		if(g_triggerOneShot)
+//			g_triggerArmed = false;
+//		else
+//		{
+//			lock_guard<mutex> lock(g_mutex);
+//
+//			if(g_captureMemDepth != g_memDepth)
+//				g_memDepthChanged = true;
+//
+//			//Restart
+//			StartCapture(false);
+//		}
+	}
+
+	//Clean up temporary buffers
+//	for(auto it : waveformBuffers)
+//		delete[] it.second;
+}
+
+//float InterpolateTriggerTime(int16_t* buf)
+//{
+//	if(g_triggerSampleIndex <= 0)
+//		return 0;
+//
+//	float trigscale = g_roundedRange[g_triggerChannel] / 32512;
+//	float trigoff = g_offsetDuringArm[g_triggerChannel];
+//
+//	float fa = buf[g_triggerSampleIndex-1] * trigscale + trigoff;
+//	float fb = buf[g_triggerSampleIndex] * trigscale + trigoff;
+//
+//	//no need to divide by time, sample spacing is normalized to 1 timebase unit
+//	float slope = (fb - fa);
+//	float delta = g_triggerVoltage - fa;
+//	return delta / slope;
+//}

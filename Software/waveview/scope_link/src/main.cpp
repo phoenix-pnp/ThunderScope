@@ -12,9 +12,14 @@
 // for runSocketTest
 #include "bridge.hpp"
 
-//Declare in advance
+// Forward Declarations
 bool parseCli (std::string line);
 void runCli();
+
+// Variables
+boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<false>> dataQueue_1{1000};
+controller* controllerThread = NULL;
+
 
 void parseCommandLineArgs(int argc, char** args) {
     if(argc > 1) {
@@ -24,18 +29,8 @@ void parseCommandLineArgs(int argc, char** args) {
         } else if(std::string(args[1]) == "--testTrigger") {
             INFO << "Main:parseCommandLineArgs() - Testing Trigger Throughput";
             testTriggerThroughput();
-        } else if(std::string(args[1]) == "-t" || std::string(args[1]) == "--test") {
-//            INFO << "Running Test";
-//            if (argc > 2) {
-//                INFO << "Opening specified file";
-//                inputFile = args[2];
-//                testCsv(inputFile);
-//            } else {
-//                INFO << "No filename provided";
-//                char filename[] = "../test/test1.csv";
-//                inputFile = filename;
-//                testCsv(filename);
-//            }
+        } else if(std::string(args[1]) == "-gl" || std::string(args[1]) == "--glscopeclient") {
+			INFO << "Running tcp connection";
         } else if(std::string(args[1]) == "--socket") {
             // Run socket test
             INFO << "Running socket test";
@@ -50,18 +45,14 @@ void parseCommandLineArgs(int argc, char** args) {
             parseCli("controller");
             runCli();
         } else {
-            ERROR << "Invalid arguments. Use -t <filename.csv> or --TestSinc or --TestDataThroughput";
+            ERROR << "Invalid arguments.";
         }
     } else {
-        ERROR << "Invalid arguments. Use -t <filename.csv> or --TestSinc or --TestDataThroughput";
+        ERROR << "Invalid arguments.";
     }
 
     return;
 }
-
-boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<false>> dataQueue_1{1000};
-
-controller* controllerThread = NULL;
 
 bool parseCli (std::string line)
 {
@@ -421,8 +412,8 @@ std::string g_fwver;
 int16_t g_hScope = 0;
 size_t g_numChannels = 0;
 
-Socket g_scpiSocket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
-Socket g_dataSocket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
+//Socket g_scpiSocket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
+//Socket g_dataSocket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
 
 int main(int argc, char** args)
 {
