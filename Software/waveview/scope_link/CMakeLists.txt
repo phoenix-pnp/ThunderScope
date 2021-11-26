@@ -37,10 +37,19 @@ endif()
 
 add_definitions(-DNOHARDWARE)
 
+add_subdirectory("${PROJECT_SOURCE_DIR}/lib/xptools")
+add_subdirectory("${PROJECT_SOURCE_DIR}/lib/log")
+
 add_executable(${PROJECT_NAME}
 	${SOURCES}
 	${HEADERS}
 )
 
+
 target_include_directories(${PROJECT_NAME} PUBLIC ${Boost_INCLUDE_DIRS} include)
-target_link_libraries(${PROJECT_NAME} ${LIBRARIES} ${Boost_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}
+	${LIBRARIES}
+	${Boost_LIBRARIES}
+	xptools
+	log
+	)

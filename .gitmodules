@@ -1,0 +1,6 @@
+[submodule "lib/xptools"]
+	path = Software/waveview/scope_link/lib/xptools
+	url = git@github.com:azonenberg/xptools.git
+[submodule "lib/log"]
+	path = Software/waveview/scope_link/lib/log
+	url = git@github.com:azonenberg/logtools.git

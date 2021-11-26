@@ -410,6 +410,20 @@ void runCli() {
     if(controllerThread != NULL)
         delete controllerThread;
 }
+
+#include "../lib/xptools/Socket.h"
+
+std::string g_model;
+std::string g_serial;
+std::string g_fwver;
+
+//PicoScopeType g_pico_type;
+int16_t g_hScope = 0;
+size_t g_numChannels = 0;
+
+Socket g_scpiSocket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
+Socket g_dataSocket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
+
 int main(int argc, char** args)
 {
     INFO << "Program Started";
@@ -420,5 +434,9 @@ int main(int argc, char** args)
         INFO << "Running in CLI mode";
         runCli();
     }
+
+	// parse port numbers
+	// Initialize number of channels
+	g_numChannels = 4;
     return 0;
 }
