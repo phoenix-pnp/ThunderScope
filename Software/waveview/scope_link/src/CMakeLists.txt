@@ -50,8 +50,6 @@ add_executable(${PROJECT_NAME}
 	postProcessor.hpp
 	processor.cpp
 	processor.hpp
-	scpiServerThread.cpp
-	scpiServerThread.hpp
 	trigger.cpp
 	trigger.hpp
 	waveformServerThread.cpp

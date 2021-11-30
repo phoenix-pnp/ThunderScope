@@ -12,6 +12,8 @@
 // for runSocketTest
 #include "bridge.hpp"
 
+#include "../lib/xptools/Socket.h"
+
 // Forward Declarations
 bool parseCli (std::string line);
 void runCli();
@@ -402,7 +404,6 @@ void runCli() {
         delete controllerThread;
 }
 
-#include "../lib/xptools/Socket.h"
 
 std::string g_model;
 std::string g_serial;
@@ -412,12 +413,24 @@ std::string g_fwver;
 int16_t g_hScope = 0;
 size_t g_numChannels = 0;
 
-//Socket g_scpiSocket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
-//Socket g_dataSocket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
+extern Socket g_scpiSocket;
+extern Socket g_dataSocket;
+
+uint16_t scpi_port = 5025;
+uint16_t waveform_port = 5026;
 
 int main(int argc, char** args)
 {
     INFO << "Program Started";
+
+	//Configure the data plane socket
+	g_dataSocket.Bind(waveform_port);
+	g_dataSocket.Listen();
+
+	//Launch the control plane socket server
+	g_scpiSocket.Bind(scpi_port);
+	g_scpiSocket.Listen();
+//	ScpiServerThread();
 
     if (argc > 1) {
         parseCommandLineArgs(argc, args);
@@ -426,8 +439,5 @@ int main(int argc, char** args)
         runCli();
     }
 
-	// parse port numbers
-	// Initialize number of channels
-	g_numChannels = 4;
     return 0;
 }
