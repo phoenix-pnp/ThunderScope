@@ -3,18 +3,17 @@
 #include "processor.hpp"
 #include "trigger.hpp"
 #include "postProcessor.hpp"
-#include "bridge.hpp"
+
 #ifndef NOHARDWARE
 #include "PCIe.hpp"
 #endif
+
 #include <boost/tokenizer.hpp>
 #include <fstream>
 #include <iostream>
 #include "controller.hpp"
 
 uint32_t testSize = 1000;
-
-Bridge* bridgeThread_1;
 
 void loadFromRand (boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<false>> *outputQ)
 {
@@ -165,47 +164,6 @@ void testTriggerThroughput()
 //
 //}
 
-/*******************************************************************************
- * runSocketTest()
- *
- * Creats a bridge, sends a test packet across the bridge and cleans up after
- * recieving a response.
- *
- * Arguments:
- *   None
- * Return:
- *   None
- ******************************************************************************/
-void runSocketTest ()
-{
-    boost::lockfree::queue<EVPacket*, boost::lockfree::fixed_sized<false>> cmdQueue{1000};
-    boost::lockfree::queue<EVPacket*, boost::lockfree::fixed_sized<false>> bridge_rx{1000};
-    char in[10] = {};
-
-    // Create packet
-    EVPacket* testPacket = (EVPacket*)malloc(sizeof(EVPacket));
-    testPacket->command = 1;
-    testPacket->packetID = 0x0808;
-    testPacket->dataSize = 5;
-    testPacket->data = (int8_t*)malloc(5);
-    testPacket->data[0] = 1;
-    testPacket->data[1] = 2;
-    testPacket->data[2] = 3;
-    testPacket->data[3] = 4;
-    testPacket->data[4] = 5;
-
-    // Pass packet to tx queue
-    Bridge* bridgeThread_1 = new Bridge("testPipe", &bridge_rx, &cmdQueue);
-    bridge_rx.push(testPacket);
-
-    // start transfering
-    bridgeThread_1->TxStart();
-    bridgeThread_1->RxStart();
-
-    std::cin >> in;
-
-    delete bridgeThread_1;
-}
 
 boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<false>> testerDataQueue{1000};
 

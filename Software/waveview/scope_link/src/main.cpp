@@ -9,9 +9,6 @@
 #include "logger.hpp"
 #include "controller.hpp"
 
-// for runSocketTest
-#include "bridge.hpp"
-
 #include "../lib/xptools/Socket.h"
 
 // Forward Declarations
@@ -33,12 +30,7 @@ void parseCommandLineArgs(int argc, char** args) {
             testTriggerThroughput();
         } else if(std::string(args[1]) == "-gl" || std::string(args[1]) == "--glscopeclient") {
 			INFO << "Running tcp connection";
-        } else if(std::string(args[1]) == "--socket") {
-            // Run socket test
-            INFO << "Running socket test";
 
-            runSocketTest();
-          
         } else if(std::string(args[1]) == "--PCIE") {
             INFO << "Running PCIE test";
 

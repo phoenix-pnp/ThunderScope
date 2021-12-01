@@ -29,8 +29,6 @@ endif()
 add_definitions(-DNOHARDWARE)
 
 add_executable(${PROJECT_NAME}
-	bridge.cpp
-	bridge.hpp
 	common.cpp
 	common.hpp
 	controller.cpp

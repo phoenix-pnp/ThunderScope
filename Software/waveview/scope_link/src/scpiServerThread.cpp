@@ -859,9 +859,9 @@ void ScpiServerThread()
 //			}
 //		}
 
-		g_waveformThreadQuit = true;
-		dataThread.join();
-		g_waveformThreadQuit = false;
+//		g_waveformThreadQuit = true;
+//		dataThread.join();
+//		g_waveformThreadQuit = false;
 	}
 }
 

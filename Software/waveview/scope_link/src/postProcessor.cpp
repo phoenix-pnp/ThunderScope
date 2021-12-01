@@ -83,33 +83,13 @@ void postProcessor::coreLoop()
             DEBUG << "post processing next window";
 
             // New packet
-            postWindow = (int8_t *)malloc(windowSize
-                    * (numCh + 1 * (doMath == true)));
-            memset(postWindow, 0, windowSize
-                    * (numCh + 1 * (doMath == true)));
+            postWindow = (int8_t *)malloc(windowSize * (numCh));
+            memset(postWindow, 0, windowSize * (numCh));
 
             for (uint8_t j = 0; j < numCh; j++) {
                 // Post process window
                 for (uint32_t i = 0; i < windowSize; i++) {
                     postWindow[i + j * windowSize] = currentWindow[i * numCh + j];
-                    if (doMath == true) {
-                        // do math
-                        // TODO: This will rollover if the number doesn't fit into an int8_t
-                        if (mathCh_1 == j) {
-                            // LHS of math
-                            postWindow[i + numCh * windowSize] += currentWindow[i * numCh + j];
-                        }
-                        if (mathCh_2 == j) {
-                            // RHS of math
-                            if (mathSign == true){
-                                // Add
-                                postWindow[i + numCh * windowSize] += currentWindow[i * numCh + j];
-                            } else {
-                                // Subtract
-                                postWindow[i + numCh * windowSize] -= currentWindow[i * numCh + j];
-                            }
-                        }
-                    }
                 }
             }
 
@@ -117,8 +97,7 @@ void postProcessor::coreLoop()
             currentPacket = (EVPacket*)malloc(sizeof(EVPacket));
             currentPacket->command = 1;
             currentPacket->packetID = 0x0808;
-            currentPacket->dataSize = windowSize
-                * (numCh + 1 * (doMath == true));
+            currentPacket->dataSize = windowSize * (numCh);
             currentPacket->data = postWindow;
 
             outputQueue->push(currentPacket);
@@ -229,84 +208,3 @@ void postProcessor::postProcessorPause()
     DEBUG << "pausing post processing";
 }
 
-/*******************************************************************************
- * setMathCh_1()
- *
- * Set the channel for the LHS of the math opperation. If an invalid channel
- * is given, it sets the mathch to -1 and turns off math
- *
- * Arguments:
- *   int8_t - channel number. Valid channels: 1, 2, 3, 4
- * Return:
- *   None
- ******************************************************************************/
-void postProcessor::setMathCh_1(int8_t mathCh)
-{
-    if (mathCh == 1 || mathCh == 2 || mathCh == 3 || mathCh == 4) {
-        mathCh_1 = mathCh - 1;
-        if (mathCh_1 != -1 && mathCh_2 != -1) {
-            doMath = true;
-            INFO << "Doing Math now";
-        } else {
-            doMath = false;
-            INFO << "Not doing math now";
-        }
-        DEBUG << "set math channel 1 to: " << (int)(mathCh);
-    } else {
-        mathCh_1 = -1;
-        doMath = false;
-        DEBUG << "Not doing math now";
-    }
-    INFO << "do math: " << (int)(windowSize * (numCh + 1 * (doMath == true)));
-}
-
-/*******************************************************************************
- * setMathCh_2()
- *
- * Set the channel for the RHS of the math opperation. If an invalid channel
- * is given, it sets the mathch to -1 and turns off math
- *
- * Arguments:
- *   int8_t - channel number. Valid channels: 1, 2, 3, 4
- * Return:
- *   None
- ******************************************************************************/
-void postProcessor::setMathCh_2(int8_t mathCh)
-{
-    if (mathCh == 1 || mathCh == 2 || mathCh == 3 || mathCh == 4) {
-        mathCh_2 = mathCh - 1;
-        if (mathCh_1 != -1 && mathCh_2 != -1) {
-            doMath = true;
-            INFO << "Doing Math now";
-        } else {
-            doMath = false;
-            INFO << "Not doing math now";
-        }
-        DEBUG << "set math channel 2 to: " << (int)(mathCh);
-    } else {
-        mathCh_2 = -1;
-        doMath = false;
-        DEBUG << "Not doing math now";
-    }
-    INFO << "do math: " << (int)(windowSize * (numCh + 1 * (doMath == true)));
-}
-
-/*******************************************************************************
- * setMathSign()
- *
- * Set the math sign for caclulating math
- *
- * Arguments:
- *   bool - true for addition, false for subtraction
- * Return:
- *   None
- ******************************************************************************/
-void postProcessor::setMathSign(bool sign)
-{
-    if (sign == true) {
-        DEBUG << "Set math sign to Addition";
-    } else {
-        DEBUG << "Set math sign to Subtraction";
-    }
-    mathSign = sign;
-}

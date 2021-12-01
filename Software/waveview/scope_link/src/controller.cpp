@@ -3,7 +3,6 @@
 
 #include "../lib/xptools/Socket.h"
 
-#include "scpiServerThread.hpp"
 #include "waveformServerThread.hpp"
 #include "logger.hpp"
 
@@ -23,10 +22,6 @@ bool ScpiRecv(Socket& sock, string& str);
 void ParseScpiLine(const string& line, string& subject, string& cmd, bool& query, vector<string>& args);
 
 
-//RampDemo Related
-int8_t RD_PACKET_ORIGINAL[RD_PACKET_SIZE];
-
-
 controller::controller(boost::lockfree::queue<buffer*, boost::lockfree::fixed_sized<false>> *inputQ)
 {
     dataQueue = inputQ;
@@ -35,17 +30,11 @@ controller::controller(boost::lockfree::queue<buffer*, boost::lockfree::fixed_si
     // command packet parser thread
     controllerThread = std::thread(&controller::controllerLoop, this);
 
-#ifdef ELECTRON
-    // Bridge to JS
-    bridgeThread = new Bridge("testPipe", &controllerQueue_tx, &controllerQueue_rx);
-    bridgeThread->TxStart();
-    bridgeThread->RxStart();
-#endif
-
     // Create pipeline threads
     triggerThread = new Trigger(dataQueue, &triggerProcessorQueue, triggerLevel);
     processorThread = new Processor(&triggerProcessorQueue, &processorPostProcessorQueue_1);
-    postProcessorThread = new postProcessor(&processorPostProcessorQueue_1, &controllerQueue_tx);
+//    postProcessorThread = new postProcessor(&processorPostProcessorQueue_1, &controllerQueue_tx);
+	waveformServerThread = new waveformServer(&processorPostProcessorQueue_1);
 
 #ifndef NOHARDWARE
     pcieLinkThread = new PCIeLink(dataQueue);
@@ -57,22 +46,6 @@ controller::controller(boost::lockfree::queue<buffer*, boost::lockfree::fixed_si
     setLevel(64);
     setPerSize(1);
     setWindowSize(1000);
-
-    //RampDemo related
-    for(int ch = 0; ch < RD_CHAN_COUNT; ch++) {
-        for(int i = 0; ch == 0 && i < RD_DATA_PER_CHAN; i++) {
-            RD_PACKET_ORIGINAL[i + ch*RD_DATA_PER_CHAN] = (i % 24) - 12;
-        }
-        for(int i = 0; ch == 1 && i < RD_DATA_PER_CHAN; i++) {
-            RD_PACKET_ORIGINAL[i + ch*RD_DATA_PER_CHAN] = 12 - (i % 24);
-        }
-        for(int i = 0; ch == 2 && i < RD_DATA_PER_CHAN; i++) {
-            RD_PACKET_ORIGINAL[i + ch*RD_DATA_PER_CHAN] = (i % 24) / 12;
-        }
-        for(int i = 0; ch == 3 && i < RD_DATA_PER_CHAN; i++) {
-            RD_PACKET_ORIGINAL[i + ch*RD_DATA_PER_CHAN] = 10;
-        }
-    }
 
     // input file related
     std::string newName = "./test/test1.csv";
@@ -92,12 +65,12 @@ controller::~controller()
     delete triggerThread;
     delete processorThread;
     delete postProcessorThread;
-#ifdef ELECTRON
-    delete bridgeThread;
-#endif
 #ifndef NOHARDWARE
     delete pcieLinkThread;
 #endif
+
+
+	delete waveformServerThread;
 
     DEBUG << "Controller Destroyed";
 }
@@ -127,8 +100,6 @@ void controller::controllerLoop()
 		if(!client.DisableNagle())
 			DEBUG << "Failed to disable Nagle on socket, performance may be poor";
 //			LogWarning("Failed to disable Nagle on socket, performance may be poor\n");
-
-		thread dataThread(WaveformServerThread);
 
 		//Main command loop
 		string line;
@@ -775,10 +746,6 @@ void controller::controllerLoop()
 //				g_msoPodEnabled[i] = false;
 //			}
 //		}
-
-		g_waveformThreadQuit = true;
-		dataThread.join();
-		g_waveformThreadQuit = false;
 	}
 
 //////////////////////////////////// Origional stuff ////////////////////////////
@@ -861,34 +828,6 @@ void controller::controllerLoop()
 //                        tempPacket->dataSize = 2*maxCh*sizeof(uint64_t);
 //                        tempPacket->packetID = 0;
 //                        tempPacket->command = CMD_GetMin;
-//                        controllerQueue_tx.push(tempPacket);
-//                    }
-//                    break;
-//                case CMD_SetFile: {
-//                        INFO << "Packet command: SetFile";
-//                        const int packetSize = 2;
-//                        if(currentPacket->dataSize != packetSize) {
-//                            ERROR << "Unexpected size for SetFile packet";
-//                        }
-//                        else {
-//                            setFileName(currentPacket->data[0]);
-//                        }
-//                        EVPacket* tempPacket = (EVPacket*) malloc(sizeof(EVPacket));
-//                        tempPacket->data = NULL;
-//                        tempPacket->dataSize = 0;
-//                        tempPacket->packetID = 0;
-//                        tempPacket->command = CMD_SetFile;
-//                        controllerQueue_tx.push(tempPacket);
-//                    }
-//                    break;
-//                case CMD_RampDemo: {
-//                        INFO << "Packet command: RampDemo";
-//                        EVPacket* tempPacket = (EVPacket*) malloc(sizeof(EVPacket));
-//                        tempPacket->data = (int8_t*) malloc(RD_PACKET_SIZE);
-//                        tempPacket->dataSize = RD_PACKET_SIZE;
-//                        tempPacket->packetID = 0x11;
-//                        tempPacket->command = CMD_RampDemo;
-//                        memcpy(tempPacket->data, (const void*)RD_PACKET_ORIGINAL, RD_PACKET_SIZE);
 //                        controllerQueue_tx.push(tempPacket);
 //                    }
 //                    break;
@@ -1483,21 +1422,6 @@ void controller::reProcess()
     processorThread->reProcess();
 }
 
-void controller::setMathCh_1(int8_t newCh)
-{
-    postProcessorThread->setMathCh_1(newCh);
-}
-
-void controller::setMathCh_2(int8_t newCh)
-{
-    postProcessorThread->setMathCh_2(newCh);
-}
-
-void controller::setMathSign(bool newSign)
-{
-    postProcessorThread->setMathSign(newSign);
-}
-
 void controller::getData()
 {
     // flush buffers
@@ -1510,52 +1434,6 @@ void controller::getData()
         loadFromFile(inputFile, dataQueue);
     }
 #endif
-}
-
-void controller::setFileName(int8_t newFile)
-{
-    std::string newName = "./test/test1.csv";
-    switch (newFile) {
-        case 1:
-            newName = "./test/test1.csv";
-            break;
-        case 2:
-            newName = "./test/test2.csv";
-            break;
-        case 3:
-            newName = "./test/test3.csv";
-            break;
-        case 4:
-            newName = "./test/test4.csv";
-            break;
-        case 5:
-            newName = "./test/test5.csv";
-            break;
-        case 6:
-            newName = "./test/test6.csv";
-            break;
-        case 72:
-            newName = "./test/test7-2ch.csv";
-            break;
-        case 74:
-            newName = "./test/test7-4ch.csv";
-            break;
-        case 8:
-            newName = "./test/test8.csv";
-            break;
-        case 91:
-            newName = "./test/test9-max.csv";
-            break;
-        case 92:
-            newName = "./test/test9-min.csv";
-            break;
-        default:
-            newName = "./test/test1.csv";
-    }
-    char* filename = (char*)malloc(newName.size() + 1);
-    std::strcpy(filename, newName.c_str());
-    free(inputFile);
-    inputFile = filename;
 }
 
 #ifndef NOHARDWARE

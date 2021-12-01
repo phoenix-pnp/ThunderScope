@@ -37,19 +37,18 @@
 
 #include "../lib/log/log.h"
 #include "../lib/xptools/Socket.h"
+#include "waveformServerThread.hpp"
+#include "logger.hpp"
 
 #ifdef _WIN32
 #include <windows.h>
 #include <shlwapi.h>
 #endif
 
-#include <thread>
 #include <map>
 #include <mutex>
 
 using namespace std;
-
-volatile bool g_waveformThreadQuit = false;
 
 float InterpolateTriggerTime(int16_t* buf);
 
@@ -57,7 +56,22 @@ Socket g_dataSocket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
 
 //vector<PICO_CHANNEL> g_channelIDs;
 
-void WaveformServerThread()
+waveformServer::waveformServer(boost::lockfree::queue<int8_t*, boost::lockfree::fixed_sized<false>> *inputQ)
+{
+	DEBUG << "Created waveform server thread";
+	inputQueue = inputQ;
+    dataThread = std::thread(&waveformServer::coreLoop, this);
+}
+
+waveformServer::~waveformServer()
+{
+	g_waveformThreadQuit = true;
+	dataThread.join();
+	g_waveformThreadQuit = false;
+
+}
+
+void waveformServer::coreLoop()
 {
 	Socket client = g_dataSocket.Accept();
 	LogVerbose("Client connected to data plane socket\n");
@@ -185,37 +199,33 @@ void WaveformServerThread()
 //
 //		//Interpolate trigger position if we're using an analog level trigger
 //		bool triggerIsAnalog = (g_triggerChannel < g_numChannels);
-//		float trigphase = 0;
+		float trigphase = 0;
 //		if(triggerIsAnalog)
 //			trigphase = InterpolateTriggerTime(waveformBuffers[g_triggerChannel]);
 //
-//		//Send data for each channel to the client
-//		for(size_t i=0; i<g_channelIDs.size(); i++)
-//		{
-//			//Analog channels
+
+		// TODO: cleanup number of channels
+		//Send data for each channel to the client
+		int8_t num_ch = 1;
+		for(size_t i=0; i<num_ch; i++)
+		{
+			//Analog channels
 //			if((i < g_numChannels) && (g_channelOnDuringArm[i]) )
 //			{
-//				//Send channel ID, scale, offset, and memory depth
-//				client.SendLooped((uint8_t*)&i, sizeof(i));
-//				client.SendLooped((uint8_t*)&numSamples, sizeof(numSamples));
+				//Send channel ID, scale, offset, and memory depth
+				client.SendLooped((uint8_t*)&i, sizeof(i));
+				client.SendLooped((uint8_t*)&numSamples, sizeof(numSamples));
+				float scale = g_roundedRange[i] / 32512;
 //				float scale = g_roundedRange[i] / 32512;
+				float offset = 0;
 //				float offset = g_offsetDuringArm[i];
-//				float config[3] = {scale, offset, trigphase};
-//				client.SendLooped((uint8_t*)&config, sizeof(config));
-//
-//				//Send the actual waveform data
-//				client.SendLooped((uint8_t*)waveformBuffers[i], numSamples * sizeof(int16_t));
+				float config[3] = {scale, offset, trigphase};
+				client.SendLooped((uint8_t*)&config, sizeof(config));
+
+				//Send the actual waveform data
+				client.SendLooped((uint8_t*)waveformBuffers[i], numSamples * sizeof(int16_t));
 //			}
-//
-//			//Digital channels
-//			else if( (i >= g_numChannels) && (g_msoPodEnabledDuringArm[i - g_numChannels]) )
-//			{
-//				client.SendLooped((uint8_t*)&i, sizeof(i));
-//				client.SendLooped((uint8_t*)&numSamples, sizeof(numSamples));
-//				client.SendLooped((uint8_t*)&trigphase, sizeof(trigphase));
-//				client.SendLooped((uint8_t*)waveformBuffers[i], numSamples * sizeof(int16_t));
-//			}
-//		}
+		}
 //
 //		//Re-arm the trigger if doing repeating triggers
 //		if(g_triggerOneShot)

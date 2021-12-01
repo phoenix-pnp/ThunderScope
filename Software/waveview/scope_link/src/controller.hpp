@@ -1,11 +1,11 @@
 #ifndef controller_hpp
 #define controller_hpp
 
-#include "bridge.hpp"
 #include "common.hpp"
 #include "trigger.hpp"
 #include "processor.hpp"
 #include "postProcessor.hpp"
+#include "waveformServerThread.hpp"
 
 #ifndef NOHARDWARE
 #include "PCIe.hpp"
@@ -43,7 +43,6 @@ public:
     void setMathCh_2(int8_t newCh);
     void setMathSign(bool newSign);
     void getData();
-    void setFileName(int8_t newFile);
     void hardWareCommand(int command, int channel, int val1, double val2);
     void testADCData();
 
@@ -59,10 +58,10 @@ private:
     boost::lockfree::queue<EVPacket*, boost::lockfree::fixed_sized<false>> controllerQueue_rx{1000};
 
     // internal threads
-    Bridge* bridgeThread = NULL;
     Trigger* triggerThread = NULL;
     Processor* processorThread = NULL;
     postProcessor* postProcessorThread = NULL;
+	waveformServer* waveformServerThread = NULL;
 #ifndef NOHARDWARE
     PCIeLink* pcieLinkThread = NULL;
 #endif
