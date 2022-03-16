@@ -1,0 +1,966 @@
+Removed Pin From Net: NetName=GND Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=C2-1
+Removed Pin From Net: NetName=GND Pin=C3-1
+Removed Pin From Net: NetName=+4V8 Pin=C4-2
+Removed Pin From Net: NetName=+4V8 Pin=C7-2
+Removed Pin From Net: NetName=GND Pin=C10-1
+Removed Pin From Net: NetName=GND Pin=C11-1
+Removed Pin From Net: NetName=+4V8 Pin=C12-1
+Removed Pin From Net: NetName=GND Pin=C12-2
+Removed Pin From Net: NetName=GND Pin=C13-1
+Removed Pin From Net: NetName=+4V8 Pin=C13-2
+Removed Pin From Net: NetName=GND Pin=C14-1
+Removed Pin From Net: NetName=-4V8 Pin=C14-2
+Removed Pin From Net: NetName=GND Pin=C18A-2
+Removed Pin From Net: NetName=GND Pin=C18B-2
+Removed Pin From Net: NetName=GND Pin=C18C-2
+Removed Pin From Net: NetName=GND Pin=C18D-2
+Removed Pin From Net: NetName=GND Pin=C20A-1
+Removed Pin From Net: NetName=GND Pin=C20B-1
+Removed Pin From Net: NetName=GND Pin=C20C-1
+Removed Pin From Net: NetName=GND Pin=C20D-1
+Removed Pin From Net: NetName=GND Pin=C21A-1
+Removed Pin From Net: NetName=GND Pin=C21B-1
+Removed Pin From Net: NetName=GND Pin=C21C-1
+Removed Pin From Net: NetName=GND Pin=C21D-1
+Removed Pin From Net: NetName=GND Pin=C22A-1
+Removed Pin From Net: NetName=+4V8 Pin=C22A-2
+Removed Pin From Net: NetName=GND Pin=C22B-1
+Removed Pin From Net: NetName=+4V8 Pin=C22B-2
+Removed Pin From Net: NetName=GND Pin=C22C-1
+Removed Pin From Net: NetName=+4V8 Pin=C22C-2
+Removed Pin From Net: NetName=GND Pin=C22D-1
+Removed Pin From Net: NetName=+4V8 Pin=C22D-2
+Removed Pin From Net: NetName=GND Pin=C23A-1
+Removed Pin From Net: NetName=+4V8 Pin=C23A-2
+Removed Pin From Net: NetName=GND Pin=C23B-1
+Removed Pin From Net: NetName=+4V8 Pin=C23B-2
+Removed Pin From Net: NetName=GND Pin=C23C-1
+Removed Pin From Net: NetName=+4V8 Pin=C23C-2
+Removed Pin From Net: NetName=GND Pin=C23D-1
+Removed Pin From Net: NetName=+4V8 Pin=C23D-2
+Removed Pin From Net: NetName=GND Pin=C24A-1
+Removed Pin From Net: NetName=+4V8 Pin=C24A-2
+Removed Pin From Net: NetName=GND Pin=C24B-1
+Removed Pin From Net: NetName=+4V8 Pin=C24B-2
+Removed Pin From Net: NetName=GND Pin=C24C-1
+Removed Pin From Net: NetName=+4V8 Pin=C24C-2
+Removed Pin From Net: NetName=GND Pin=C24D-1
+Removed Pin From Net: NetName=+4V8 Pin=C24D-2
+Removed Pin From Net: NetName=GND Pin=C25A-1
+Removed Pin From Net: NetName=+4V8 Pin=C25A-2
+Removed Pin From Net: NetName=GND Pin=C25B-1
+Removed Pin From Net: NetName=+4V8 Pin=C25B-2
+Removed Pin From Net: NetName=GND Pin=C25C-1
+Removed Pin From Net: NetName=+4V8 Pin=C25C-2
+Removed Pin From Net: NetName=GND Pin=C25D-1
+Removed Pin From Net: NetName=+4V8 Pin=C25D-2
+Removed Pin From Net: NetName=GND Pin=C26A-1
+Removed Pin From Net: NetName=GND Pin=C26B-1
+Removed Pin From Net: NetName=GND Pin=C26C-1
+Removed Pin From Net: NetName=GND Pin=C26D-1
+Removed Pin From Net: NetName=GND Pin=C28A-2
+Removed Pin From Net: NetName=GND Pin=C28B-2
+Removed Pin From Net: NetName=GND Pin=C28C-2
+Removed Pin From Net: NetName=GND Pin=C28D-2
+Removed Pin From Net: NetName=GND Pin=C29A-1
+Removed Pin From Net: NetName=GND Pin=C29B-1
+Removed Pin From Net: NetName=GND Pin=C29C-1
+Removed Pin From Net: NetName=GND Pin=C29D-1
+Removed Pin From Net: NetName=GND Pin=C31A-1
+Removed Pin From Net: NetName=+4V8 Pin=C31A-2
+Removed Pin From Net: NetName=GND Pin=C31B-1
+Removed Pin From Net: NetName=+4V8 Pin=C31B-2
+Removed Pin From Net: NetName=GND Pin=C31C-1
+Removed Pin From Net: NetName=+4V8 Pin=C31C-2
+Removed Pin From Net: NetName=GND Pin=C31D-1
+Removed Pin From Net: NetName=+4V8 Pin=C31D-2
+Removed Pin From Net: NetName=+4V8 Pin=C32A-1
+Removed Pin From Net: NetName=GND Pin=C32A-2
+Removed Pin From Net: NetName=+4V8 Pin=C32B-1
+Removed Pin From Net: NetName=GND Pin=C32B-2
+Removed Pin From Net: NetName=+4V8 Pin=C32C-1
+Removed Pin From Net: NetName=GND Pin=C32C-2
+Removed Pin From Net: NetName=+4V8 Pin=C32D-1
+Removed Pin From Net: NetName=GND Pin=C32D-2
+Removed Pin From Net: NetName=+4V8 Pin=C33A-1
+Removed Pin From Net: NetName=GND Pin=C33A-2
+Removed Pin From Net: NetName=+4V8 Pin=C33B-1
+Removed Pin From Net: NetName=GND Pin=C33B-2
+Removed Pin From Net: NetName=+4V8 Pin=C33C-1
+Removed Pin From Net: NetName=GND Pin=C33C-2
+Removed Pin From Net: NetName=+4V8 Pin=C33D-1
+Removed Pin From Net: NetName=GND Pin=C33D-2
+Removed Pin From Net: NetName=+4V8 Pin=C34A-1
+Removed Pin From Net: NetName=GND Pin=C34A-2
+Removed Pin From Net: NetName=+4V8 Pin=C34B-1
+Removed Pin From Net: NetName=GND Pin=C34B-2
+Removed Pin From Net: NetName=+4V8 Pin=C34C-1
+Removed Pin From Net: NetName=GND Pin=C34C-2
+Removed Pin From Net: NetName=+4V8 Pin=C34D-1
+Removed Pin From Net: NetName=GND Pin=C34D-2
+Removed Pin From Net: NetName=GND Pin=C35A-1
+Removed Pin From Net: NetName=+4V8 Pin=C35A-2
+Removed Pin From Net: NetName=GND Pin=C35B-1
+Removed Pin From Net: NetName=+4V8 Pin=C35B-2
+Removed Pin From Net: NetName=GND Pin=C35C-1
+Removed Pin From Net: NetName=+4V8 Pin=C35C-2
+Removed Pin From Net: NetName=GND Pin=C35D-1
+Removed Pin From Net: NetName=+4V8 Pin=C35D-2
+Removed Pin From Net: NetName=GND Pin=C36A-1
+Removed Pin From Net: NetName=+4V8 Pin=C36A-2
+Removed Pin From Net: NetName=GND Pin=C36B-1
+Removed Pin From Net: NetName=+4V8 Pin=C36B-2
+Removed Pin From Net: NetName=GND Pin=C36C-1
+Removed Pin From Net: NetName=+4V8 Pin=C36C-2
+Removed Pin From Net: NetName=GND Pin=C36D-1
+Removed Pin From Net: NetName=+4V8 Pin=C36D-2
+Removed Pin From Net: NetName=GND Pin=C37A-1
+Removed Pin From Net: NetName=-4V8 Pin=C37A-2
+Removed Pin From Net: NetName=GND Pin=C37B-1
+Removed Pin From Net: NetName=-4V8 Pin=C37B-2
+Removed Pin From Net: NetName=GND Pin=C37C-1
+Removed Pin From Net: NetName=-4V8 Pin=C37C-2
+Removed Pin From Net: NetName=GND Pin=C37D-1
+Removed Pin From Net: NetName=-4V8 Pin=C37D-2
+Removed Pin From Net: NetName=GND Pin=C38A-1
+Removed Pin From Net: NetName=-4V8 Pin=C38A-2
+Removed Pin From Net: NetName=GND Pin=C38B-1
+Removed Pin From Net: NetName=-4V8 Pin=C38B-2
+Removed Pin From Net: NetName=GND Pin=C38C-1
+Removed Pin From Net: NetName=-4V8 Pin=C38C-2
+Removed Pin From Net: NetName=GND Pin=C38D-1
+Removed Pin From Net: NetName=-4V8 Pin=C38D-2
+Removed Pin From Net: NetName=-4V8 Pin=C39A-1
+Removed Pin From Net: NetName=GND Pin=C39A-2
+Removed Pin From Net: NetName=-4V8 Pin=C39B-1
+Removed Pin From Net: NetName=GND Pin=C39B-2
+Removed Pin From Net: NetName=-4V8 Pin=C39C-1
+Removed Pin From Net: NetName=GND Pin=C39C-2
+Removed Pin From Net: NetName=-4V8 Pin=C39D-1
+Removed Pin From Net: NetName=GND Pin=C39D-2
+Removed Pin From Net: NetName=GND Pin=C41-1
+Removed Pin From Net: NetName=GND Pin=C42-1
+Removed Pin From Net: NetName=GND Pin=C43-1
+Removed Pin From Net: NetName=GND Pin=C44-1
+Removed Pin From Net: NetName=GND Pin=C45-1
+Removed Pin From Net: NetName=GND Pin=C46-1
+Removed Pin From Net: NetName=GND Pin=C47-1
+Removed Pin From Net: NetName=GND Pin=C48-1
+Removed Pin From Net: NetName=GND Pin=C49-1
+Removed Pin From Net: NetName=GND Pin=C50-1
+Removed Pin From Net: NetName=GND Pin=C52-1
+Removed Pin From Net: NetName=GND Pin=C53-1
+Removed Pin From Net: NetName=GND Pin=C54-1
+Removed Pin From Net: NetName=GND Pin=C55-1
+Removed Pin From Net: NetName=GND Pin=C56-1
+Removed Pin From Net: NetName=GND Pin=C57-1
+Removed Pin From Net: NetName=GND Pin=C58-1
+Removed Pin From Net: NetName=GND Pin=C59-1
+Removed Pin From Net: NetName=GND Pin=C60-1
+Removed Pin From Net: NetName=GND Pin=C61-1
+Removed Pin From Net: NetName=-4V8 Pin=C63A-1
+Removed Pin From Net: NetName=GND Pin=C63A-2
+Removed Pin From Net: NetName=-4V8 Pin=C63B-1
+Removed Pin From Net: NetName=GND Pin=C63B-2
+Removed Pin From Net: NetName=-4V8 Pin=C63C-1
+Removed Pin From Net: NetName=GND Pin=C63C-2
+Removed Pin From Net: NetName=-4V8 Pin=C63D-1
+Removed Pin From Net: NetName=GND Pin=C63D-2
+Removed Pin From Net: NetName=-4V8 Pin=C64A-1
+Removed Pin From Net: NetName=GND Pin=C64A-2
+Removed Pin From Net: NetName=-4V8 Pin=C64B-1
+Removed Pin From Net: NetName=GND Pin=C64B-2
+Removed Pin From Net: NetName=-4V8 Pin=C64C-1
+Removed Pin From Net: NetName=GND Pin=C64C-2
+Removed Pin From Net: NetName=-4V8 Pin=C64D-1
+Removed Pin From Net: NetName=GND Pin=C64D-2
+Removed Pin From Net: NetName=GND Pin=C78A-1
+Removed Pin From Net: NetName=-4V8 Pin=C78A-2
+Removed Pin From Net: NetName=GND Pin=C78B-1
+Removed Pin From Net: NetName=-4V8 Pin=C78B-2
+Removed Pin From Net: NetName=GND Pin=C78C-1
+Removed Pin From Net: NetName=-4V8 Pin=C78C-2
+Removed Pin From Net: NetName=GND Pin=C78D-1
+Removed Pin From Net: NetName=-4V8 Pin=C78D-2
+Removed Pin From Net: NetName=GND Pin=C82-2
+Removed Pin From Net: NetName=GND Pin=C83-2
+Removed Pin From Net: NetName=GND Pin=C84-2
+Removed Pin From Net: NetName=GND Pin=C85-2
+Removed Pin From Net: NetName=GND Pin=C86-2
+Removed Pin From Net: NetName=GND Pin=C87-2
+Removed Pin From Net: NetName=GND Pin=C88-2
+Removed Pin From Net: NetName=GND Pin=C89-2
+Removed Pin From Net: NetName=GND Pin=C90-2
+Removed Pin From Net: NetName=GND Pin=C91-1
+Removed Pin From Net: NetName=GND Pin=C92-1
+Removed Pin From Net: NetName=GND Pin=C93-2
+Removed Pin From Net: NetName=GND Pin=C94-2
+Removed Pin From Net: NetName=GND Pin=C95-2
+Removed Pin From Net: NetName=GND Pin=C97-2
+Removed Pin From Net: NetName=GND Pin=C99-2
+Removed Pin From Net: NetName=GND Pin=GDT1A-2
+Removed Pin From Net: NetName=GND Pin=GDT1B-2
+Removed Pin From Net: NetName=GND Pin=GDT1C-2
+Removed Pin From Net: NetName=GND Pin=GDT1D-2
+Removed Pin From Net: NetName=GND Pin=J1-1
+Removed Pin From Net: NetName=GND Pin=J2A-2
+Removed Pin From Net: NetName=GND Pin=J2A-2
+Removed Pin From Net: NetName=GND Pin=J2A-2
+Removed Pin From Net: NetName=GND Pin=J2B-2
+Removed Pin From Net: NetName=GND Pin=J2B-2
+Removed Pin From Net: NetName=GND Pin=J2B-2
+Removed Pin From Net: NetName=GND Pin=J2C-2
+Removed Pin From Net: NetName=GND Pin=J2C-2
+Removed Pin From Net: NetName=GND Pin=J2C-2
+Removed Pin From Net: NetName=GND Pin=J2D-2
+Removed Pin From Net: NetName=GND Pin=J2D-2
+Removed Pin From Net: NetName=GND Pin=J2D-2
+Removed Pin From Net: NetName=GND Pin=J3A-2
+Removed Pin From Net: NetName=GND Pin=J3A-2
+Removed Pin From Net: NetName=GND Pin=J3A-2
+Removed Pin From Net: NetName=GND Pin=J3B-2
+Removed Pin From Net: NetName=GND Pin=J3B-2
+Removed Pin From Net: NetName=GND Pin=J3B-2
+Removed Pin From Net: NetName=GND Pin=J3C-2
+Removed Pin From Net: NetName=GND Pin=J3C-2
+Removed Pin From Net: NetName=GND Pin=J3C-2
+Removed Pin From Net: NetName=GND Pin=J3D-2
+Removed Pin From Net: NetName=GND Pin=J3D-2
+Removed Pin From Net: NetName=GND Pin=J3D-2
+Removed Pin From Net: NetName=GND Pin=J4A-2
+Removed Pin From Net: NetName=GND Pin=J4A-2
+Removed Pin From Net: NetName=GND Pin=J4B-2
+Removed Pin From Net: NetName=GND Pin=J4B-2
+Removed Pin From Net: NetName=GND Pin=J4C-2
+Removed Pin From Net: NetName=GND Pin=J4C-2
+Removed Pin From Net: NetName=GND Pin=J4D-2
+Removed Pin From Net: NetName=GND Pin=J4D-2
+Removed Pin From Net: NetName=GND Pin=J5-2
+Removed Pin From Net: NetName=GND Pin=J5-2
+Removed Pin From Net: NetName=GND Pin=J5-2
+Removed Pin From Net: NetName=GND Pin=J6-2
+Removed Pin From Net: NetName=GND Pin=J6-2
+Removed Pin From Net: NetName=GND Pin=J6-2
+Removed Pin From Net: NetName=GND Pin=J7-2
+Removed Pin From Net: NetName=GND Pin=J7-2
+Removed Pin From Net: NetName=GND Pin=J8-5
+Removed Pin From Net: NetName=GND Pin=J9-2
+Removed Pin From Net: NetName=GND Pin=J9-2
+Removed Pin From Net: NetName=GND Pin=J10-2
+Removed Pin From Net: NetName=GND Pin=J10-4
+Removed Pin From Net: NetName=GND Pin=J10-10
+Removed Pin From Net: NetName=GND Pin=J10-16
+Removed Pin From Net: NetName=GND Pin=J10-22
+Removed Pin From Net: NetName=GND Pin=J10-28
+Removed Pin From Net: NetName=GND Pin=J10-34
+Removed Pin From Net: NetName=GND Pin=J10-40
+Removed Pin From Net: NetName=GND Pin=J10-46
+Removed Pin From Net: NetName=GND Pin=J10-52
+Removed Pin From Net: NetName=GND Pin=J10-58
+Removed Pin From Net: NetName=GND Pin=J10-70
+Removed Pin From Net: NetName=GND Pin=J10-72
+Removed Pin From Net: NetName=GND Pin=J10-74
+Removed Pin From Net: NetName=GND Pin=J10-76
+Removed Pin From Net: NetName=GND Pin=J10-77
+Removed Pin From Net: NetName=GND Pin=JM1-1
+Removed Pin From Net: NetName=GND Pin=JM1-7
+Removed Pin From Net: NetName=GND Pin=JM1-19
+Removed Pin From Net: NetName=GND Pin=JM1-25
+Removed Pin From Net: NetName=GND Pin=JM1-30
+Removed Pin From Net: NetName=GND Pin=JM1-33
+Removed Pin From Net: NetName=GND Pin=JM1-43
+Removed Pin From Net: NetName=GND Pin=JM1-53
+Removed Pin From Net: NetName=GND Pin=JM1-54
+Removed Pin From Net: NetName=GND Pin=JM1-63
+Removed Pin From Net: NetName=GND Pin=JM1-64
+Removed Pin From Net: NetName=GND Pin=JM1-73
+Removed Pin From Net: NetName=GND Pin=JM1-74
+Removed Pin From Net: NetName=GND Pin=JM1-83
+Removed Pin From Net: NetName=GND Pin=JM1-89
+Removed Pin From Net: NetName=GND Pin=JM1-101
+Removed Pin From Net: NetName=GND Pin=JM1-102
+Removed Pin From Net: NetName=GND Pin=JM2-19
+Removed Pin From Net: NetName=GND Pin=JM2-29
+Removed Pin From Net: NetName=GND Pin=JM2-39
+Removed Pin From Net: NetName=GND Pin=JM2-40
+Removed Pin From Net: NetName=GND Pin=JM2-49
+Removed Pin From Net: NetName=GND Pin=JM2-50
+Removed Pin From Net: NetName=GND Pin=JM2-59
+Removed Pin From Net: NetName=GND Pin=JM2-60
+Removed Pin From Net: NetName=GND Pin=JM2-69
+Removed Pin From Net: NetName=GND Pin=JM2-70
+Removed Pin From Net: NetName=GND Pin=JM2-79
+Removed Pin From Net: NetName=GND Pin=JM2-80
+Removed Pin From Net: NetName=GND Pin=JM2-89
+Removed Pin From Net: NetName=GND Pin=JM2-101
+Removed Pin From Net: NetName=GND Pin=JM2-102
+Removed Pin From Net: NetName=GND Pin=JM3-5
+Removed Pin From Net: NetName=GND Pin=JM3-6
+Removed Pin From Net: NetName=GND Pin=JM3-11
+Removed Pin From Net: NetName=GND Pin=JM3-12
+Removed Pin From Net: NetName=GND Pin=JM3-17
+Removed Pin From Net: NetName=GND Pin=JM3-18
+Removed Pin From Net: NetName=GND Pin=JM3-23
+Removed Pin From Net: NetName=GND Pin=JM3-24
+Removed Pin From Net: NetName=GND Pin=JM3-29
+Removed Pin From Net: NetName=GND Pin=JM3-30
+Removed Pin From Net: NetName=GND Pin=JM3-35
+Removed Pin From Net: NetName=GND Pin=JM3-36
+Removed Pin From Net: NetName=GND Pin=JM3-45
+Removed Pin From Net: NetName=GND Pin=JM3-46
+Removed Pin From Net: NetName=GND Pin=JM3-61
+Removed Pin From Net: NetName=GND Pin=JM3-62
+Removed Pin From Net: NetName=GND Pin=MH1-1
+Removed Pin From Net: NetName=GND Pin=MH2-1
+Removed Pin From Net: NetName=GND Pin=MH3-1
+Removed Pin From Net: NetName=GND Pin=MH4-1
+Removed Pin From Net: NetName=GND Pin=P1-A4
+Removed Pin From Net: NetName=GND Pin=P1-A12
+Removed Pin From Net: NetName=GND Pin=P1-A15
+Removed Pin From Net: NetName=GND Pin=P1-A18
+Removed Pin From Net: NetName=GND Pin=P1-A20
+Removed Pin From Net: NetName=GND Pin=P1-A23
+Removed Pin From Net: NetName=GND Pin=P1-A24
+Removed Pin From Net: NetName=GND Pin=P1-A27
+Removed Pin From Net: NetName=GND Pin=P1-A28
+Removed Pin From Net: NetName=GND Pin=P1-A31
+Removed Pin From Net: NetName=GND Pin=P1-B4
+Removed Pin From Net: NetName=GND Pin=P1-B7
+Removed Pin From Net: NetName=GND Pin=P1-B13
+Removed Pin From Net: NetName=GND Pin=P1-B16
+Removed Pin From Net: NetName=GND Pin=P1-B18
+Removed Pin From Net: NetName=GND Pin=P1-B21
+Removed Pin From Net: NetName=GND Pin=P1-B22
+Removed Pin From Net: NetName=GND Pin=P1-B25
+Removed Pin From Net: NetName=GND Pin=P1-B26
+Removed Pin From Net: NetName=GND Pin=P1-B29
+Removed Pin From Net: NetName=GND Pin=P1-B32
+Removed Pin From Net: NetName=GND Pin=Q3A-3
+Removed Pin From Net: NetName=GND Pin=Q3B-3
+Removed Pin From Net: NetName=GND Pin=Q3C-3
+Removed Pin From Net: NetName=GND Pin=Q3D-3
+Removed Pin From Net: NetName=GND Pin=R2-1
+Removed Pin From Net: NetName=GND Pin=R6-2
+Removed Pin From Net: NetName=-4V8 Pin=R9-2
+Removed Pin From Net: NetName=+4V8 Pin=R10-2
+Removed Pin From Net: NetName=GND Pin=R13-1
+Removed Pin From Net: NetName=+4V8 Pin=R14-2
+Removed Pin From Net: NetName=-4V8 Pin=R16-1
+Removed Pin From Net: NetName=+4V8 Pin=R22-2
+Removed Pin From Net: NetName=+4V8 Pin=R23-2
+Removed Pin From Net: NetName=GND Pin=R26A-1
+Removed Pin From Net: NetName=GND Pin=R26B-1
+Removed Pin From Net: NetName=GND Pin=R26C-1
+Removed Pin From Net: NetName=GND Pin=R26D-1
+Removed Pin From Net: NetName=GND Pin=R28A-1
+Removed Pin From Net: NetName=GND Pin=R28B-1
+Removed Pin From Net: NetName=GND Pin=R28C-1
+Removed Pin From Net: NetName=GND Pin=R28D-1
+Removed Pin From Net: NetName=-4V8 Pin=R32A-2
+Removed Pin From Net: NetName=-4V8 Pin=R32B-2
+Removed Pin From Net: NetName=-4V8 Pin=R32C-2
+Removed Pin From Net: NetName=-4V8 Pin=R32D-2
+Removed Pin From Net: NetName=GND Pin=R35A-1
+Removed Pin From Net: NetName=GND Pin=R35B-1
+Removed Pin From Net: NetName=GND Pin=R35C-1
+Removed Pin From Net: NetName=GND Pin=R35D-1
+Removed Pin From Net: NetName=GND Pin=R38-1
+Removed Pin From Net: NetName=GND Pin=R39-1
+Removed Pin From Net: NetName=+4V8 Pin=R45A-2
+Removed Pin From Net: NetName=+4V8 Pin=R45B-2
+Removed Pin From Net: NetName=+4V8 Pin=R45C-2
+Removed Pin From Net: NetName=+4V8 Pin=R45D-2
+Removed Pin From Net: NetName=GND Pin=R49A-1
+Removed Pin From Net: NetName=GND Pin=R49B-1
+Removed Pin From Net: NetName=GND Pin=R49C-1
+Removed Pin From Net: NetName=GND Pin=R49D-1
+Removed Pin From Net: NetName=GND Pin=R50A-1
+Removed Pin From Net: NetName=GND Pin=R50B-1
+Removed Pin From Net: NetName=GND Pin=R50C-1
+Removed Pin From Net: NetName=GND Pin=R50D-1
+Removed Pin From Net: NetName=-4V8 Pin=R51A-1
+Removed Pin From Net: NetName=-4V8 Pin=R51B-1
+Removed Pin From Net: NetName=-4V8 Pin=R51C-1
+Removed Pin From Net: NetName=-4V8 Pin=R51D-1
+Removed Pin From Net: NetName=GND Pin=R53A-1
+Removed Pin From Net: NetName=GND Pin=R53B-1
+Removed Pin From Net: NetName=GND Pin=R53C-1
+Removed Pin From Net: NetName=GND Pin=R53D-1
+Removed Pin From Net: NetName=GND Pin=R54A-1
+Removed Pin From Net: NetName=GND Pin=R54B-1
+Removed Pin From Net: NetName=GND Pin=R54C-1
+Removed Pin From Net: NetName=GND Pin=R54D-1
+Removed Pin From Net: NetName=GND Pin=R55A-3
+Removed Pin From Net: NetName=GND Pin=R55B-3
+Removed Pin From Net: NetName=GND Pin=R55C-3
+Removed Pin From Net: NetName=GND Pin=R55D-3
+Removed Pin From Net: NetName=GND Pin=R61-1
+Removed Pin From Net: NetName=GND Pin=R92-1
+Removed Pin From Net: NetName=GND Pin=R93-1
+Removed Pin From Net: NetName=GND Pin=R94-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3A-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3B-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3C-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=SHLD3D-1
+Removed Pin From Net: NetName=GND Pin=TP5-1
+Removed Pin From Net: NetName=GND Pin=TP6-1
+Removed Pin From Net: NetName=GND Pin=TP7-1
+Removed Pin From Net: NetName=+4V8 Pin=TP10-1
+Removed Pin From Net: NetName=-4V8 Pin=TP15-1
+Removed Pin From Net: NetName=GND Pin=U1-3
+Removed Pin From Net: NetName=GND Pin=U2-C1
+Removed Pin From Net: NetName=GND Pin=U2-C2
+Removed Pin From Net: NetName=GND Pin=U2-C3
+Removed Pin From Net: NetName=+4V8 Pin=U3-1
+Removed Pin From Net: NetName=+4V8 Pin=U3-2
+Removed Pin From Net: NetName=GND Pin=U3-4
+Removed Pin From Net: NetName=GND Pin=U3-9
+Removed Pin From Net: NetName=GND Pin=U4-2
+Removed Pin From Net: NetName=GND Pin=U4-9
+Removed Pin From Net: NetName=-4V8 Pin=U5-4
+Removed Pin From Net: NetName=+4V8 Pin=U5-7
+Removed Pin From Net: NetName=+4V8 Pin=U6-1
+Removed Pin From Net: NetName=GND Pin=U6-4
+Removed Pin From Net: NetName=GND Pin=U6-10
+Removed Pin From Net: NetName=+4V8 Pin=U7A-3
+Removed Pin From Net: NetName=+4V8 Pin=U7A-4
+Removed Pin From Net: NetName=GND Pin=U7A-5
+Removed Pin From Net: NetName=GND Pin=U7A-8
+Removed Pin From Net: NetName=GND Pin=U7A-17
+Removed Pin From Net: NetName=+4V8 Pin=U7B-3
+Removed Pin From Net: NetName=+4V8 Pin=U7B-4
+Removed Pin From Net: NetName=GND Pin=U7B-5
+Removed Pin From Net: NetName=GND Pin=U7B-8
+Removed Pin From Net: NetName=GND Pin=U7B-17
+Removed Pin From Net: NetName=+4V8 Pin=U7C-3
+Removed Pin From Net: NetName=+4V8 Pin=U7C-4
+Removed Pin From Net: NetName=GND Pin=U7C-5
+Removed Pin From Net: NetName=GND Pin=U7C-8
+Removed Pin From Net: NetName=GND Pin=U7C-17
+Removed Pin From Net: NetName=+4V8 Pin=U7D-3
+Removed Pin From Net: NetName=+4V8 Pin=U7D-4
+Removed Pin From Net: NetName=GND Pin=U7D-5
+Removed Pin From Net: NetName=GND Pin=U7D-8
+Removed Pin From Net: NetName=GND Pin=U7D-17
+Removed Pin From Net: NetName=+4V8 Pin=U8A-1
+Removed Pin From Net: NetName=-4V8 Pin=U8A-5
+Removed Pin From Net: NetName=-4V8 Pin=U8A-6
+Removed Pin From Net: NetName=-4V8 Pin=U8A-8
+Removed Pin From Net: NetName=-4V8 Pin=U8A-10
+Removed Pin From Net: NetName=+4V8 Pin=U8A-12
+Removed Pin From Net: NetName=+4V8 Pin=U8A-15
+Removed Pin From Net: NetName=GND Pin=U8A-17
+Removed Pin From Net: NetName=+4V8 Pin=U8B-1
+Removed Pin From Net: NetName=-4V8 Pin=U8B-5
+Removed Pin From Net: NetName=-4V8 Pin=U8B-6
+Removed Pin From Net: NetName=-4V8 Pin=U8B-8
+Removed Pin From Net: NetName=-4V8 Pin=U8B-10
+Removed Pin From Net: NetName=+4V8 Pin=U8B-12
+Removed Pin From Net: NetName=+4V8 Pin=U8B-15
+Removed Pin From Net: NetName=GND Pin=U8B-17
+Removed Pin From Net: NetName=+4V8 Pin=U8C-1
+Removed Pin From Net: NetName=-4V8 Pin=U8C-5
+Removed Pin From Net: NetName=-4V8 Pin=U8C-6
+Removed Pin From Net: NetName=-4V8 Pin=U8C-8
+Removed Pin From Net: NetName=-4V8 Pin=U8C-10
+Removed Pin From Net: NetName=+4V8 Pin=U8C-12
+Removed Pin From Net: NetName=+4V8 Pin=U8C-15
+Removed Pin From Net: NetName=GND Pin=U8C-17
+Removed Pin From Net: NetName=+4V8 Pin=U8D-1
+Removed Pin From Net: NetName=-4V8 Pin=U8D-5
+Removed Pin From Net: NetName=-4V8 Pin=U8D-6
+Removed Pin From Net: NetName=-4V8 Pin=U8D-8
+Removed Pin From Net: NetName=-4V8 Pin=U8D-10
+Removed Pin From Net: NetName=+4V8 Pin=U8D-12
+Removed Pin From Net: NetName=+4V8 Pin=U8D-15
+Removed Pin From Net: NetName=GND Pin=U8D-17
+Removed Pin From Net: NetName=-4V8 Pin=U9A-4
+Removed Pin From Net: NetName=+4V8 Pin=U9A-7
+Removed Pin From Net: NetName=-4V8 Pin=U9B-4
+Removed Pin From Net: NetName=+4V8 Pin=U9B-7
+Removed Pin From Net: NetName=-4V8 Pin=U9C-4
+Removed Pin From Net: NetName=+4V8 Pin=U9C-7
+Removed Pin From Net: NetName=-4V8 Pin=U9D-4
+Removed Pin From Net: NetName=+4V8 Pin=U9D-7
+Removed Pin From Net: NetName=GND Pin=U11-1
+Removed Pin From Net: NetName=GND Pin=U12-8
+Removed Pin From Net: NetName=GND Pin=U12-29
+Removed Pin From Net: NetName=GND Pin=U12-31
+Removed Pin From Net: NetName=GND Pin=U12-39
+Removed Pin From Net: NetName=GND Pin=U12-42
+Removed Pin From Net: NetName=GND Pin=U12-45
+Removed Pin From Net: NetName=GND Pin=U12-49
+Removed Pin From Net: NetName=GND Pin=U13-C1
+Removed Pin From Net: NetName=GND Pin=U14-4
+Removed Pin From Net: NetName=GND Pin=U15-1
+Removed Pin From Net: NetName=GND Pin=U15-32
+Removed Pin From Net: NetName=GND Pin=U15-33
+Removed Pin From Net: NetName=GND Pin=Y1-2
+Removed Member From Class: ClassName=Main Member=L1
+Removed Member From Class: ClassName=Main Member=TP5
+Removed Member From Class: ClassName=Main Member=TP6
+Removed Member From Class: ClassName=Main Member=TP7
+Removed Member From Class: ClassName=Main Member=TP8
+Change Component Footprint: Designator=J1 Old Footprint=GEN_2.54mm_1x2_Pin_TH_RA New Footprint=TE_2334884-1
+Change Component Footprint: Designator=C15 Old Footprint=GEN_C_0201 New Footprint=GEN_C_0402
+Change Component Footprint: Designator=C16 Old Footprint=GEN_C_0201 New Footprint=GEN_C_0402
+Change Component Footprint: Designator=C13 Old Footprint=GEN_C_0402 New Footprint=GEN_C_0603
+Change Component Footprint: Designator=C5 Old Footprint=GEN_C_0603 New Footprint=GEN_C_0402
+Change Component Footprint: Designator=C6 Old Footprint=GEN_C_0603 New Footprint=GEN_C_0402
+Change Component Footprint: Designator=C7 Old Footprint=GEN_C_0603 New Footprint=GEN_C_0402
+Change Component Footprint: Designator=C8 Old Footprint=GEN_C_0603 New Footprint=GEN_C_0402
+Change Component Footprint: Designator=C11 Old Footprint=GEN_C_0603 New Footprint=GEN_C_0402
+Change Component Footprint: Designator=C2 Old Footprint=GEN_C_0805 New Footprint=GEN_C_0402
+Change Component Footprint: Designator=C3 Old Footprint=GEN_C_0805 New Footprint=GEN_C_0402
+Change Component Footprint: Designator=R15 Old Footprint=GEN_R_0402 New Footprint=BOU_3mm_POT
+Change Component Footprint: Designator=R3 Old Footprint=GEN_R_0603 New Footprint=GEN_R_0402
+Change Component Footprint: Designator=R4 Old Footprint=GEN_R_0603 New Footprint=GEN_R_0402
+Change Component Footprint: Designator=R5 Old Footprint=GEN_R_0603 New Footprint=GEN_R_0402
+Change Component Footprint: Designator=R7 Old Footprint=GEN_R_0603 New Footprint=GEN_R_0402
+Change Component Footprint: Designator=U1 Old Footprint=GEN_SC-70-5 New Footprint=TI_VQFN_RGT0016C
+Change Component Footprint: Designator=TP1 Old Footprint=KEY_5015 New Footprint=GEN_TP_PCB
+Change Component Footprint: Designator=TP2 Old Footprint=KEY_5015 New Footprint=GEN_TP_PCB
+Change Component Footprint: Designator=TP3 Old Footprint=KEY_5015 New Footprint=GEN_TP_PCB
+Change Component Footprint: Designator=TP4 Old Footprint=KEY_5015 New Footprint=GEN_TP_PCB
+Change Component Footprint: Designator=U2 Old Footprint=TI_DSBGA_YFF0009 New Footprint=TI_SOIC8_D0008A
+Change Component Comment : Designator=R1 Old Comment=0 New Comment=49.9
+Change Component Comment : Designator=R9 Old Comment=0.1 New Comment=2K
+Change Component Comment : Designator=R3 Old Comment=0.01 New Comment=49.9
+Change Component Comment : Designator=R7 Old Comment=0.01 New Comment=49.9
+Change Component Comment : Designator=R8 Old Comment=0.1 New Comment=90.9k
+Change Component Comment : Designator=R4 Old Comment=0.01 New Comment=909k
+Change Component Comment : Designator=R5 Old Comment=0.01 New Comment=909k
+Change Component Comment : Designator=C10 Old Comment=1nF New Comment=100nF
+Change Component Comment : Designator=C9 Old Comment=1uF New Comment=100nF
+Change Component Comment : Designator=R15 Old Comment=2K New Comment=5K TRIMPOT
+Change Component Comment : Designator=R6 Old Comment=10K New Comment=90.9k
+Change Component Comment : Designator=R2 Old Comment=10K New Comment=100k
+Change Component Comment : Designator=R14 Old Comment=10K New Comment=DNP
+Change Component Comment : Designator=C5 Old Comment=10uF New Comment=100nF
+Change Component Comment : Designator=C6 Old Comment=10uF New Comment=100nF
+Change Component Comment : Designator=C7 Old Comment=10uF New Comment=100nF
+Change Component Comment : Designator=C8 Old Comment=10uF New Comment=100nF
+Change Component Comment : Designator=C11 Old Comment=10uF New Comment=100nF
+Change Component Comment : Designator=C2 Old Comment=22uF New Comment=100nF
+Change Component Comment : Designator=C3 Old Comment=22uF New Comment=100nF
+Change Component Comment : Designator=R12 Old Comment=36k New Comment=0
+Change Component Comment : Designator=R13 Old Comment=100k New Comment=10K
+Change Component Comment : Designator=C1 Old Comment=100nF New Comment=2.2uF
+Change Component Comment : Designator=C12 Old Comment=100nF New Comment=2.2uF
+Change Component Comment : Designator=C13 Old Comment=100nF New Comment=22nF
+Change Component Comment : Designator=C15 Old Comment=100nF New Comment=100pF
+Change Component Comment : Designator=C16 Old Comment=100nF New Comment=TBD
+Change Component Comment : Designator=C4 Old Comment=100pF New Comment=100nF
+Change Component Comment : Designator=R11 Old Comment=294K New Comment=0
+Change Component Comment : Designator=R10 Old Comment=309K New Comment=90.9k
+Change Component Comment : Designator=TP1 Old Comment=5015 New Comment=PCB
+Change Component Comment : Designator=TP2 Old Comment=5015 New Comment=PCB
+Change Component Comment : Designator=TP3 Old Comment=5015 New Comment=PCB
+Change Component Comment : Designator=TP4 Old Comment=5015 New Comment=PCB
+Change Component Comment : Designator=U1 Old Comment=SN74LVC1G17 New Comment=BUF802
+Change Component Comment : Designator=U2 Old Comment=TPS61256A New Comment=OP07CDR
+Change Component Comment : Designator=J1 Old Comment=TSW-101-08-F-D-RA New Comment=UFL
+Change Component Kind : Designator=TP3 Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=TP4 Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=TP2 Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=R14 Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=TP1 Old Kind=Standard New Kind=Standard (No BOM)
+Change component parameters: Designator = "C1" ("C1"); Footprint = "GEN_C_0402"; UniqueID = "\HBXUXXVX" ("\HBXUXXVX")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "587-3153-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2" ("C2"); Footprint = "GEN_C_0805"; UniqueID = "\MPYNHFWB" ("\MPYNHFWB")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3" ("C3"); Footprint = "GEN_C_0805"; UniqueID = "\OVHHLYGT" ("\OVHHLYGT")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C4" ("C4"); Footprint = "GEN_C_0402"; UniqueID = "\FXTRIELI" ("\FXTRIELI")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5" ("C5"); Footprint = "GEN_C_0603"; UniqueID = "\BCPTPSPG" ("\BCPTPSPG")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6" ("C6"); Footprint = "GEN_C_0603"; UniqueID = "\DZODLLCE" ("\DZODLLCE")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7" ("C7"); Footprint = "GEN_C_0603"; UniqueID = "\HKUXQKKM" ("\HKUXQKKM")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C8" ("C8"); Footprint = "GEN_C_0603"; UniqueID = "\VTOCWEQN" ("\VTOCWEQN")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C9" ("C9"); Footprint = "GEN_C_0402"; UniqueID = "\DHSBARPS" ("\DHSBARPS")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C10" ("C10"); Footprint = "GEN_C_0402"; UniqueID = "\LSEHYXUJ" ("\LSEHYXUJ")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C11" ("C11"); Footprint = "GEN_C_0603"; UniqueID = "\BSNCGIYU" ("\BSNCGIYU")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C12" ("C12"); Footprint = "GEN_C_0402"; UniqueID = "\XYYPYOGI" ("\XYYPYOGI")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "587-3153-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C13" ("C13"); Footprint = "GEN_C_0402"; UniqueID = "\JOUTIRML" ("\JOUTIRML")
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4782-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "22nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C15" ("C15"); Footprint = "GEN_C_0201"; UniqueID = "\VCMFOYYM" ("\VCMFOYYM")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-14349-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "C0G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C16" ("C16"); Footprint = "GEN_C_0201"; UniqueID = "\LNKWPBES" ("\LNKWPBES")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "TBD"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J1" ("J1"); Footprint = "GEN_2.54mm_1x2_Pin_TH_RA"; UniqueID = "\TLPHPGQO" ("\TLPHPGQO")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A145155CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R1" ("R1"); Footprint = "GEN_R_0402"; UniqueID = "\NXECVXVJ" ("\NXECVXVJ")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-49.9LRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "49.9"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "GEN_R_0402"; UniqueID = "\JIJPVUQL" ("\JIJPVUQL")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-100KLRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R3" ("R3"); Footprint = "GEN_R_0603"; UniqueID = "\AQIMXMYX" ("\AQIMXMYX")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-49.9LRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "49.9"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "GEN_R_0603"; UniqueID = "\RZBXJIRN" ("\RZBXJIRN")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2377CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "909k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R5" ("R5"); Footprint = "GEN_R_0603"; UniqueID = "\PSCNFCCZ" ("\PSCNFCCZ")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2377CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "909k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6" ("R6"); Footprint = "GEN_R_0402"; UniqueID = "\QJCHXQSU" ("\QJCHXQSU")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-90.9KLRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "90.9k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R7" ("R7"); Footprint = "GEN_R_0603"; UniqueID = "\XYXFSFUF" ("\XYXFSFUF")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-49.9LRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "49.9"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R8" ("R8"); Footprint = "GEN_R_0402"; UniqueID = "\FKTEZMEU" ("\FKTEZMEU")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-90.9KLRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "90.9k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R9" ("R9"); Footprint = "GEN_R_0402"; UniqueID = "\WOBUZITT" ("\WOBUZITT")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-2KLRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R10" ("R10"); Footprint = "GEN_R_0402"; UniqueID = "\NUSKOIIH" ("\NUSKOIIH")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-90.9KLRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "90.9k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R11" ("R11"); Footprint = "GEN_R_0402"; UniqueID = "\FUDWNJMJ" ("\FUDWNJMJ")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-0.0JRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R12" ("R12"); Footprint = "GEN_R_0402"; UniqueID = "\KCTJAFXR" ("\KCTJAFXR")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-0.0JRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R13" ("R13"); Footprint = "GEN_R_0402"; UniqueID = "\BMNYDBOO" ("\BMNYDBOO")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "P10.0KLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R14" ("R14"); Footprint = "GEN_R_0402"; UniqueID = "\HMUNTYIN" ("\HMUNTYIN")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "DNP"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R15" ("R15"); Footprint = "GEN_R_0402"; UniqueID = "\BVCOBPYJ" ("\BVCOBPYJ")
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "TC33X-502ECT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "5K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "TP1" ("TP1"); Footprint = "KEY_5015"; UniqueID = "\CLIRRHCL" ("\CLIRRHCL")
+Change component parameters: Designator = "TP2" ("TP2"); Footprint = "KEY_5015"; UniqueID = "\JWMMHYST" ("\JWMMHYST")
+Change component parameters: Designator = "TP3" ("TP3"); Footprint = "KEY_5015"; UniqueID = "\XDPJTCVY" ("\XDPJTCVY")
+Change component parameters: Designator = "TP4" ("TP4"); Footprint = "KEY_5015"; UniqueID = "\RMLOIJCF" ("\RMLOIJCF")
+Change component parameters: Designator = "U1" ("U1"); Footprint = "GEN_SC-70-5"; UniqueID = "\FAOXWVOR" ("\FAOXWVOR")
+Change component parameters: Designator = "U2" ("U2"); Footprint = "TI_DSBGA_YFF0009"; UniqueID = "\CQOCUPNW" ("\CQOCUPNW")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "296-14626-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J2(TE_2334884-1)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A145155CT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=+4V8 Pin=C1-2
+Added Pin To Net: NetName=+4V8 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=+4V8 Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=+4V8 Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=+4V8 Pin=C5-2
+Added Pin To Net: NetName=+4V8 Pin=C6-2
+Added Pin To Net: NetName=-4V8 Pin=C7-2
+Added Pin To Net: NetName=-4V8 Pin=C8-2
+Added Pin To Net: NetName=-4V8 Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=-4V8 Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=-4V8 Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=-4V8 Pin=C12-2
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=+4V8 Pin=FB1-2
+Added Pin To Net: NetName=-4V8 Pin=FB2-1
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=-4V8 Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R7-1
+Added Pin To Net: NetName=GND Pin=R10-1
+Added Pin To Net: NetName=-4V8 Pin=R11-1
+Added Pin To Net: NetName=GND Pin=R14-1
+Added Pin To Net: NetName=GND Pin=R15-3
+Added Pin To Net: NetName=GND Pin=TP3-1
+Added Pin To Net: NetName=+4V8 Pin=U1-1
+Added Pin To Net: NetName=-4V8 Pin=U1-5
+Added Pin To Net: NetName=-4V8 Pin=U1-6
+Added Pin To Net: NetName=-4V8 Pin=U1-8
+Added Pin To Net: NetName=-4V8 Pin=U1-10
+Added Pin To Net: NetName=+4V8 Pin=U1-12
+Added Pin To Net: NetName=+4V8 Pin=U1-15
+Added Pin To Net: NetName=GND Pin=U1-17
+Added Pin To Net: NetName=-4V8 Pin=U2-4
+Added Pin To Net: NetName=+4V8 Pin=U2-7
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(255, 110, 110)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(110, 110, 255)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(0, 190, 0)
+Added Pin To Net: NetName=NetC13_1 Pin=C13-1
+Added Pin To Net: NetName=NetC13_1 Pin=R4-2
+Added Pin To Net: NetName=NetC13_1 Pin=U1-2
+Added Net: Name=NetC13_1
+Added Pin To Net: NetName=NetC13_2 Pin=C13-2
+Added Pin To Net: NetName=NetC13_2 Pin=R1-2
+Added Net: Name=NetC13_2
+Added Pin To Net: NetName=NetC14_1 Pin=C14-1
+Added Pin To Net: NetName=NetC14_1 Pin=R8-1
+Added Pin To Net: NetName=NetC14_1 Pin=TP4-1
+Added Net: Name=NetC14_1
+Added Pin To Net: NetName=NetC15_2 Pin=C15-2
+Added Pin To Net: NetName=NetC15_2 Pin=R9-1
+Added Pin To Net: NetName=NetC15_2 Pin=U1-4
+Added Net: Name=NetC15_2
+Added Pin To Net: NetName=NetC16_1 Pin=C16-1
+Added Pin To Net: NetName=NetC16_1 Pin=R9-2
+Added Pin To Net: NetName=NetC16_1 Pin=U2-6
+Added Net: Name=NetC16_1
+Added Pin To Net: NetName=NetC16_2 Pin=C16-2
+Added Pin To Net: NetName=NetC16_2 Pin=R6-1
+Added Pin To Net: NetName=NetC16_2 Pin=R8-2
+Added Pin To Net: NetName=NetC16_2 Pin=R13-2
+Added Pin To Net: NetName=NetC16_2 Pin=U2-2
+Added Net: Name=NetC16_2
+Added Pin To Net: NetName=NetFB1_1 Pin=FB1-1
+Added Pin To Net: NetName=NetFB1_1 Pin=TP1-1
+Added Net: Name=NetFB1_1
+Added Pin To Net: NetName=NetFB2_2 Pin=FB2-2
+Added Pin To Net: NetName=NetFB2_2 Pin=TP2-1
+Added Net: Name=NetFB2_2
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ1_1 Pin=R1-1
+Added Pin To Net: NetName=NetJ1_1 Pin=R5-2
+Added Pin To Net: NetName=NetJ1_1 Pin=R7-2
+Added Net: Name=NetJ1_1
+Added Pin To Net: NetName=NetJ2_1 Pin=J2-1
+Added Pin To Net: NetName=NetJ2_1 Pin=R3-2
+Added Net: Name=NetJ2_1
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Pin To Net: NetName=NetR2_1 Pin=U1-7
+Added Net: Name=NetR2_1
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=NetR3_1 Pin=R6-2
+Added Pin To Net: NetName=NetR3_1 Pin=U1-11
+Added Net: Name=NetR3_1
+Added Pin To Net: NetName=NetR4_1 Pin=R4-1
+Added Pin To Net: NetName=NetR4_1 Pin=U1-3
+Added Net: Name=NetR4_1
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=NetR5_1 Pin=R10-2
+Added Pin To Net: NetName=NetR5_1 Pin=U2-3
+Added Net: Name=NetR5_1
+Added Pin To Net: NetName=NetR11_2 Pin=R11-2
+Added Pin To Net: NetName=NetR11_2 Pin=R12-2
+Added Pin To Net: NetName=NetR11_2 Pin=U1-14
+Added Net: Name=NetR11_2
+Added Pin To Net: NetName=NetR13_1 Pin=R13-1
+Added Pin To Net: NetName=NetR13_1 Pin=R14-2
+Added Pin To Net: NetName=NetR13_1 Pin=R15-2
+Added Net: Name=NetR13_1
+Added Member To Class: ClassName=Main Member=Component C4 100nF
+Added Member To Class: ClassName=Main Member=Component C5 100nF
+Added Member To Class: ClassName=Main Member=Component C6 100nF
+Added Member To Class: ClassName=Main Member=Component C7 100nF
+Added Member To Class: ClassName=Main Member=Component C8 100nF
+Added Member To Class: ClassName=Main Member=Component C9 100nF
+Added Member To Class: ClassName=Main Member=Component C10 100nF
+Added Member To Class: ClassName=Main Member=Component C11 100nF
+Added Member To Class: ClassName=Main Member=Component C12 2.2uF
+Added Member To Class: ClassName=Main Member=Component C13 22nF
+Added Member To Class: ClassName=Main Member=Component C14 100nF
+Added Member To Class: ClassName=Main Member=Component C15 100pF
+Added Member To Class: ClassName=Main Member=Component C16 TBD
+Added Member To Class: ClassName=Main Member=Component FB1 120@100MHZ
+Added Member To Class: ClassName=Main Member=Component FB2 120@100MHZ
+Added Member To Class: ClassName=Main Member=Component J2 UFL
+Added Member To Class: ClassName=Main Member=Component R7 49.9
+Added Member To Class: ClassName=Main Member=Component R8 90.9k
+Added Member To Class: ClassName=Main Member=Component R9 2K
+Added Member To Class: ClassName=Main Member=Component R10 90.9k
+Added Member To Class: ClassName=Main Member=Component R11 0
+Added Member To Class: ClassName=Main Member=Component R12 0
+Added Member To Class: ClassName=Main Member=Component R13 10K
+Added Member To Class: ClassName=Main Member=Component R14 DNP
+Added Member To Class: ClassName=Main Member=Component R15 5K TRIMPOT

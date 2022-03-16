@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [BUF802_Eval.PcbDoc]
+   Generated File[BUF802_Eval.TXT]
+   Generated File[BUF802_Eval.LDP]
+   Generated File[BUF802_Eval.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 11:31:26 PM On 2022-02-16

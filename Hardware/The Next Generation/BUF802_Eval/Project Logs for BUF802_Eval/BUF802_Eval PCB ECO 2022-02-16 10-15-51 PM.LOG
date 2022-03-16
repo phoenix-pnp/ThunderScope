@@ -1,0 +1,12 @@
+Change Component DesignItemId : Designator=J1 Old DesignItemId=BNC JACK R/A New DesignItemId=UFL Jack SMD
+Change Component DesignItemId : Designator=J2 Old DesignItemId=BNC JACK R/A New DesignItemId=UFL Jack SMD
+Change Component Footprint: Designator=J1 Old Footprint=MOL_0731000105 New Footprint=TE_2334884-1
+Change Component Footprint: Designator=J2 Old Footprint=MOL_0731000105 New Footprint=TE_2334884-1
+Change Component Comment : Designator=J1 Old Comment=BNC New Comment=UFL
+Change Component Comment : Designator=J2 Old Comment=BNC New Comment=UFL
+Change component parameters: Designator = "J1" ("J1"); Footprint = "MOL_0731000105"; UniqueID = "\TLPHPGQO" ("\TLPHPGQO")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A145155CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J2" ("J2"); Footprint = "MOL_0731000105"; UniqueID = "\YBMAAPGH" ("\YBMAAPGH")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A145155CT-ND"; VariantName = "[No Variations]"

@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=NetC29A_2 Pin=TP24A-1
+Removed Pin From Net: NetName=NetC29B_2 Pin=TP24B-1
+Removed Pin From Net: NetName=NetC29C_2 Pin=TP24C-1
+Removed Pin From Net: NetName=NetC29D_2 Pin=TP24D-1
+Removed Member From Class: ClassName=CH1 Member=TP24A
+Removed Member From Class: ClassName=CH2 Member=TP24B
+Removed Member From Class: ClassName=CH3 Member=TP24C
+Removed Member From Class: ClassName=CH4 Member=TP24D

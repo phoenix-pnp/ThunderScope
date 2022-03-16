@@ -1,0 +1,336 @@
+Removed Member From Class: ClassName=FPGA Module Member=C1
+Removed Member From Class: ClassName=PLL Member=C1
+Removed Member From Class: ClassName=Front End Member=C3
+Removed Member From Class: ClassName=FPGA Module Member=C10
+Removed Member From Class: ClassName=FPGA Module Member=C12
+Removed Member From Class: ClassName=Front End Member=C54
+Removed Member From Class: ClassName=PLL Member=C68
+Removed Member From Class: ClassName=PLL Member=C72
+Removed Member From Class: ClassName=PLL Member=C73
+Removed Member From Class: ClassName=PLL Member=C76
+Removed Member From Class: ClassName=PLL Member=C78
+Removed Member From Class: ClassName=PLL Member=C79
+Removed Member From Class: ClassName=PLL Member=C80
+Removed Member From Class: ClassName=PLL Member=C81
+Removed Member From Class: ClassName=ADC Member=C82
+Removed Member From Class: ClassName=ADC Member=C83
+Removed Member From Class: ClassName=Main Member=C83
+Removed Member From Class: ClassName=ADC Member=C84
+Removed Member From Class: ClassName=ADC Member=C85
+Removed Member From Class: ClassName=Front End Member=C85
+Removed Member From Class: ClassName=ADC Member=C86
+Removed Member From Class: ClassName=Main Member=C86
+Removed Member From Class: ClassName=ADC Member=C87
+Removed Member From Class: ClassName=Front End Member=C87
+Removed Member From Class: ClassName=FPGA Module Member=C88
+Removed Member From Class: ClassName=FPGA Module Member=C92
+Removed Member From Class: ClassName=FPGA Module Member=J1
+Removed Member From Class: ClassName=ADC Member=J8
+Removed Member From Class: ClassName=FPGA Module Member=R2
+Removed Member From Class: ClassName=PLL Member=R2
+Removed Member From Class: ClassName=Front End Member=R6
+Removed Member From Class: ClassName=Main Member=R8
+Removed Member From Class: ClassName=Main Member=R10
+Removed Member From Class: ClassName=Front End Member=R49
+Removed Member From Class: ClassName=FPGA Module Member=R60
+Removed Member From Class: ClassName=FPGA Module Member=R62
+Removed Member From Class: ClassName=FPGA Module Member=R63
+Removed Member From Class: ClassName=FPGA Module Member=R64
+Removed Member From Class: ClassName=FPGA Module Member=R66
+Removed Member From Class: ClassName=PLL Member=R66
+Removed Member From Class: ClassName=PLL Member=R74
+Removed Member From Class: ClassName=PLL Member=R76
+Removed Member From Class: ClassName=PCIe_X4 Member=R78
+Removed Member From Class: ClassName=ADC Member=R81
+Removed Member From Class: ClassName=PLL Member=R81
+Removed Member From Class: ClassName=ADC Member=R83
+Removed Member From Class: ClassName=PLL Member=R83
+Removed Member From Class: ClassName=PLL Member=R85
+Removed Member From Class: ClassName=ADC Member=R91
+Removed Member From Class: ClassName=FPGA Module Member=R93
+Removed Member From Class: ClassName=Front End Member=TP3
+Removed Member From Class: ClassName=Main Member=TP9
+Removed Member From Class: ClassName=Main Member=TP11
+Removed Member From Class: ClassName=Main Member=TP13
+Removed Member From Class: ClassName=Main Member=TP15
+Removed Member From Class: ClassName=Main Member=TP21
+Removed Member From Class: ClassName=FPGA Module Member=TP43
+Removed Member From Class: ClassName=PCIe_X4 Member=TP43
+Removed Member From Class: ClassName=PCIe_X4 Member=TP44
+Removed Member From Class: ClassName=ADC Member=TP45
+Removed Member From Class: ClassName=PLL Member=TP45
+Removed Member From Class: ClassName=PLL Member=TP46
+Removed Member From Class: ClassName=PLL Member=U1
+Removed Member From Class: ClassName=Main Member=U3
+Removed Member From Class: ClassName=ADC Member=U14
+Added Component: Designator=J1A(TE_2334884-1)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A145155CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J3A(MOL_0731000105)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM5524-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J3B(MOL_0731000105)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM5524-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J3C(MOL_0731000105)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM5524-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J3D(MOL_0731000105)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM5524-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=OUT_RA_N Pin=J1A-1
+Added Pin To Net: NetName=GND Pin=J1A-2
+Added Pin To Net: NetName=GND Pin=J1A-2
+Added Pin To Net: NetName=GND Pin=J1A-2
+Added Pin To Net: NetName=NetC17A_2 Pin=J3A-1
+Added Pin To Net: NetName=GND Pin=J3A-2
+Added Pin To Net: NetName=GND Pin=J3A-2
+Added Pin To Net: NetName=NetC17B_2 Pin=J3B-1
+Added Pin To Net: NetName=GND Pin=J3B-2
+Added Pin To Net: NetName=GND Pin=J3B-2
+Added Pin To Net: NetName=NetC17C_2 Pin=J3C-1
+Added Pin To Net: NetName=GND Pin=J3C-2
+Added Pin To Net: NetName=GND Pin=J3C-2
+Added Pin To Net: NetName=NetC17D_2 Pin=J3D-1
+Added Pin To Net: NetName=GND Pin=J3D-2
+Added Pin To Net: NetName=GND Pin=J3D-2
+Added Member To Class: ClassName=Main Member=Component C1 100nF
+Added Member To Class: ClassName=Main Member=Component C3 22uF
+Added Member To Class: ClassName=Front End Member=Component C11 10uF
+Added Member To Class: ClassName=Front End Member=Component C12 100nF
+Added Member To Class: ClassName=Front End Member=Component C13 100nF
+Added Member To Class: ClassName=Front End Member=Component C14 100nF
+Added Member To Class: ClassName=CH2 Member=Component C17B (C17) 22nF
+Added Member To Class: ClassName=CH3 Member=Component C17C (C17) 22nF
+Added Member To Class: ClassName=CH4 Member=Component C17D (C17) 22nF
+Added Member To Class: ClassName=CH2 Member=Component C18B (C18) 5.5-20pF
+Added Member To Class: ClassName=CH3 Member=Component C18C (C18) 5.5-20pF
+Added Member To Class: ClassName=CH4 Member=Component C18D (C18) 5.5-20pF
+Added Member To Class: ClassName=CH2 Member=Component C19B (C19) 15pF
+Added Member To Class: ClassName=CH3 Member=Component C19C (C19) 15pF
+Added Member To Class: ClassName=CH4 Member=Component C19D (C19) 15pF
+Added Member To Class: ClassName=CH2 Member=Component C22B (C22) 1nF
+Added Member To Class: ClassName=CH3 Member=Component C22C (C22) 1nF
+Added Member To Class: ClassName=CH4 Member=Component C22D (C22) 1nF
+Added Member To Class: ClassName=CH2 Member=Component C23B (C23) 10nF
+Added Member To Class: ClassName=CH3 Member=Component C23C (C23) 10nF
+Added Member To Class: ClassName=CH4 Member=Component C23D (C23) 10nF
+Added Member To Class: ClassName=CH2 Member=Component C24B (C24) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C24C (C24) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C24D (C24) 100nF
+Added Member To Class: ClassName=CH2 Member=Component C27B (C27) 22nF
+Added Member To Class: ClassName=CH3 Member=Component C27C (C27) 22nF
+Added Member To Class: ClassName=CH4 Member=Component C27D (C27) 22nF
+Added Member To Class: ClassName=CH2 Member=Component C28B (C28) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C28C (C28) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C28D (C28) 100nF
+Added Member To Class: ClassName=CH2 Member=Component C29B (C29) 100pF
+Added Member To Class: ClassName=CH3 Member=Component C29C (C29) 100pF
+Added Member To Class: ClassName=CH2 Member=Component C32B (C32) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C32C (C32) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C32D (C32) 100nF
+Added Member To Class: ClassName=CH2 Member=Component C33B (C33) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C33C (C33) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C33D (C33) 100nF
+Added Member To Class: ClassName=CH2 Member=Component C34B (C34) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C34C (C34) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C34D (C34) 100nF
+Added Member To Class: ClassName=CH2 Member=Component C35B (C35) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C35C (C35) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C35D (C35) 100nF
+Added Member To Class: ClassName=CH2 Member=Component C37B (C37) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C37C (C37) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C37D (C37) 100nF
+Added Member To Class: ClassName=CH2 Member=Component C39B (C39) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C39C (C39) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C39D (C39) 100nF
+Added Member To Class: ClassName=ADC Member=Component C41 1uF
+Added Member To Class: ClassName=ADC Member=Component C43 10nF
+Added Member To Class: ClassName=ADC Member=Component C45 1nF
+Added Member To Class: ClassName=ADC Member=Component C47 10nF
+Added Member To Class: ClassName=ADC Member=Component C49 1uF
+Added Member To Class: ClassName=ADC Member=Component C51 39pF
+Added Member To Class: ClassName=ADC Member=Component C52 10uF
+Added Member To Class: ClassName=ADC Member=Component C53 22uF
+Added Member To Class: ClassName=ADC Member=Component C55 10nF
+Added Member To Class: ClassName=ADC Member=Component C57 10nF
+Added Member To Class: ClassName=ADC Member=Component C59 100nF
+Added Member To Class: ClassName=ADC Member=Component C60 10uF
+Added Member To Class: ClassName=ADC Member=Component C61 4.7uF
+Added Member To Class: ClassName=CH2 Member=Component C63B (C63) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C63C (C63) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C63D (C63) 100nF
+Added Member To Class: ClassName=CH2 Member=Component C64B (C64) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C64C (C64) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C64D (C64) 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C65 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C67 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C69 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C70 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C71 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C72 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C74 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C75 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C76 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C77 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C79 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C80 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C81 100nF
+Added Member To Class: ClassName=PLL Member=Component C82 1uF
+Added Member To Class: ClassName=PLL Member=Component C83 1uF
+Added Member To Class: ClassName=PLL Member=Component C84 1uF
+Added Member To Class: ClassName=PLL Member=Component C85 1uF
+Added Member To Class: ClassName=PLL Member=Component C86 1uF
+Added Member To Class: ClassName=PLL Member=Component C87 1uF
+Added Member To Class: ClassName=PLL Member=Component C88 1uF
+Added Member To Class: ClassName=PLL Member=Component C89 1uF
+Added Member To Class: ClassName=PLL Member=Component C90 1uF
+Added Member To Class: ClassName=PLL Member=Component C91 4.7uF
+Added Member To Class: ClassName=PLL Member=Component C93 1uF
+Added Member To Class: ClassName=PLL Member=Component C95 1uF
+Added Member To Class: ClassName=PLL Member=Component C96 100nF
+Added Member To Class: ClassName=PLL Member=Component C97 100nF
+Added Member To Class: ClassName=PLL Member=Component C98 100nF
+Added Member To Class: ClassName=PLL Member=Component C99 100nF
+Added Member To Class: ClassName=CH1 Member=Component J1A (J1) UFL
+Add Class Member: Failed to add class member : Component J1B (J1) UFL
+Add Class Member: Failed to add class member : Component J1C (J1) UFL
+Add Class Member: Failed to add class member : Component J1D (J1) UFL
+Add Class Member: Failed to add class member : Component J2A (J2) UFL
+Added Member To Class: ClassName=CH2 Member=Component J2B (J2) UFL
+Added Member To Class: ClassName=CH3 Member=Component J2C (J2) UFL
+Added Member To Class: ClassName=CH4 Member=Component J2D (J2) UFL
+Added Member To Class: ClassName=CH1 Member=Component J3A (J3) BNC
+Added Member To Class: ClassName=CH2 Member=Component J3B (J3) BNC
+Added Member To Class: ClassName=CH3 Member=Component J3C (J3) BNC
+Added Member To Class: ClassName=CH4 Member=Component J3D (J3) BNC
+Added Member To Class: ClassName=ADC Member=Component J5 UFL
+Added Member To Class: ClassName=FPGA Module Member=Component J7 BNC
+Added Member To Class: ClassName=FPGA Module Member=Component J8 2.54mm 6 Pin TH
+Added Member To Class: ClassName=Main Member=Component R1 0
+Added Member To Class: ClassName=Main Member=Component R2 10K
+Added Member To Class: ClassName=Main Member=Component R5 0.01
+Added Member To Class: ClassName=Front End Member=Component R7 0.01
+Added Member To Class: ClassName=Front End Member=Component R8 0.1
+Added Member To Class: ClassName=Front End Member=Component R9 0.1
+Added Member To Class: ClassName=Front End Member=Component R12 36k
+Added Member To Class: ClassName=Front End Member=Component R17 2K
+Added Member To Class: ClassName=Front End Member=Component R20 10K
+Added Member To Class: ClassName=Front End Member=Component R22 10K
+Added Member To Class: ClassName=CH2 Member=Component R23B (R23) 1K
+Added Member To Class: ClassName=CH3 Member=Component R23C (R23) 1K
+Added Member To Class: ClassName=CH4 Member=Component R23D (R23) 1K
+Added Member To Class: ClassName=CH2 Member=Component R31B (R31) 49.9
+Added Member To Class: ClassName=CH3 Member=Component R31C (R31) 49.9
+Added Member To Class: ClassName=CH4 Member=Component R31D (R31) 49.9
+Added Member To Class: ClassName=CH2 Member=Component R32B (R32) 100k
+Added Member To Class: ClassName=CH3 Member=Component R32C (R32) 100k
+Added Member To Class: ClassName=CH4 Member=Component R32D (R32) 100k
+Added Member To Class: ClassName=CH2 Member=Component R34B (R34) 909k
+Added Member To Class: ClassName=CH3 Member=Component R34C (R34) 909k
+Added Member To Class: ClassName=CH4 Member=Component R34D (R34) 909k
+Added Member To Class: ClassName=CH2 Member=Component R40B (R40) 0
+Added Member To Class: ClassName=CH3 Member=Component R40C (R40) 0
+Added Member To Class: ClassName=CH4 Member=Component R40D (R40) 0
+Added Member To Class: ClassName=CH2 Member=Component R41B (R41) 909k
+Added Member To Class: ClassName=CH3 Member=Component R41C (R41) 909k
+Added Member To Class: ClassName=CH4 Member=Component R41D (R41) 909k
+Added Member To Class: ClassName=CH2 Member=Component R43B (R43) 90.9k
+Added Member To Class: ClassName=CH3 Member=Component R43C (R43) 90.9k
+Added Member To Class: ClassName=CH4 Member=Component R43D (R43) 90.9k
+Added Member To Class: ClassName=CH2 Member=Component R45B (R45) 1K
+Added Member To Class: ClassName=CH3 Member=Component R45C (R45) 1K
+Added Member To Class: ClassName=CH4 Member=Component R45D (R45) 1K
+Added Member To Class: ClassName=CH2 Member=Component R50B (R50) 0
+Added Member To Class: ClassName=CH3 Member=Component R50C (R50) 0
+Added Member To Class: ClassName=CH4 Member=Component R50D (R50) 0
+Added Member To Class: ClassName=CH2 Member=Component R52B (R52) 10K
+Added Member To Class: ClassName=CH3 Member=Component R52C (R52) 10K
+Added Member To Class: ClassName=CH4 Member=Component R52D (R52) 10K
+Added Member To Class: ClassName=CH2 Member=Component R54B (R54) DNP
+Added Member To Class: ClassName=CH3 Member=Component R54C (R54) DNP
+Added Member To Class: ClassName=CH4 Member=Component R54D (R54) DNP
+Added Member To Class: ClassName=CH2 Member=Component R55B (R55) 5K TRIMPOT
+Added Member To Class: ClassName=CH3 Member=Component R55C (R55) 5K TRIMPOT
+Added Member To Class: ClassName=CH4 Member=Component R55D (R55) 5K TRIMPOT
+Added Member To Class: ClassName=ADC Member=Component R57 100
+Added Member To Class: ClassName=ADC Member=Component R58 0.01
+Added Member To Class: ClassName=ADC Member=Component R59 261K
+Added Member To Class: ClassName=ADC Member=Component R61 100k
+Added Member To Class: ClassName=ADC Member=Component R62 100
+Added Member To Class: ClassName=ADC Member=Component R63 100
+Added Member To Class: ClassName=ADC Member=Component R64 100
+Added Member To Class: ClassName=ADC Member=Component R65 0
+Added Member To Class: ClassName=ADC Member=Component R66 0
+Added Member To Class: ClassName=FPGA Module Member=Component R67 1K
+Added Member To Class: ClassName=FPGA Module Member=Component R73 0
+Added Member To Class: ClassName=FPGA Module Member=Component R75 0
+Added Member To Class: ClassName=FPGA Module Member=Component R77 0
+Added Member To Class: ClassName=FPGA Module Member=Component R79 0
+Added Member To Class: ClassName=FPGA Module Member=Component R80 0
+Added Member To Class: ClassName=FPGA Module Member=Component R81 0
+Added Member To Class: ClassName=FPGA Module Member=Component R82 0
+Added Member To Class: ClassName=FPGA Module Member=Component R83 0
+Added Member To Class: ClassName=FPGA Module Member=Component R84 49.9
+Added Member To Class: ClassName=PCIe_X4 Member=Component R86 0
+Added Member To Class: ClassName=PLL Member=Component R88 0
+Added Member To Class: ClassName=PLL Member=Component R89 10K
+Added Member To Class: ClassName=PLL Member=Component R90 10K
+Added Member To Class: ClassName=PLL Member=Component R91 10K
+Added Member To Class: ClassName=PLL Member=Component R92 10K
+Added Member To Class: ClassName=PLL Member=Component R93 10K
+Added Member To Class: ClassName=PLL Member=Component R94 10K
+Add Class Member: Failed to add class member : Component SHLD1 9204
+Added Member To Class: ClassName=Main Member=Component TP2 5015
+Added Member To Class: ClassName=Main Member=Component TP4 5015
+Added Member To Class: ClassName=Main Member=Component TP5 5019
+Added Member To Class: ClassName=Main Member=Component TP6 5019
+Added Member To Class: ClassName=Main Member=Component TP7 5019
+Added Member To Class: ClassName=Main Member=Component TP8 5015
+Added Member To Class: ClassName=Front End Member=Component TP10 PCB
+Added Member To Class: ClassName=Front End Member=Component TP11 PCB
+Added Member To Class: ClassName=Front End Member=Component TP12 PCB
+Added Member To Class: ClassName=Front End Member=Component TP13 PCB
+Added Member To Class: ClassName=Front End Member=Component TP14 PCB
+Added Member To Class: ClassName=Front End Member=Component TP16 PCB
+Added Member To Class: ClassName=Front End Member=Component TP19 PCB
+Added Member To Class: ClassName=CH2 Member=Component TP20B (TP20) PCB
+Added Member To Class: ClassName=CH3 Member=Component TP20C (TP20) PCB
+Added Member To Class: ClassName=CH4 Member=Component TP20D (TP20) PCB
+Added Member To Class: ClassName=CH2 Member=Component TP21B (TP21) PCB
+Added Member To Class: ClassName=CH3 Member=Component TP21C (TP21) PCB
+Added Member To Class: ClassName=CH4 Member=Component TP21D (TP21) PCB
+Added Member To Class: ClassName=CH2 Member=Component TP23B (TP23) PCB
+Added Member To Class: ClassName=CH3 Member=Component TP23C (TP23) PCB
+Added Member To Class: ClassName=CH4 Member=Component TP23D (TP23) PCB
+Added Member To Class: ClassName=CH2 Member=Component TP24B (TP24) PCB
+Added Member To Class: ClassName=CH3 Member=Component TP24C (TP24) PCB
+Added Member To Class: ClassName=CH4 Member=Component TP24D (TP24) PCB
+Added Member To Class: ClassName=ADC Member=Component TP29 PCB
+Added Member To Class: ClassName=ADC Member=Component TP31 PCB
+Added Member To Class: ClassName=ADC Member=Component TP33 PCB
+Added Member To Class: ClassName=ADC Member=Component TP34 PCB
+Added Member To Class: ClassName=ADC Member=Component TP35 PCB
+Added Member To Class: ClassName=ADC Member=Component TP37 PCB
+Added Member To Class: ClassName=FPGA Module Member=Component TP39 PCB
+Added Member To Class: ClassName=PCIe_X4 Member=Component TP40 5015
+Added Member To Class: ClassName=PCIe_X4 Member=Component TP41 5015
+Added Member To Class: ClassName=PLL Member=Component TP42 PCB
+Added Member To Class: ClassName=PLL Member=Component TP43 PCB
+Added Member To Class: ClassName=Main Member=Component U1 SN74LVC1G17
+Added Member To Class: ClassName=Main Member=Component U2 TPS61256A
+Added Member To Class: ClassName=Front End Member=Component U3 ISL80510
+Added Member To Class: ClassName=Front End Member=Component U4 LM27761
+Added Member To Class: ClassName=CH2 Member=Component U6B (U6) CPC1017NTR
+Added Member To Class: ClassName=CH3 Member=Component U6C (U6) CPC1017NTR
+Added Member To Class: ClassName=CH4 Member=Component U6D (U6) CPC1017NTR
+Added Member To Class: ClassName=CH2 Member=Component U7B (U7) LMH6518
+Added Member To Class: ClassName=CH3 Member=Component U7C (U7) LMH6518
+Added Member To Class: ClassName=CH4 Member=Component U7D (U7) LMH6518
+Added Member To Class: ClassName=CH2 Member=Component U9B (U9) OP07CDR
+Added Member To Class: ClassName=CH3 Member=Component U9C (U9) OP07CDR
+Added Member To Class: ClassName=CH4 Member=Component U9D (U9) OP07CDR
+Added Member To Class: ClassName=ADC Member=Component U11 TPS62A01
+Added Member To Class: ClassName=ADC Member=Component U12 HMCAD1511
+Added Member To Class: ClassName=PLL Member=Component U14 SIP32508
+Added Member To Class: ClassName=PLL Member=Component U15 ZL30250LDG1

@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=V+ NewDesignator=TP1
+Change Component Designator: OldDesignator=V- NewDesignator=TP2
+Change Component Designator: OldDesignator=VTRIM NewDesignator=TP4
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(255, 110, 110)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(110, 110, 255)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(0, 190, 0)

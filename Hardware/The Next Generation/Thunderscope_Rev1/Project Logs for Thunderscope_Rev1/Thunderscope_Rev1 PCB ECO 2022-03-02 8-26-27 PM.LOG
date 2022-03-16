@@ -1,0 +1,125 @@
+Removed Member From Class: ClassName=FPGA Module Member=C1
+Removed Member From Class: ClassName=FPGA Module Member=C10
+Removed Member From Class: ClassName=FPGA Module Member=C12
+Removed Member From Class: ClassName=FPGA Module Member=J1
+Removed Member From Class: ClassName=FPGA Module Member=R2
+Removed Member From Class: ClassName=Front End Member=R6
+Removed Member From Class: ClassName=Main Member=R8
+Removed Member From Class: ClassName=Main Member=R10
+Removed Member From Class: ClassName=Main Member=R11
+Removed Member From Class: ClassName=Front End Member=R49
+Removed Member From Class: ClassName=FPGA Module Member=R60
+Removed Member From Class: ClassName=FPGA Module Member=R62
+Removed Member From Class: ClassName=FPGA Module Member=R63
+Removed Member From Class: ClassName=FPGA Module Member=R64
+Removed Member From Class: ClassName=FPGA Module Member=R66
+Removed Member From Class: ClassName=PLL Member=U1
+Removed Member From Class: ClassName=Main Member=U3
+Change Component Designator: OldDesignator=C63 NewDesignator=C15
+Change Component Designator: OldDesignator=C64 NewDesignator=C16
+Change Component Designator: OldDesignator=C78 NewDesignator=C40
+Change Component Designator: OldDesignator=D2 NewDesignator=D1
+Change Component Designator: OldDesignator=J1A NewDesignator=J4A
+Change Component Designator: OldDesignator=J1B NewDesignator=J4B
+Change Component Designator: OldDesignator=J1C NewDesignator=J4C
+Change Component Designator: OldDesignator=J1D NewDesignator=J4D
+Change Component Designator: OldDesignator=R10A NewDesignator=R24A
+Change Component Designator: OldDesignator=R10B NewDesignator=R24B
+Change Component Designator: OldDesignator=R10C NewDesignator=R24C
+Change Component Designator: OldDesignator=R10D NewDesignator=R24D
+Change Component Designator: OldDesignator=R16A NewDesignator=R25A
+Change Component Designator: OldDesignator=R16B NewDesignator=R25B
+Change Component Designator: OldDesignator=R16C NewDesignator=R25C
+Change Component Designator: OldDesignator=R16D NewDesignator=R25D
+Change Component Designator: OldDesignator=R19A NewDesignator=R26A
+Change Component Designator: OldDesignator=R19B NewDesignator=R26B
+Change Component Designator: OldDesignator=R19C NewDesignator=R26C
+Change Component Designator: OldDesignator=R19D NewDesignator=R26D
+Change Component Designator: OldDesignator=R21A NewDesignator=R27A
+Change Component Designator: OldDesignator=R21B NewDesignator=R27B
+Change Component Designator: OldDesignator=R21C NewDesignator=R27C
+Change Component Designator: OldDesignator=R21D NewDesignator=R27D
+Change Component Designator: OldDesignator=R23A NewDesignator=R35A
+Change Component Designator: OldDesignator=R23B NewDesignator=R35B
+Change Component Designator: OldDesignator=R23C NewDesignator=R35C
+Change Component Designator: OldDesignator=R23D NewDesignator=R35D
+Change Component Designator: OldDesignator=R49 NewDesignator=R36
+Change Component Designator: OldDesignator=R50 NewDesignator=R37
+Change Component Designator: OldDesignator=R51 NewDesignator=R38
+Change Component Designator: OldDesignator=R52 NewDesignator=R39
+Change Component Designator: OldDesignator=R53 NewDesignator=R42
+Change Component Designator: OldDesignator=R54 NewDesignator=R44
+Change Component Designator: OldDesignator=R55 NewDesignator=R46
+Change Component Designator: OldDesignator=SHLD1A NewDesignator=SHLD3A
+Change Component Designator: OldDesignator=SHLD1B NewDesignator=SHLD3B
+Change Component Designator: OldDesignator=SHLD1C NewDesignator=SHLD3C
+Change Component Designator: OldDesignator=SHLD1D NewDesignator=SHLD3D
+Change Component Designator: OldDesignator=TP20A NewDesignator=TP26A
+Change Component Designator: OldDesignator=TP20B NewDesignator=TP26B
+Change Component Designator: OldDesignator=TP20C NewDesignator=TP26C
+Change Component Designator: OldDesignator=TP20D NewDesignator=TP26D
+Change Component Designator: OldDesignator=TP21A NewDesignator=TP25A
+Change Component Designator: OldDesignator=TP21B NewDesignator=TP25B
+Change Component Designator: OldDesignator=TP21C NewDesignator=TP25C
+Change Component Designator: OldDesignator=TP21D NewDesignator=TP25D
+Change Component Designator: OldDesignator=U6A NewDesignator=U10A
+Change Component Designator: OldDesignator=U6B NewDesignator=U10B
+Change Component Designator: OldDesignator=U6C NewDesignator=U10C
+Change Component Designator: OldDesignator=U6D NewDesignator=U10D
+Change Net Name : Old Net Name=NetD2_2 New Net Name=NetD1_2
+Change Net Name : Old Net Name=NetR10A_2 New Net Name=NetR24A_2
+Change Net Name : Old Net Name=NetR10B_2 New Net Name=NetR24B_2
+Change Net Name : Old Net Name=NetR10C_2 New Net Name=NetR24C_2
+Change Net Name : Old Net Name=NetR10D_2 New Net Name=NetR24D_2
+Change Net Name : Old Net Name=NetR23A_2 New Net Name=NetR35A_2
+Change Net Name : Old Net Name=NetR23B_2 New Net Name=NetR35B_2
+Change Net Name : Old Net Name=NetR23C_2 New Net Name=NetR35C_2
+Change Net Name : Old Net Name=NetR23D_2 New Net Name=NetR35D_2
+Added Member To Class: ClassName=Front End Member=Component C11 10uF
+Added Member To Class: ClassName=Front End Member=Component C12 100nF
+Added Member To Class: ClassName=Front End Member=Component C13 100nF
+Added Member To Class: ClassName=Front End Member=Component C14 100nF
+Added Member To Class: ClassName=ADC Member=Component C41 1uF
+Added Member To Class: ClassName=ADC Member=Component C43 10nF
+Added Member To Class: ClassName=ADC Member=Component C45 1nF
+Added Member To Class: ClassName=ADC Member=Component C47 10nF
+Added Member To Class: ClassName=ADC Member=Component C52 10uF
+Added Member To Class: ClassName=ADC Member=Component C55 10nF
+Added Member To Class: ClassName=FPGA Module Member=Component C75 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C76 100nF
+Added Member To Class: ClassName=FPGA Module Member=Component C77 100nF
+Added Member To Class: ClassName=CH2 Member=Component J3B (J3) UFL
+Added Member To Class: ClassName=CH3 Member=Component J3C (J3) UFL
+Added Member To Class: ClassName=CH4 Member=Component J3D (J3) UFL
+Added Member To Class: ClassName=FPGA Module Member=Component J7 BNC
+Added Member To Class: ClassName=Main Member=Component R4 0.01
+Added Member To Class: ClassName=Main Member=Component R5 0.01
+Added Member To Class: ClassName=Main Member=Component R6 10K
+Added Member To Class: ClassName=Front End Member=Component R7 0.01
+Added Member To Class: ClassName=Front End Member=Component R8 0.1
+Added Member To Class: ClassName=Front End Member=Component R9 0.1
+Added Member To Class: ClassName=Front End Member=Component R12 36k
+Added Member To Class: ClassName=Front End Member=Component R17 2K
+Added Member To Class: ClassName=Front End Member=Component R20 10K
+Added Member To Class: ClassName=Front End Member=Component R22 10K
+Added Member To Class: ClassName=CH2 Member=Component R29B (R29) 10K
+Added Member To Class: ClassName=CH3 Member=Component R29C (R29) 10K
+Added Member To Class: ClassName=CH4 Member=Component R29D (R29) 10K
+Added Member To Class: ClassName=ADC Member=Component R57 100
+Added Member To Class: ClassName=ADC Member=Component R59 261K
+Added Member To Class: ClassName=ADC Member=Component R63 100
+Added Member To Class: ClassName=ADC Member=Component R64 100
+Added Member To Class: ClassName=ADC Member=Component R65 0
+Added Member To Class: ClassName=FPGA Module Member=Component R68 0
+Added Member To Class: ClassName=FPGA Module Member=Component R69 0
+Added Member To Class: ClassName=FPGA Module Member=Component R70 0
+Added Member To Class: ClassName=FPGA Module Member=Component R71 0
+Added Member To Class: ClassName=FPGA Module Member=Component R73 0
+Added Member To Class: ClassName=FPGA Module Member=Component R84 49.9
+Add Class Member: Failed to add class member : Component SHLD1 9204
+Added Member To Class: ClassName=Main Member=Component U2 TPS61256A
+Added Member To Class: ClassName=Front End Member=Component U3 ISL80510
+Added Member To Class: ClassName=Front End Member=Component U4 LM27761
+Added Member To Class: ClassName=ADC Member=Component U11 TPS62A01
+Added Member To Class: ClassName=ADC Member=Component U12 HMCAD1511
+Added Member To Class: ClassName=PLL Member=Component U15 ZL30250LDG1

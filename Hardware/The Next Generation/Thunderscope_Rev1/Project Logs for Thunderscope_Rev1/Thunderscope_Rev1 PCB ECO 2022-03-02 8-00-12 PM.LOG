@@ -1,0 +1,37 @@
+Change Footprint: Cannot match pads with new footprint in component :J1A Footprint:MOL_0731000105
+Change Footprint: Cannot match pads with new footprint in component :J1B Footprint:MOL_0731000105
+Change Footprint: Cannot match pads with new footprint in component :J1C Footprint:MOL_0731000105
+Change Footprint: Cannot match pads with new footprint in component :J1D Footprint:MOL_0731000105
+Added Component: Designator=J2B(TE_2334884-1)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A145155CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J2C(TE_2334884-1)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A145155CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J2D(TE_2334884-1)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A145155CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J3A(TE_2334884-1)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A145155CT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=OUT_RB_N Pin=J2B-1
+Added Pin To Net: NetName=GND Pin=J2B-2
+Added Pin To Net: NetName=GND Pin=J2B-2
+Added Pin To Net: NetName=GND Pin=J2B-2
+Added Pin To Net: NetName=OUT_RC_N Pin=J2C-1
+Added Pin To Net: NetName=GND Pin=J2C-2
+Added Pin To Net: NetName=GND Pin=J2C-2
+Added Pin To Net: NetName=GND Pin=J2C-2
+Added Pin To Net: NetName=OUT_RD_N Pin=J2D-1
+Added Pin To Net: NetName=GND Pin=J2D-2
+Added Pin To Net: NetName=GND Pin=J2D-2
+Added Pin To Net: NetName=GND Pin=J2D-2
+Added Pin To Net: NetName=OUT_RA_P Pin=J3A-1
+Added Pin To Net: NetName=GND Pin=J3A-2
+Added Pin To Net: NetName=GND Pin=J3A-2
+Added Pin To Net: NetName=GND Pin=J3A-2
+Added Member To Class: ClassName=CH2 Member=Component J2B (J2) UFL
+Added Member To Class: ClassName=CH3 Member=Component J2C (J2) UFL
+Added Member To Class: ClassName=CH4 Member=Component J2D (J2) UFL
+Added Member To Class: ClassName=CH1 Member=Component J3A (J3) UFL
+Add Class Member: Failed to add class member : Component SHLD1 9204
