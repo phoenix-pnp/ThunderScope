@@ -1,0 +1,5 @@
+Change Component DesignItemId : Designator=D1 Old DesignItemId=LED GREEN 0603 APT1608 New DesignItemId=LED GREEN 0603 LTST-S270K
+Change Component Footprint: Designator=D1 Old Footprint=LED_0603_APT1608 New Footprint=LED_0603_LTST-S270K
+Change component parameters: Designator = "D1" ("D1"); Footprint = "LED_0603_APT1608"; UniqueID = "\WKVQNEZI\TYCSDGWE" ("\WKVQNEZI\TYCSDGWE")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "160-1478-1-ND"; VariantName = "[No Variations]"

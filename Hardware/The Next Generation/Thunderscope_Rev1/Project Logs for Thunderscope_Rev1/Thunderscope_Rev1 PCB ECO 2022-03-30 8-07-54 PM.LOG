@@ -1,0 +1,172 @@
+Change Component DesignItemId : Designator=GDT1A Old DesignItemId=GDT 90V New DesignItemId=GDT 75V 1812
+Change Component DesignItemId : Designator=GDT1B Old DesignItemId=GDT 90V New DesignItemId=GDT 75V 1812
+Change Component DesignItemId : Designator=GDT1C Old DesignItemId=GDT 90V New DesignItemId=GDT 75V 1812
+Change Component DesignItemId : Designator=GDT1D Old DesignItemId=GDT 90V New DesignItemId=GDT 75V 1812
+Change Component DesignItemId : Designator=VAR1A Old DesignItemId=VARISTOR 220V 400A 1210 New DesignItemId=VARISTOR 68V 250A 1210
+Change Component DesignItemId : Designator=VAR1B Old DesignItemId=VARISTOR 220V 400A 1210 New DesignItemId=VARISTOR 68V 250A 1210
+Change Component DesignItemId : Designator=VAR1C Old DesignItemId=VARISTOR 220V 400A 1210 New DesignItemId=VARISTOR 68V 250A 1210
+Change Component DesignItemId : Designator=VAR1D Old DesignItemId=VARISTOR 220V 400A 1210 New DesignItemId=VARISTOR 68V 250A 1210
+Change Component Comment : Designator=GDT1A Old Comment=GDT New Comment=4532-075-LF
+Change Component Comment : Designator=GDT1B Old Comment=GDT New Comment=4532-075-LF
+Change Component Comment : Designator=GDT1C Old Comment=GDT New Comment=4532-075-LF
+Change Component Comment : Designator=GDT1D Old Comment=GDT New Comment=4532-075-LF
+Change Component Comment : Designator=VAR1A Old Comment=V120MLA1210NH New Comment=ZV40K1210251NIR1HT
+Change Component Comment : Designator=VAR1B Old Comment=V120MLA1210NH New Comment=ZV40K1210251NIR1HT
+Change Component Comment : Designator=VAR1C Old Comment=V120MLA1210NH New Comment=ZV40K1210251NIR1HT
+Change Component Comment : Designator=VAR1D Old Comment=V120MLA1210NH New Comment=ZV40K1210251NIR1HT
+Change component parameters: Designator = "GDT1A" ("GDT1"); Footprint = "BOU_2051"; UniqueID = "\LFQUXEVB\QZMSFBXE\SEXRDLBM" ("\LFQUXEVB\QZMSFBXE\SEXRDLBM")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG6774CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "GDT1B" ("GDT1"); Footprint = "BOU_2051"; UniqueID = "\LFQUXEVB\QXYCCULR\SEXRDLBM" ("\LFQUXEVB\QXYCCULR\SEXRDLBM")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG6774CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "GDT1C" ("GDT1"); Footprint = "BOU_2051"; UniqueID = "\LFQUXEVB\DSBYOQXN\SEXRDLBM" ("\LFQUXEVB\DSBYOQXN\SEXRDLBM")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG6774CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "GDT1D" ("GDT1"); Footprint = "BOU_2051"; UniqueID = "\LFQUXEVB\OJFNMMJL\SEXRDLBM" ("\LFQUXEVB\OJFNMMJL\SEXRDLBM")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG6774CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "VAR1A" ("VAR1"); Footprint = "GEN_VAR_1210"; UniqueID = "\LFQUXEVB\QZMSFBXE\VPRMREXO" ("\LFQUXEVB\QZMSFBXE\VPRMREXO")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "118-ZV40K1210251NIR1HTCT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "VAR1B" ("VAR1"); Footprint = "GEN_VAR_1210"; UniqueID = "\LFQUXEVB\QXYCCULR\VPRMREXO" ("\LFQUXEVB\QXYCCULR\VPRMREXO")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "118-ZV40K1210251NIR1HTCT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "VAR1C" ("VAR1"); Footprint = "GEN_VAR_1210"; UniqueID = "\LFQUXEVB\DSBYOQXN\VPRMREXO" ("\LFQUXEVB\DSBYOQXN\VPRMREXO")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "118-ZV40K1210251NIR1HTCT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "VAR1D" ("VAR1"); Footprint = "GEN_VAR_1210"; UniqueID = "\LFQUXEVB\OJFNMMJL\VPRMREXO" ("\LFQUXEVB\OJFNMMJL\VPRMREXO")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "118-ZV40K1210251NIR1HTCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=C101A(GEN_C_0603)
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4782-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "100V"; VariantName = "[No Variations]"
+Added Component: Designator=C101B(GEN_C_0603)
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4782-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "100V"; VariantName = "[No Variations]"
+Added Component: Designator=C101C(GEN_C_0603)
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4782-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "100V"; VariantName = "[No Variations]"
+Added Component: Designator=C101D(GEN_C_0603)
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4782-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "100V"; VariantName = "[No Variations]"
+Added Component: Designator=R99A(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2377CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "909k"; VariantName = "[No Variations]"
+Added Component: Designator=R99B(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2377CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "909k"; VariantName = "[No Variations]"
+Added Component: Designator=R99C(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2377CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "909k"; VariantName = "[No Variations]"
+Added Component: Designator=R99D(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2377CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "909k"; VariantName = "[No Variations]"
+Added Component: Designator=R100A(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2377CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "909k"; VariantName = "[No Variations]"
+Added Component: Designator=R100B(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2377CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "909k"; VariantName = "[No Variations]"
+Added Component: Designator=R100C(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2377CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "909k"; VariantName = "[No Variations]"
+Added Component: Designator=R100D(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.0625W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2377CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "909k"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C101A-2
+Added Pin To Net: NetName=GND Pin=C101B-2
+Added Pin To Net: NetName=GND Pin=C101C-2
+Added Pin To Net: NetName=GND Pin=C101D-2
+Added Pin To Net: NetName=GND Pin=R100A-1
+Added Pin To Net: NetName=GND Pin=R100B-1
+Added Pin To Net: NetName=GND Pin=R100C-1
+Added Pin To Net: NetName=GND Pin=R100D-1
+Added Pin To Net: NetName=NetC101A_1 Pin=C101A-1
+Added Pin To Net: NetName=NetC101A_1 Pin=GDT1A-2
+Added Pin To Net: NetName=NetC101A_1 Pin=R99A-2
+Added Pin To Net: NetName=NetC101A_1 Pin=VAR1A-2
+Added Net: Name=NetC101A_1
+Added Pin To Net: NetName=NetC101B_1 Pin=C101B-1
+Added Pin To Net: NetName=NetC101B_1 Pin=GDT1B-2
+Added Pin To Net: NetName=NetC101B_1 Pin=R99B-2
+Added Pin To Net: NetName=NetC101B_1 Pin=VAR1B-2
+Added Net: Name=NetC101B_1
+Added Pin To Net: NetName=NetC101C_1 Pin=C101C-1
+Added Pin To Net: NetName=NetC101C_1 Pin=GDT1C-2
+Added Pin To Net: NetName=NetC101C_1 Pin=R99C-2
+Added Pin To Net: NetName=NetC101C_1 Pin=VAR1C-2
+Added Net: Name=NetC101C_1
+Added Pin To Net: NetName=NetC101D_1 Pin=C101D-1
+Added Pin To Net: NetName=NetC101D_1 Pin=GDT1D-2
+Added Pin To Net: NetName=NetC101D_1 Pin=R99D-2
+Added Pin To Net: NetName=NetC101D_1 Pin=VAR1D-2
+Added Net: Name=NetC101D_1
+Added Pin To Net: NetName=NetR99A_1 Pin=R99A-1
+Added Pin To Net: NetName=NetR99A_1 Pin=R100A-2
+Added Net: Name=NetR99A_1
+Added Pin To Net: NetName=NetR99B_1 Pin=R99B-1
+Added Pin To Net: NetName=NetR99B_1 Pin=R100B-2
+Added Net: Name=NetR99B_1
+Added Pin To Net: NetName=NetR99C_1 Pin=R99C-1
+Added Pin To Net: NetName=NetR99C_1 Pin=R100C-2
+Added Net: Name=NetR99C_1
+Added Pin To Net: NetName=NetR99D_1 Pin=R99D-1
+Added Pin To Net: NetName=NetR99D_1 Pin=R100D-2
+Added Net: Name=NetR99D_1
+Added Member To Class: ClassName=CH1 Member=Component C101A (C101) 22nF
+Added Member To Class: ClassName=CH2 Member=Component C101B (C101) 22nF
+Added Member To Class: ClassName=CH3 Member=Component C101C (C101) 22nF
+Added Member To Class: ClassName=CH4 Member=Component C101D (C101) 22nF
+Added Member To Class: ClassName=CH1 Member=Component R99A (R99) 909k
+Added Member To Class: ClassName=CH2 Member=Component R99B (R99) 909k
+Added Member To Class: ClassName=CH3 Member=Component R99C (R99) 909k
+Added Member To Class: ClassName=CH4 Member=Component R99D (R99) 909k
+Added Member To Class: ClassName=CH1 Member=Component R100A (R100) 909k
+Added Member To Class: ClassName=CH2 Member=Component R100B (R100) 909k
+Added Member To Class: ClassName=CH3 Member=Component R100C (R100) 909k
+Added Member To Class: ClassName=CH4 Member=Component R100D (R100) 909k

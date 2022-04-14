@@ -1,0 +1,12 @@
+Added Component: Designator=D4(TI_X1SON_DPY0002A)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-47364-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=D5(TI_X1SON_DPY0002A)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-47364-1-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=SYNC Pin=D4-1
+Added Pin To Net: NetName=GND Pin=D4-2
+Added Pin To Net: NetName=REFINOUT Pin=D5-1
+Added Pin To Net: NetName=GND Pin=D5-2
+Added Member To Class: ClassName=FPGA Module Member=Component D4 TPD1E1B04
+Added Member To Class: ClassName=PLL Member=Component D5 TPD1E1B04

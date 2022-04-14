@@ -1,0 +1,144 @@
+Change Component DesignItemId : Designator=C20A Old DesignItemId=CAP 1nF 50V C0G 0402 New DesignItemId=CAP 680pF 50V C0G 0402
+Change Component DesignItemId : Designator=C20B Old DesignItemId=CAP 1nF 50V C0G 0402 New DesignItemId=CAP 680pF 50V C0G 0402
+Change Component DesignItemId : Designator=C20C Old DesignItemId=CAP 1nF 50V C0G 0402 New DesignItemId=CAP 680pF 50V C0G 0402
+Change Component DesignItemId : Designator=C20D Old DesignItemId=CAP 1nF 50V C0G 0402 New DesignItemId=CAP 680pF 50V C0G 0402
+Change Component DesignItemId : Designator=C19A Old DesignItemId=CAP 15pF 200V C0G 0603 New DesignItemId=CAP 10pF 100V C0G 0603
+Change Component DesignItemId : Designator=C19B Old DesignItemId=CAP 15pF 200V C0G 0603 New DesignItemId=CAP 10pF 100V C0G 0603
+Change Component DesignItemId : Designator=C19C Old DesignItemId=CAP 15pF 200V C0G 0603 New DesignItemId=CAP 10pF 100V C0G 0603
+Change Component DesignItemId : Designator=C19D Old DesignItemId=CAP 15pF 200V C0G 0603 New DesignItemId=CAP 10pF 100V C0G 0603
+Change Component DesignItemId : Designator=C21A Old DesignItemId=CAP 470pF 50V C0G 0402 New DesignItemId=CAP 300pF 50V C0G 0402
+Change Component DesignItemId : Designator=C21B Old DesignItemId=CAP 470pF 50V C0G 0402 New DesignItemId=CAP 300pF 50V C0G 0402
+Change Component DesignItemId : Designator=C21C Old DesignItemId=CAP 470pF 50V C0G 0402 New DesignItemId=CAP 300pF 50V C0G 0402
+Change Component DesignItemId : Designator=C21D Old DesignItemId=CAP 470pF 50V C0G 0402 New DesignItemId=CAP 300pF 50V C0G 0402
+Change Component Comment : Designator=C20A Old Comment=1nF New Comment=680pF
+Change Component Comment : Designator=C20B Old Comment=1nF New Comment=680pF
+Change Component Comment : Designator=C20C Old Comment=1nF New Comment=680pF
+Change Component Comment : Designator=C20D Old Comment=1nF New Comment=680pF
+Change Component Comment : Designator=R55A Old Comment=5K TRIMPOT New Comment=5K
+Change Component Comment : Designator=R55B Old Comment=5K TRIMPOT New Comment=5K
+Change Component Comment : Designator=R55C Old Comment=5K TRIMPOT New Comment=5K
+Change Component Comment : Designator=R55D Old Comment=5K TRIMPOT New Comment=5K
+Change Component Comment : Designator=C19A Old Comment=15pF New Comment=10pF
+Change Component Comment : Designator=C19B Old Comment=15pF New Comment=10pF
+Change Component Comment : Designator=C19C Old Comment=15pF New Comment=10pF
+Change Component Comment : Designator=C19D Old Comment=15pF New Comment=10pF
+Change Component Comment : Designator=C21A Old Comment=470pF New Comment=300pF
+Change Component Comment : Designator=C21B Old Comment=470pF New Comment=300pF
+Change Component Comment : Designator=C21C Old Comment=470pF New Comment=300pF
+Change Component Comment : Designator=C21D Old Comment=470pF New Comment=300pF
+Change component parameters: Designator = "C19A" ("C19"); Footprint = "GEN_C_0603"; UniqueID = "\LFQUXEVB\QZMSFBXE\FHXHUVGA" ("\LFQUXEVB\QZMSFBXE\FHXHUVGA")
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-5769-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C19B" ("C19"); Footprint = "GEN_C_0603"; UniqueID = "\LFQUXEVB\QXYCCULR\FHXHUVGA" ("\LFQUXEVB\QXYCCULR\FHXHUVGA")
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-5769-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C19C" ("C19"); Footprint = "GEN_C_0603"; UniqueID = "\LFQUXEVB\DSBYOQXN\FHXHUVGA" ("\LFQUXEVB\DSBYOQXN\FHXHUVGA")
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-5769-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C19D" ("C19"); Footprint = "GEN_C_0603"; UniqueID = "\LFQUXEVB\OJFNMMJL\FHXHUVGA" ("\LFQUXEVB\OJFNMMJL\FHXHUVGA")
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-5769-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "100V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C20A" ("C20"); Footprint = "GEN_C_0402"; UniqueID = "\LFQUXEVB\QZMSFBXE\RQYRWGPO" ("\LFQUXEVB\QZMSFBXE\RQYRWGPO")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-16439-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "C0G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "680pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C20B" ("C20"); Footprint = "GEN_C_0402"; UniqueID = "\LFQUXEVB\QXYCCULR\RQYRWGPO" ("\LFQUXEVB\QXYCCULR\RQYRWGPO")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-16439-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "C0G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "680pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C20C" ("C20"); Footprint = "GEN_C_0402"; UniqueID = "\LFQUXEVB\DSBYOQXN\RQYRWGPO" ("\LFQUXEVB\DSBYOQXN\RQYRWGPO")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-16439-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "C0G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "680pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C20D" ("C20"); Footprint = "GEN_C_0402"; UniqueID = "\LFQUXEVB\OJFNMMJL\RQYRWGPO" ("\LFQUXEVB\OJFNMMJL\RQYRWGPO")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-16439-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "C0G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "680pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C21A" ("C21"); Footprint = "GEN_C_0402"; UniqueID = "\LFQUXEVB\QZMSFBXE\IEJZOMAZ" ("\LFQUXEVB\QZMSFBXE\IEJZOMAZ")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-GCM1555C1H301FA16DCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "C0G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "300pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C21B" ("C21"); Footprint = "GEN_C_0402"; UniqueID = "\LFQUXEVB\QXYCCULR\IEJZOMAZ" ("\LFQUXEVB\QXYCCULR\IEJZOMAZ")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-GCM1555C1H301FA16DCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "C0G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "300pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C21C" ("C21"); Footprint = "GEN_C_0402"; UniqueID = "\LFQUXEVB\DSBYOQXN\IEJZOMAZ" ("\LFQUXEVB\DSBYOQXN\IEJZOMAZ")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-GCM1555C1H301FA16DCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "C0G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "300pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C21D" ("C21"); Footprint = "GEN_C_0402"; UniqueID = "\LFQUXEVB\OJFNMMJL\IEJZOMAZ" ("\LFQUXEVB\OJFNMMJL\IEJZOMAZ")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-GCM1555C1H301FA16DCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "C0G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "300pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=C102A(GEN_C_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C102B(GEN_C_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C102C(GEN_C_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C102D(GEN_C_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=TRIM1 Pin=C102A-1
+Added Pin To Net: NetName=GND Pin=C102A-2
+Added Pin To Net: NetName=TRIM2 Pin=C102B-1
+Added Pin To Net: NetName=GND Pin=C102B-2
+Added Pin To Net: NetName=TRIM3 Pin=C102C-1
+Added Pin To Net: NetName=GND Pin=C102C-2
+Added Pin To Net: NetName=TRIM4 Pin=C102D-1
+Added Pin To Net: NetName=GND Pin=C102D-2
+Added Member To Class: ClassName=CH1 Member=Component C102A (C102) 100nF
+Added Member To Class: ClassName=CH2 Member=Component C102B (C102) 100nF
+Added Member To Class: ClassName=CH3 Member=Component C102C (C102) 100nF
+Added Member To Class: ClassName=CH4 Member=Component C102D (C102) 100nF

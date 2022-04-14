@@ -1,0 +1,3 @@
+Change Net Name : Old Net Name=NetC103_1 New Net Name=ADC_CLK_C_P
+Change Net Name : Old Net Name=NetC104_1 New Net Name=ADC_CLK_C_N
+Added Differential Pair: Name=ADC_CLK_C

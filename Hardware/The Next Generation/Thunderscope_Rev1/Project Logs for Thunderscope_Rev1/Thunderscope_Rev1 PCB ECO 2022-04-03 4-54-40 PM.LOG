@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=NetC101A_1 Pin=GDT1A-2
+Removed Pin From Net: NetName=NetC101B_1 Pin=GDT1B-2
+Removed Pin From Net: NetName=NetC101C_1 Pin=GDT1C-2
+Removed Pin From Net: NetName=NetC101D_1 Pin=GDT1D-2
+Removed Pin From Net: NetName=ADC_CLK_N Pin=U15-23
+Removed Pin From Net: NetName=ADC_CLK_P Pin=U15-24
+Removed Pin From Net: NetName=NetC101A_1 Pin=VAR1A-2
+Removed Pin From Net: NetName=NetC101B_1 Pin=VAR1B-2
+Removed Pin From Net: NetName=NetC101C_1 Pin=VAR1C-2
+Removed Pin From Net: NetName=NetC101D_1 Pin=VAR1D-2
+Added Pin To Net: NetName=ADC_CLK_P Pin=U15-23
+Added Pin To Net: NetName=ADC_CLK_N Pin=U15-24
+Added Pin To Net: NetName=NetGDT1A_2 Pin=GDT1A-2
+Added Pin To Net: NetName=NetGDT1A_2 Pin=VAR1A-2
+Added Net: Name=NetGDT1A_2
+Added Pin To Net: NetName=NetGDT1B_2 Pin=GDT1B-2
+Added Pin To Net: NetName=NetGDT1B_2 Pin=VAR1B-2
+Added Net: Name=NetGDT1B_2
+Added Pin To Net: NetName=NetGDT1C_2 Pin=GDT1C-2
+Added Pin To Net: NetName=NetGDT1C_2 Pin=VAR1C-2
+Added Net: Name=NetGDT1C_2
+Added Pin To Net: NetName=NetGDT1D_2 Pin=GDT1D-2
+Added Pin To Net: NetName=NetGDT1D_2 Pin=VAR1D-2
+Added Net: Name=NetGDT1D_2

@@ -1,0 +1,50 @@
+Removed Pin From Net: NetName=NetC17A_2 Pin=C17A-2
+Removed Pin From Net: NetName=NetC17B_2 Pin=C17B-2
+Removed Pin From Net: NetName=NetC17C_2 Pin=C17C-2
+Removed Pin From Net: NetName=NetC17D_2 Pin=C17D-2
+Removed Pin From Net: NetName=NetC17A_2 Pin=U10A-3
+Removed Pin From Net: NetName=NetC17B_2 Pin=U10B-3
+Removed Pin From Net: NetName=NetC17C_2 Pin=U10C-3
+Removed Pin From Net: NetName=NetC17D_2 Pin=U10D-3
+Added Component: Designator=R65A(GEN_R_0603)
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "TBD"; VariantName = "[No Variations]"
+Added Component: Designator=R65B(GEN_R_0603)
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "TBD"; VariantName = "[No Variations]"
+Added Component: Designator=R65C(GEN_R_0603)
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "TBD"; VariantName = "[No Variations]"
+Added Component: Designator=R65D(GEN_R_0603)
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "TBD"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC17A_2 Pin=R65A-1
+Added Pin To Net: NetName=NetC17B_2 Pin=R65B-1
+Added Pin To Net: NetName=NetC17C_2 Pin=R65C-1
+Added Pin To Net: NetName=NetC17D_2 Pin=R65D-1
+Change Net Name : Old Net Name=NetC17A_2 New Net Name=NetGDT1A_1
+Change Net Name : Old Net Name=NetC17B_2 New Net Name=NetGDT1B_1
+Change Net Name : Old Net Name=NetC17C_2 New Net Name=NetGDT1C_1
+Change Net Name : Old Net Name=NetC17D_2 New Net Name=NetGDT1D_1
+Added Pin To Net: NetName=NetC17A_2 Pin=C17A-2
+Added Pin To Net: NetName=NetC17A_2 Pin=R65A-2
+Added Pin To Net: NetName=NetC17A_2 Pin=U10A-3
+Added Net: Name=NetC17A_2
+Added Pin To Net: NetName=NetC17B_2 Pin=C17B-2
+Added Pin To Net: NetName=NetC17B_2 Pin=R65B-2
+Added Pin To Net: NetName=NetC17B_2 Pin=U10B-3
+Added Net: Name=NetC17B_2
+Added Pin To Net: NetName=NetC17C_2 Pin=C17C-2
+Added Pin To Net: NetName=NetC17C_2 Pin=R65C-2
+Added Pin To Net: NetName=NetC17C_2 Pin=U10C-3
+Added Net: Name=NetC17C_2
+Added Pin To Net: NetName=NetC17D_2 Pin=C17D-2
+Added Pin To Net: NetName=NetC17D_2 Pin=R65D-2
+Added Pin To Net: NetName=NetC17D_2 Pin=U10D-3
+Added Net: Name=NetC17D_2
+Added Member To Class: ClassName=CH1 Member=Component R65A (R65) TBD
+Added Member To Class: ClassName=CH2 Member=Component R65B (R65) TBD
+Added Member To Class: ClassName=CH3 Member=Component R65C (R65) TBD
+Added Member To Class: ClassName=CH4 Member=Component R65D (R65) TBD
+Added Member To Class: ClassName=Front End Member=Component TP17 PCB
+Added Member To Class: ClassName=Front End Member=Component TP18 PCB

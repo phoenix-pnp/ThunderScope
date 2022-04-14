@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=ADC_CLK_P Pin=R65-1
+Removed Pin From Net: NetName=ADC_CLK_N Pin=R66-1
+Change Component DesignItemId : Designator=R65 Old DesignItemId=RES 0 OHM 1/16W 0402 New DesignItemId=CAP 100nF 16V X7R 0402
+Change Component DesignItemId : Designator=R66 Old DesignItemId=RES 0 OHM 1/16W 0402 New DesignItemId=CAP 100nF 16V X7R 0402
+Change Component Footprint: Designator=R65 Old Footprint=GEN_R_0402 New Footprint=GEN_C_0402
+Change Component Footprint: Designator=R66 Old Footprint=GEN_R_0402 New Footprint=GEN_C_0402
+Change Component Comment : Designator=R65 Old Comment=0 New Comment=100nF
+Change Component Comment : Designator=R66 Old Comment=0 New Comment=100nF
+Change Component Designator: OldDesignator=R65 NewDesignator=C103
+Change Component Designator: OldDesignator=R66 NewDesignator=C104
+Change component parameters: Designator = "R65" ("R65"); Footprint = "GEN_R_0402"; UniqueID = "\IGGKOPQF\MFGEASZL" ("\IGGKOPQF\MFGEASZL")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R66" ("R66"); Footprint = "GEN_R_0402"; UniqueID = "\IGGKOPQF\VEQYDMEL" ("\IGGKOPQF\VEQYDMEL")
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-4759-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ADC_CLK_P Pin=C103-2
+Added Pin To Net: NetName=ADC_CLK_N Pin=C104-2
+Added Pin To Net: NetName=NetC103_1 Pin=C103-1
+Added Pin To Net: NetName=NetC103_1 Pin=R64-2
+Added Pin To Net: NetName=NetC103_1 Pin=U12-35
+Added Net: Name=NetC103_1
+Added Pin To Net: NetName=NetC104_1 Pin=C104-1
+Added Pin To Net: NetName=NetC104_1 Pin=R64-1
+Added Pin To Net: NetName=NetC104_1 Pin=U12-34
+Added Net: Name=NetC104_1

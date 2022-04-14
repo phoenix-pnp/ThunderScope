@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=PLL_RSTn Pin=Y1-1
+Added Pin To Net: NetName=+1V8APLL Pin=Y1-1
+Added Member To Class: ClassName=CH1 Member=Component TP22A (TP22) PCB

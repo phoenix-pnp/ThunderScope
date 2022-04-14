@@ -1,0 +1,336 @@
+Removed Pin From Net: NetName=ADC_CSn Pin=JM2-66
+Removed Pin From Net: NetName=+3V3 Pin=R46-2
+Removed Pin From Net: NetName=+3V3 Pin=R56-2
+Removed Member From Class: ClassName=ADC Member=R56
+Removed Member From Class: ClassName=ADC Member=TP30
+Removed Member From Class: ClassName=ADC Member=TP31
+Removed Member From Class: ClassName=ADC Member=TP32
+Added Component: Designator=D3A(GEN_SOD_323)
+Add component (AddParameter): Name = "Max Current"; Value = "150mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Voltage"; Value = "75V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1N4148WS-FDICT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=D3B(GEN_SOD_323)
+Add component (AddParameter): Name = "Max Current"; Value = "150mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Voltage"; Value = "75V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1N4148WS-FDICT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=D3C(GEN_SOD_323)
+Add component (AddParameter): Name = "Max Current"; Value = "150mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Voltage"; Value = "75V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1N4148WS-FDICT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=D3D(GEN_SOD_323)
+Add component (AddParameter): Name = "Max Current"; Value = "150mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Voltage"; Value = "75V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1N4148WS-FDICT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=K2A(COTO_9002-05-10)
+Added Component: Designator=K2B(COTO_9002-05-10)
+Added Component: Designator=K2C(COTO_9002-05-10)
+Added Component: Designator=K2D(COTO_9002-05-10)
+Added Component: Designator=L3A(GEN_L_0402)
+Add component (AddParameter): Name = "Value"; Value = "TBD"; VariantName = "[No Variations]"
+Added Component: Designator=L3B(GEN_L_0402)
+Add component (AddParameter): Name = "Value"; Value = "TBD"; VariantName = "[No Variations]"
+Added Component: Designator=L3C(GEN_L_0402)
+Add component (AddParameter): Name = "Value"; Value = "TBD"; VariantName = "[No Variations]"
+Added Component: Designator=L3D(GEN_L_0402)
+Add component (AddParameter): Name = "Value"; Value = "TBD"; VariantName = "[No Variations]"
+Added Component: Designator=Q4A(GEN_SOT_323)
+Add component (AddParameter): Name = "Id"; Value = "340mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power"; Value = "320mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "DMN62D0UW-7DICT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "60V"; VariantName = "[No Variations]"
+Added Component: Designator=Q4B(GEN_SOT_323)
+Add component (AddParameter): Name = "Id"; Value = "340mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power"; Value = "320mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "DMN62D0UW-7DICT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "60V"; VariantName = "[No Variations]"
+Added Component: Designator=Q4C(GEN_SOT_323)
+Add component (AddParameter): Name = "Id"; Value = "340mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power"; Value = "320mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "DMN62D0UW-7DICT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "60V"; VariantName = "[No Variations]"
+Added Component: Designator=Q4D(GEN_SOT_323)
+Add component (AddParameter): Name = "Id"; Value = "340mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power"; Value = "320mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "DMN62D0UW-7DICT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "60V"; VariantName = "[No Variations]"
+Added Component: Designator=R56A(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73H1ETTP1000FCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R56B(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73H1ETTP1000FCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R56C(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73H1ETTP1000FCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R56D(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73H1ETTP1000FCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R96A(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73H1ETTP1000FCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R96B(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73H1ETTP1000FCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R96C(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73H1ETTP1000FCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R96D(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73H1ETTP1000FCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Component: Designator=R97A(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P10.0KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R97B(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P10.0KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R97C(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P10.0KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R97D(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P10.0KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R98A(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P10.0KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R98B(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P10.0KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R98C(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P10.0KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R98D(GEN_R_0402)
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P10.0KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=TP24A(GEN_TP_PCB)
+Added Component: Designator=TP24B(GEN_TP_PCB)
+Added Component: Designator=TP24C(GEN_TP_PCB)
+Added Component: Designator=TP24D(GEN_TP_PCB)
+Added Pin To Net: NetName=+3V3 Pin=D3A-1
+Added Pin To Net: NetName=+3V3 Pin=D3B-1
+Added Pin To Net: NetName=+3V3 Pin=D3C-1
+Added Pin To Net: NetName=+3V3 Pin=D3D-1
+Added Pin To Net: NetName=ADC_CSn Pin=JM2-46
+Added Pin To Net: NetName=NetC17A_2 Pin=K2A-1
+Added Pin To Net: NetName=+3V3 Pin=K2A-2
+Added Pin To Net: NetName=GND Pin=K2A-5
+Added Pin To Net: NetName=GND Pin=K2A-6
+Added Pin To Net: NetName=NetC17B_2 Pin=K2B-1
+Added Pin To Net: NetName=+3V3 Pin=K2B-2
+Added Pin To Net: NetName=GND Pin=K2B-5
+Added Pin To Net: NetName=GND Pin=K2B-6
+Added Pin To Net: NetName=NetC17C_2 Pin=K2C-1
+Added Pin To Net: NetName=+3V3 Pin=K2C-2
+Added Pin To Net: NetName=GND Pin=K2C-5
+Added Pin To Net: NetName=GND Pin=K2C-6
+Added Pin To Net: NetName=NetC17D_2 Pin=K2D-1
+Added Pin To Net: NetName=+3V3 Pin=K2D-2
+Added Pin To Net: NetName=GND Pin=K2D-5
+Added Pin To Net: NetName=GND Pin=K2D-6
+Added Pin To Net: NetName=GND Pin=L3A-2
+Added Pin To Net: NetName=GND Pin=L3B-2
+Added Pin To Net: NetName=GND Pin=L3C-2
+Added Pin To Net: NetName=GND Pin=L3D-2
+Added Pin To Net: NetName=GND Pin=Q4A-3
+Added Pin To Net: NetName=GND Pin=Q4B-3
+Added Pin To Net: NetName=GND Pin=Q4C-3
+Added Pin To Net: NetName=GND Pin=Q4D-3
+Added Pin To Net: NetName=GND Pin=R46-2
+Added Pin To Net: NetName=GND Pin=R98A-1
+Added Pin To Net: NetName=GND Pin=R98B-1
+Added Pin To Net: NetName=GND Pin=R98C-1
+Added Pin To Net: NetName=GND Pin=R98D-1
+Added Pin To Net: NetName=NetD3A_2 Pin=D3A-2
+Added Pin To Net: NetName=NetD3A_2 Pin=K2A-3
+Added Pin To Net: NetName=NetD3A_2 Pin=Q4A-1
+Added Net: Name=NetD3A_2
+Added Pin To Net: NetName=NetD3B_2 Pin=D3B-2
+Added Pin To Net: NetName=NetD3B_2 Pin=K2B-3
+Added Pin To Net: NetName=NetD3B_2 Pin=Q4B-1
+Added Net: Name=NetD3B_2
+Added Pin To Net: NetName=NetD3C_2 Pin=D3C-2
+Added Pin To Net: NetName=NetD3C_2 Pin=K2C-3
+Added Pin To Net: NetName=NetD3C_2 Pin=Q4C-1
+Added Net: Name=NetD3C_2
+Added Pin To Net: NetName=NetD3D_2 Pin=D3D-2
+Added Pin To Net: NetName=NetD3D_2 Pin=K2D-3
+Added Pin To Net: NetName=NetD3D_2 Pin=Q4D-1
+Added Net: Name=NetD3D_2
+Added Pin To Net: NetName=NetK2A_4 Pin=K2A-4
+Added Pin To Net: NetName=NetK2A_4 Pin=R56A-2
+Added Pin To Net: NetName=NetK2A_4 Pin=R96A-2
+Added Net: Name=NetK2A_4
+Added Pin To Net: NetName=NetK2B_4 Pin=K2B-4
+Added Pin To Net: NetName=NetK2B_4 Pin=R56B-2
+Added Pin To Net: NetName=NetK2B_4 Pin=R96B-2
+Added Net: Name=NetK2B_4
+Added Pin To Net: NetName=NetK2C_4 Pin=K2C-4
+Added Pin To Net: NetName=NetK2C_4 Pin=R56C-2
+Added Pin To Net: NetName=NetK2C_4 Pin=R96C-2
+Added Net: Name=NetK2C_4
+Added Pin To Net: NetName=NetK2D_4 Pin=K2D-4
+Added Pin To Net: NetName=NetK2D_4 Pin=R56D-2
+Added Pin To Net: NetName=NetK2D_4 Pin=R96D-2
+Added Net: Name=NetK2D_4
+Added Pin To Net: NetName=NetL3A_1 Pin=L3A-1
+Added Pin To Net: NetName=NetL3A_1 Pin=R56A-1
+Added Pin To Net: NetName=NetL3A_1 Pin=R96A-1
+Added Net: Name=NetL3A_1
+Added Pin To Net: NetName=NetL3B_1 Pin=L3B-1
+Added Pin To Net: NetName=NetL3B_1 Pin=R56B-1
+Added Pin To Net: NetName=NetL3B_1 Pin=R96B-1
+Added Net: Name=NetL3B_1
+Added Pin To Net: NetName=NetL3C_1 Pin=L3C-1
+Added Pin To Net: NetName=NetL3C_1 Pin=R56C-1
+Added Pin To Net: NetName=NetL3C_1 Pin=R96C-1
+Added Net: Name=NetL3C_1
+Added Pin To Net: NetName=NetL3D_1 Pin=L3D-1
+Added Pin To Net: NetName=NetL3D_1 Pin=R56D-1
+Added Pin To Net: NetName=NetL3D_1 Pin=R96D-1
+Added Net: Name=NetL3D_1
+Added Pin To Net: NetName=NetQ4A_2 Pin=Q4A-2
+Added Pin To Net: NetName=NetQ4A_2 Pin=R97A-1
+Added Net: Name=NetQ4A_2
+Added Pin To Net: NetName=NetQ4B_2 Pin=Q4B-2
+Added Pin To Net: NetName=NetQ4B_2 Pin=R97B-1
+Added Net: Name=NetQ4B_2
+Added Pin To Net: NetName=NetQ4C_2 Pin=Q4C-2
+Added Pin To Net: NetName=NetQ4C_2 Pin=R97C-1
+Added Net: Name=NetQ4C_2
+Added Pin To Net: NetName=NetQ4D_2 Pin=Q4D-2
+Added Pin To Net: NetName=NetQ4D_2 Pin=R97D-1
+Added Net: Name=NetQ4D_2
+Added Pin To Net: NetName=NetR44_1 Pin=R44-1
+Added Pin To Net: NetName=NetR44_1 Pin=U12-5
+Added Net: Name=NetR44_1
+Added Pin To Net: NetName=NetR46_1 Pin=R46-1
+Added Pin To Net: NetName=NetR46_1 Pin=U12-6
+Added Net: Name=NetR46_1
+Added Pin To Net: NetName=TERM_1 Pin=JM2-62
+Added Pin To Net: NetName=TERM_1 Pin=R97A-2
+Added Pin To Net: NetName=TERM_1 Pin=R98A-2
+Added Pin To Net: NetName=TERM_1 Pin=TP24A-1
+Added Net: Name=TERM_1
+Added Pin To Net: NetName=TERM_2 Pin=JM2-64
+Added Pin To Net: NetName=TERM_2 Pin=R97B-2
+Added Pin To Net: NetName=TERM_2 Pin=R98B-2
+Added Pin To Net: NetName=TERM_2 Pin=TP24B-1
+Added Net: Name=TERM_2
+Added Pin To Net: NetName=TERM_3 Pin=JM2-66
+Added Pin To Net: NetName=TERM_3 Pin=R97C-2
+Added Pin To Net: NetName=TERM_3 Pin=R98C-2
+Added Pin To Net: NetName=TERM_3 Pin=TP24C-1
+Added Net: Name=TERM_3
+Added Pin To Net: NetName=TERM_4 Pin=JM2-68
+Added Pin To Net: NetName=TERM_4 Pin=R97D-2
+Added Pin To Net: NetName=TERM_4 Pin=R98D-2
+Added Pin To Net: NetName=TERM_4 Pin=TP24D-1
+Added Net: Name=TERM_4
+Added Class: Name=TERM_[4..1]
+Added Member To Class: ClassName=CH1 Member=Component D3A (D3) 1N4148
+Added Member To Class: ClassName=CH2 Member=Component D3B (D3) 1N4148
+Added Member To Class: ClassName=CH3 Member=Component D3C (D3) 1N4148
+Added Member To Class: ClassName=CH4 Member=Component D3D (D3) 1N4148
+Added Member To Class: ClassName=CH1 Member=Component K2A (K2) 9002-05-10
+Added Member To Class: ClassName=CH2 Member=Component K2B (K2) 9002-05-10
+Added Member To Class: ClassName=CH3 Member=Component K2C (K2) 9002-05-10
+Added Member To Class: ClassName=CH4 Member=Component K2D (K2) 9002-05-10
+Added Member To Class: ClassName=CH1 Member=Component L3A (L3) TBD
+Added Member To Class: ClassName=CH2 Member=Component L3B (L3) TBD
+Added Member To Class: ClassName=CH3 Member=Component L3C (L3) TBD
+Added Member To Class: ClassName=CH4 Member=Component L3D (L3) TBD
+Added Member To Class: ClassName=CH1 Member=Component Q4A (Q4) DMN62D0UW
+Added Member To Class: ClassName=CH2 Member=Component Q4B (Q4) DMN62D0UW
+Added Member To Class: ClassName=CH3 Member=Component Q4C (Q4) DMN62D0UW
+Added Member To Class: ClassName=CH4 Member=Component Q4D (Q4) DMN62D0UW
+Added Member To Class: ClassName=CH1 Member=Component R56A (R56) 100
+Added Member To Class: ClassName=CH2 Member=Component R56B (R56) 100
+Added Member To Class: ClassName=CH3 Member=Component R56C (R56) 100
+Added Member To Class: ClassName=CH4 Member=Component R56D (R56) 100
+Added Member To Class: ClassName=CH1 Member=Component R96A (R96) 100
+Added Member To Class: ClassName=CH2 Member=Component R96B (R96) 100
+Added Member To Class: ClassName=CH3 Member=Component R96C (R96) 100
+Added Member To Class: ClassName=CH4 Member=Component R96D (R96) 100
+Added Member To Class: ClassName=CH1 Member=Component R97A (R97) 10K
+Added Member To Class: ClassName=CH2 Member=Component R97B (R97) 10K
+Added Member To Class: ClassName=CH3 Member=Component R97C (R97) 10K
+Added Member To Class: ClassName=CH4 Member=Component R97D (R97) 10K
+Added Member To Class: ClassName=CH1 Member=Component R98A (R98) 10K
+Added Member To Class: ClassName=CH2 Member=Component R98B (R98) 10K
+Added Member To Class: ClassName=CH3 Member=Component R98C (R98) 10K
+Added Member To Class: ClassName=CH4 Member=Component R98D (R98) 10K
+Added Member To Class: ClassName=CH1 Member=Component TP24A (TP24) PCB
+Added Member To Class: ClassName=CH2 Member=Component TP24B (TP24) PCB
+Added Member To Class: ClassName=CH3 Member=Component TP24C (TP24) PCB
+Added Member To Class: ClassName=CH4 Member=Component TP24D (TP24) PCB
